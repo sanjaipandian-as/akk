@@ -1,18 +1,18 @@
 {
   "version": 2,
   "functions": {
-    "*.php": {
+    "api/index.php": {
       "runtime": "vercel-php@0.9.0"
     }
   },
   "routes": [
     {
-      "src": "/(about|app-intigration|blog-details|blog|cart|checkout|contact|faq|index-2|index-3|index-4|index-5|index-6|intigration-details|login|policy-privacy|pricing-plan|project-details|register|service-details|shop-details|shop)",
-      "dest": "/$1.php"
+      "src": "/(.*\\.php)$",
+      "dest": "/api/index.php"
     },
     {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "src": "/((?!.*\\.).*)",
+      "dest": "/api/index.php"
     }
   ]
 }
