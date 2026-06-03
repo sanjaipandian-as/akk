@@ -1,20 +1,20 @@
 <!-- ========================== Sleek Black Footer Start ========================= -->
 <style>
     .custom-footer {
-        background-color: #000000;
-        color: #a3a3a3;
+        background-color: #081a4b;
+        color: #ffffff;
         padding: 60px 0 30px;
         font-family: 'Space Grotesk', sans-serif;
         font-size: 14px;
         position: relative;
     }
     .custom-footer a {
-        color: #8c8c8c;
+        color: #dbe7ff;
         text-decoration: none;
         transition: color 0.2s ease;
     }
     .custom-footer a:hover {
-        color: #ffffff;
+        color: #7dc7ff;
     }
     .custom-footer .footer-logo {
         height: 38px;
@@ -23,13 +23,13 @@
     }
     .custom-footer .footer-info {
         font-size: 13px;
-        color: #8c8c8c;
+        color: rgba(255, 255, 255, 0.8);
         line-height: 1.6;
         margin-top: 10px;
         margin-bottom: 0;
     }
     .custom-footer .footer-divider {
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
         margin: 25px 0;
     }
     .custom-footer .footer-title {
@@ -54,10 +54,10 @@
         font-size: 13px;
     }
     .custom-footer .footer-bottom-links a {
-        color: #666666;
+        color: #dbe7ff;
     }
     .custom-footer .footer-bottom-links a:hover {
-        color: #a3a3a3;
+        color: #7dc7ff;
     }
 
     /* Grid & Responsive Styles */
@@ -180,7 +180,7 @@
     }
 </style>
 
-<section class="custom-footer">
+<section class="custom-footer footer-akkurate-dark">
     <div class="container">
         <!-- Top Row: Logo & Copyright -->
         <div class="row">
@@ -238,7 +238,7 @@
                     <ul class="footer-links">
                         <li><a href="tel:+919841663161">+91 9841663161</a></li>
                         <li><a href="mailto:growth@akkurate.in">growth@akkurate.in</a></li>
-                        <li style="color: #8c8c8c; line-height: 1.6; font-size: 13px;">
+                        <li style="color: rgba(255, 255, 255, 0.8); line-height: 1.6; font-size: 13px;">
                             No. 63/44, 3rd Cross Street,<br>
                             Ranganadhapuram, West Tambaram,<br>
                             Chennai - 600045

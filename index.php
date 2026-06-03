@@ -2094,10 +2094,10 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <div class="tw-mt-2 w-100">
                                     <style>
                                         .premium-square-card {
-                                            background: linear-gradient(180deg, #ffffff 40%, #fff8f5 100%) !important;
+                                            background: linear-gradient(180deg, #ffffff 40%, #f0f4fa 100%) !important;
                                             box-shadow: 0 10px 40px rgba(0,0,0,0.03);
                                             transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, background 0.4s ease, border-color 0.4s ease;
-                                            border: 1px solid rgba(255, 95, 31, 0.1) !important;
+                                            border: 1px solid rgba(0, 44, 125, 0.1) !important;
                                             min-height: auto;
                                             display: flex;
                                             flex-direction: column;
@@ -2118,9 +2118,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                         }
                                         .premium-square-card:hover {
                                             transform: translateY(-10px);
-                                            box-shadow: 0 20px 50px rgba(255, 95, 31, 0.08);
-                                            background: linear-gradient(180deg, #ffffff 30%, #fff1eb 100%) !important;
-                                            border-color: rgba(255, 95, 31, 0.25) !important;
+                                            box-shadow: 0 20px 50px rgba(0, 44, 125, 0.08);
+                                            background: linear-gradient(180deg, #ffffff 30%, #e8f0fe 100%) !important;
+                                            border-color: rgba(0, 44, 125, 0.25) !important;
                                         }
                                         .akkurate-highlight-box {
                                             background: transparent;
@@ -2136,9 +2136,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                                 <div class="w-100">
                                                     <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-3 text-neutral-400" style="letter-spacing: 0.1em;">The Industry</span>
                                                     <h6 class="tw-mb-4 text-neutral-500 fw-normal" style="font-size: 15px; line-height: 1.5;">Most agencies focus on campaigns.</h6>
-                                                    <div class="tw-w-8 tw-mb-4 mx-auto tw-rounded-full" style="background: rgba(255, 95, 31, 0.2); height: 2px;"></div>
+                                                    <div class="tw-w-8 tw-mb-4 mx-auto tw-rounded-full" style="background: rgba(0, 44, 125, 0.2); height: 2px;"></div>
                                                     <div class="akkurate-highlight-box">
-                                                        <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-2" style="letter-spacing: 0.1em; color: #ff5f1f;">Akkurate</span>
+                                                        <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-2" style="letter-spacing: 0.1em; color: #002c7d;">Akkurate</span>
                                                         <p class="text-black fw-bold tw-mb-0" style="font-size: 17px; line-height: 1.3;">We focus on infrastructure.</p>
                                                     </div>
                                                 </div>
@@ -2150,9 +2150,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                                 <div class="w-100">
                                                     <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-3 text-neutral-400" style="letter-spacing: 0.1em;">The Industry</span>
                                                     <h6 class="tw-mb-4 text-neutral-500 fw-normal" style="font-size: 15px; line-height: 1.5;">Most talk impressions.</h6>
-                                                    <div class="tw-w-8 tw-mb-4 mx-auto tw-rounded-full" style="background: rgba(255, 95, 31, 0.2); height: 2px;"></div>
+                                                    <div class="tw-w-8 tw-mb-4 mx-auto tw-rounded-full" style="background: rgba(0, 44, 125, 0.2); height: 2px;"></div>
                                                     <div class="akkurate-highlight-box">
-                                                        <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-2" style="letter-spacing: 0.1em; color: #ff5f1f;">Akkurate</span>
+                                                        <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-2" style="letter-spacing: 0.1em; color: #002c7d;">Akkurate</span>
                                                         <p class="text-black fw-bold tw-mb-0" style="font-size: 17px; line-height: 1.3;">We track revenue attribution.</p>
                                                     </div>
                                                 </div>
@@ -2164,9 +2164,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                                 <div class="w-100">
                                                     <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-3 text-neutral-400" style="letter-spacing: 0.1em;">The Industry</span>
                                                     <h6 class="tw-mb-4 text-neutral-500 fw-normal" style="font-size: 15px; line-height: 1.5;">Most deliver reports.</h6>
-                                                    <div class="tw-w-8 tw-mb-4 mx-auto tw-rounded-full" style="background: rgba(255, 95, 31, 0.2); height: 2px;"></div>
+                                                    <div class="tw-w-8 tw-mb-4 mx-auto tw-rounded-full" style="background: rgba(0, 44, 125, 0.2); height: 2px;"></div>
                                                     <div class="akkurate-highlight-box">
-                                                        <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-2" style="letter-spacing: 0.1em; color: #ff5f1f;">Akkurate</span>
+                                                        <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-2" style="letter-spacing: 0.1em; color: #002c7d;">Akkurate</span>
                                                         <p class="text-black fw-bold tw-mb-0" style="font-size: 17px; line-height: 1.3;">We deliver insights & action plans.</p>
                                                     </div>
                                                 </div>
@@ -2630,88 +2630,78 @@ document.addEventListener("DOMContentLoaded", function () {
                 <img alt="Shape" class="position-absolute w-100 tw-start-0 bottom-0 z-n1"
                     src="/assets/images/shapes/shape-image.png" />
                 <!-- ===================================== Blog section start ============================== -->
-          <section class="premium-blog-section">
-              <div class="container-fluid px-4">
-                  <div class="premium-blog-header">
-                      <span class="premium-blog-eyebrow">Our Insights</span>
-                      <h2 class="premium-blog-heading">Latest Blogs &amp; Articles</h2>
-                  </div>
+          <section class="coverflow-blog-section">
+              <div class="cfl-header">
+                  <span class="cfl-eyebrow">Our Insights</span>
+                  <h2 class="cfl-heading">Latest Blogs &amp; Articles</h2>
+              </div>
 
-                  <div class="premium-blog-slider-viewport">
-                      <div class="premium-blog-slider-track">
-                          <!-- Card 1 -->
-                          <div class="premium-blog-slide">
-                              <article class="premium-blog-card">
-                                  <div class="premium-blog-image-wrapper">
-                                      <img src="https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg" alt="Grow Your Business">
-                                  </div>
-                                  <div class="premium-blog-content">
-                                      <span class="premium-blog-category">Business Growth</span>
-                                      <h3 class="premium-blog-card-title">Grow Your Business</h3>
-                                      <p class="premium-blog-card-text">Learn powerful strategies to scale your business online and reach global markets.</p>
-                                      <a href="#" class="premium-blog-link">Read Article <i class="ph ph-arrow-right"></i></a>
-                                  </div>
-                              </article>
+              <!-- Coverflow scene -->
+              <div class="cfl-scene" id="cflScene">
+                  <button class="cfl-btn cfl-prev" id="cflPrev">&#8249;</button>
+                  <button class="cfl-btn cfl-next" id="cflNext">&#8250;</button>
+                  <div class="cfl-stage" id="cflStage">
+                      <div class="cfl-card" data-i="0">
+                          <div class="cfl-img"><img src="https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Grow Your Business"></div>
+                          <div class="cfl-body">
+                              <span class="cfl-cat">Business Growth</span>
+                              <h3 class="cfl-title">Grow Your Business</h3>
+                              <p class="cfl-desc">Learn powerful strategies to scale your business online and reach global markets faster.</p>
+                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
                           </div>
-
-                          <!-- Card 2 -->
-                          <div class="premium-blog-slide">
-                              <article class="premium-blog-card">
-                                  <div class="premium-blog-image-wrapper">
-                                      <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg" alt="SEO Tips 2026">
-                                  </div>
-                                  <div class="premium-blog-content">
-                                      <span class="premium-blog-category">SEO &amp; Web</span>
-                                      <h3 class="premium-blog-card-title">SEO Tips 2026</h3>
-                                      <p class="premium-blog-card-text">Latest search engine optimization techniques to rank your website faster in search results.</p>
-                                      <a href="#" class="premium-blog-link">Read Article <i class="ph ph-arrow-right"></i></a>
-                                  </div>
-                              </article>
+                      </div>
+                      <div class="cfl-card" data-i="1">
+                          <div class="cfl-img"><img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800" alt="SEO Tips"></div>
+                          <div class="cfl-body">
+                              <span class="cfl-cat">SEO &amp; Web</span>
+                              <h3 class="cfl-title">SEO Tips 2026</h3>
+                              <p class="cfl-desc">Latest search engine optimization techniques to rank your website faster in results.</p>
+                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
                           </div>
-
-                          <!-- Card 3 -->
-                          <div class="premium-blog-slide">
-                              <article class="premium-blog-card">
-                                  <div class="premium-blog-image-wrapper">
-                                      <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Marketing Trends">
-                                  </div>
-                                  <div class="premium-blog-content">
-                                      <span class="premium-blog-category">Marketing</span>
-                                      <h3 class="premium-blog-card-title">Marketing Trends</h3>
-                                      <p class="premium-blog-card-text">Stay ahead of the curve with modern digital marketing trends and conversion strategies.</p>
-                                      <a href="#" class="premium-blog-link">Read Article <i class="ph ph-arrow-right"></i></a>
-                                  </div>
-                              </article>
+                      </div>
+                      <div class="cfl-card" data-i="2">
+                          <div class="cfl-img"><img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Marketing Trends"></div>
+                          <div class="cfl-body">
+                              <span class="cfl-cat">Marketing</span>
+                              <h3 class="cfl-title">Marketing Trends</h3>
+                              <p class="cfl-desc">Stay ahead with modern digital marketing trends and proven conversion strategies.</p>
+                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
                           </div>
-
-                          <!-- Card 4 -->
-                          <div class="premium-blog-slide">
-                              <article class="premium-blog-card">
-                                  <div class="premium-blog-image-wrapper">
-                                      <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="Content Strategy">
-                                  </div>
-                                  <div class="premium-blog-content">
-                                      <span class="premium-blog-category">Content Strategy</span>
-                                      <h3 class="premium-blog-card-title">Content Marketing</h3>
-                                      <p class="premium-blog-card-text">Craft high-impact content that resonates with your audience and drives organic growth.</p>
-                                      <a href="#" class="premium-blog-link">Read Article <i class="ph ph-arrow-right"></i></a>
-                                  </div>
-                              </article>
+                      </div>
+                      <div class="cfl-card" data-i="3">
+                          <div class="cfl-img"><img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Content Strategy"></div>
+                          <div class="cfl-body">
+                              <span class="cfl-cat">Content Strategy</span>
+                              <h3 class="cfl-title">Content Marketing</h3>
+                              <p class="cfl-desc">Craft high-impact content that resonates with your audience and drives organic growth.</p>
+                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
                           </div>
-
-                          <!-- Card 5 -->
-                          <div class="premium-blog-slide">
-                              <article class="premium-blog-card">
-                                  <div class="premium-blog-image-wrapper">
-                                      <img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg" alt="Brand Identity">
-                                  </div>
-                                  <div class="premium-blog-content">
-                                      <span class="premium-blog-category">Branding</span>
-                                      <h3 class="premium-blog-card-title">Brand Identity</h3>
-                                      <p class="premium-blog-card-text">Build a memorable brand personality and visual identity that stands out in the industry.</p>
-                                      <a href="#" class="premium-blog-link">Read Article <i class="ph ph-arrow-right"></i></a>
-                                  </div>
-                              </article>
+                      </div>
+                      <div class="cfl-card" data-i="4">
+                          <div class="cfl-img"><img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Brand Identity"></div>
+                          <div class="cfl-body">
+                              <span class="cfl-cat">Branding</span>
+                              <h3 class="cfl-title">Brand Identity</h3>
+                              <p class="cfl-desc">Build a memorable brand personality and visual identity that stands out in the market.</p>
+                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
+                          </div>
+                      </div>
+                      <div class="cfl-card" data-i="5">
+                          <div class="cfl-img"><img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Team Collaboration"></div>
+                          <div class="cfl-body">
+                              <span class="cfl-cat">Teamwork</span>
+                              <h3 class="cfl-title">Team Collaboration</h3>
+                              <p class="cfl-desc">Discover how aligned teams deliver better results, faster projects, and stronger outcomes.</p>
+                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
+                          </div>
+                      </div>
+                      <div class="cfl-card" data-i="6">
+                          <div class="cfl-img"><img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Digital Innovation"></div>
+                          <div class="cfl-body">
+                              <span class="cfl-cat">Innovation</span>
+                              <h3 class="cfl-title">Digital Innovation</h3>
+                              <p class="cfl-desc">Explore the latest digital tools and technologies reshaping the business landscape today.</p>
+                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
                           </div>
                       </div>
                   </div>
@@ -2719,239 +2709,396 @@ document.addEventListener("DOMContentLoaded", function () {
           </section>
 
           <style>
-          .premium-blog-section {
-              padding: 30px 0 90px 0;
-              background-color: #ffffff;
-              overflow: hidden;
-          }
-          .premium-blog-header {
-              text-align: center;
-              margin-bottom: 50px;
-          }
-          .premium-blog-eyebrow {
-              font-family: 'Inter', sans-serif !important;
-              text-transform: uppercase !important;
-              font-size: 13px !important;
-              font-weight: 700 !important;
-              letter-spacing: 0.1em !important;
-              color: #64748b !important;
-              display: inline-block !important;
-              margin-bottom: 12px !important;
-          }
-          .premium-blog-heading {
-              font-family: 'Space Grotesk', sans-serif !important;
-              font-size: clamp(2rem, 1.6rem + 1.7vw, 3rem) !important;
-              font-weight: 700 !important;
-              color: #000000 !important;
-              letter-spacing: -0.02em !important;
-              margin: 0 !important;
-          }
-          .premium-blog-slider-viewport {
-              overflow: hidden;
-              width: 100%;
-              position: relative;
-              padding: 20px 0;
-          }
-          .premium-blog-slider-track {
-              display: flex;
-              will-change: transform;
-          }
-          .premium-blog-slide {
-              flex: 0 0 20%;
-              padding: 0 10px;
-              box-sizing: border-box;
-              transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1);
-          }
-          @media (max-width: 1024px) {
-              .premium-blog-slide {
-                  flex: 0 0 33.333333%;
-              }
-          }
-          @media (max-width: 600px) {
-              .premium-blog-slide {
-                  flex: 0 0 100%;
-              }
-          }
-          .premium-blog-slide.active-center {
-              transform: scale(1.06);
-              z-index: 2;
-          }
-          .premium-blog-slide:not(.active-center) {
-              transform: scale(0.94);
-              opacity: 0.6;
-          }
-          .premium-blog-card {
+          /* =============================================
+             CoverFlow Blog Carousel — White Theme
+          ============================================= */
+          .coverflow-blog-section {
               background: #ffffff;
-              border: 1px solid #e2e8f0;
-              border-radius: 12px;
+              padding: 24px 0 40px;
               overflow: hidden;
-              height: 100%;
-              transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+              position: relative;
+          }
+
+          .cfl-header {
+              text-align: center;
+              margin-bottom: 16px;
+          }
+
+          .cfl-eyebrow {
+              font-family: 'Space Grotesk', sans-serif;
+              text-transform: uppercase;
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.3em;
+              color: #002c7d;
+              display: inline-block;
+              margin-bottom: 10px;
+          }
+
+          .cfl-heading {
+              font-family: 'Space Grotesk', sans-serif;
+              font-size: clamp(1.9rem, 1.4rem + 2vw, 3rem);
+              font-weight: 700;
+              color: #0f172a;
+              letter-spacing: -0.03em;
+              margin: 0;
+          }
+
+          /* ---- Scene ---- */
+          .cfl-scene {
+              position: relative;
+              width: 100%;
+              height: 540px;
+              overflow: hidden;
+          }
+
+          /* ---- Stage ---- */
+          .cfl-stage {
+              position: absolute;
+              top: 0; left: 0; right: 0; bottom: 0;
+          }
+
+          /* ---- Card shell ---- */
+          .cfl-card {
+              position: absolute;
+              top:  46%;
+              left: 50%;
+              width:  350px;
+              height: 490px;
+              margin-top:  -245px;
+              margin-left: -175px;
+              border-radius: 18px;
+              overflow: hidden;
+              cursor: pointer;
+              will-change: transform, opacity, filter;
+              background: #ffffff;
+              box-shadow: 0 4px 24px rgba(0,0,0,0.08);
               display: flex;
               flex-direction: column;
           }
-          .premium-blog-card:hover {
-              box-shadow: 0 15px 30px rgba(0, 0, 0, 0.04);
-              border-color: #cbd5e1;
-          }
-          .premium-blog-image-wrapper {
+
+          /* ---- Image section (top 58%) ---- */
+          .cfl-img {
               width: 100%;
-              height: 150px;
+              height: 285px;
+              flex-shrink: 0;
               overflow: hidden;
               position: relative;
-              background: #f1f5f9;
           }
-          .premium-blog-image-wrapper img {
-              width: 100%;
-              height: 100%;
+
+          .cfl-img img {
+              width: 100%; height: 100%;
               object-fit: cover;
+              display: block;
+              pointer-events: none;
+              user-select: none;
+              -webkit-user-drag: none;
               transition: transform 0.5s ease;
           }
-          .premium-blog-card:hover .premium-blog-image-wrapper img {
+
+          .cfl-card:hover .cfl-img img {
               transform: scale(1.04);
           }
-          .premium-blog-content {
-              padding: 16px;
+
+          /* ---- Content body (bottom) ---- */
+          .cfl-body {
+              flex: 1;
               display: flex;
               flex-direction: column;
-              flex-grow: 1;
+              padding: 18px 20px 16px;
+              background: #ffffff;
           }
-          .premium-blog-category {
-              font-family: 'Inter', sans-serif !important;
-              font-size: 11px !important;
-              font-weight: 700 !important;
-              text-transform: uppercase !important;
-              color: #2563eb !important;
-              letter-spacing: 0.05em !important;
-              margin-bottom: 8px !important;
+
+          .cfl-cat {
+              font-family: 'Space Grotesk', sans-serif;
+              font-size: 10px;
+              font-weight: 700;
+              letter-spacing: 0.18em;
+              text-transform: uppercase;
+              color: #002c7d;
+              display: inline-block;
+              margin-bottom: 8px;
           }
-          .premium-blog-card-title {
-              font-family: 'Space Grotesk', sans-serif !important;
-              font-size: 18px !important;
-              font-weight: 600 !important;
-              color: #000000 !important;
-              margin: 0 0 8px 0 !important;
-              line-height: 1.3 !important;
+
+          .cfl-title {
+              font-family: 'Space Grotesk', sans-serif;
+              font-size: 17px;
+              font-weight: 700;
+              color: #0f172a;
+              margin: 0 0 8px;
+              line-height: 1.3;
           }
-          .premium-blog-card-text {
-              font-family: 'Inter', sans-serif !important;
-              font-size: 13.5px !important;
-              color: #64748b !important;
-              line-height: 1.5 !important;
-              margin: 0 0 14px 0 !important;
-              flex-grow: 1;
+
+          .cfl-desc {
+              font-family: 'Inter', sans-serif;
+              font-size: 13px;
+              color: #64748b;
+              line-height: 1.55;
+              margin: 0 0 12px;
+              flex: 1;
+              /* clamp to 2 lines */
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
           }
-          .premium-blog-link {
-              font-family: 'Inter', sans-serif !important;
-              font-size: 13.5px !important;
-              font-weight: 600 !important;
-              color: #000000 !important;
-              text-decoration: none !important;
+
+          .cfl-link {
+              font-family: 'Space Grotesk', sans-serif;
+              font-size: 13px;
+              font-weight: 700;
+              color: #002c7d;
+              text-decoration: none;
               display: inline-flex;
               align-items: center;
-              gap: 6px;
-              margin-top: auto;
-              transition: gap 0.2s ease, color 0.2s ease !important;
+              gap: 4px;
+              transition: gap 0.2s ease, color 0.2s ease;
           }
-          .premium-blog-link i {
-              font-size: 15px;
+          .cfl-link:hover { color: #0040a8; gap: 8px; }
+
+          /* ---- Nav buttons (pure blue boxed) ---- */
+          .cfl-btn {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              z-index: 30;
+              background: #002c7d; /* Pure Brand Blue background */
+              color: #ffffff;      /* White arrow */
+              border: none;
+              border-radius: 0px;  /* Sharp boxed style, not rounded */
+              width: 48px;
+              height: 48px;
+              font-size: 26px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              box-shadow: 0 4px 12px rgba(0, 44, 125, 0.2);
+              transition: background 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+              padding: 0;
+              line-height: 1;
           }
-          .premium-blog-link:hover {
-              gap: 10px;
-              color: #2563eb !important;
+          .cfl-btn:hover {
+              background: #3b82f6; /* Hover light blue */
+              transform: translateY(-50%) scale(1.08);
+              box-shadow: 0 6px 16px rgba(0, 44, 125, 0.35);
+          }
+          .cfl-prev { left:  calc(50% - 220px); }
+          .cfl-next { right: calc(50% - 220px); }
+
+          /* Mobile view visibility & scaling */
+          @media (max-width: 768px) {
+              .cfl-btn {
+                  width: 38px;
+                  height: 38px;
+                  font-size: 20px;
+              }
+              .cfl-prev { left: 8px; }
+              .cfl-next { right: 8px; }
           }
           </style>
 
           <script>
-          document.addEventListener("DOMContentLoaded", function() {
-              const track = document.querySelector('.premium-blog-slider-track');
-              if (!track) return;
-              
-              const slides = Array.from(track.children);
-              const slideCount = slides.length;
-              
-              // Clone slides at both ends in the correct order to ensure smooth looping
-              const clonesBefore = [];
-              const clonesAfter = [];
-              slides.forEach(slide => {
-                  const cloneBefore = slide.cloneNode(true);
-                  const cloneAfter = slide.cloneNode(true);
-                  cloneBefore.classList.add('clone');
-                  cloneAfter.classList.add('clone');
-                  clonesBefore.push(cloneBefore);
-                  clonesAfter.push(cloneAfter);
-              });
-              
-              // Append after clones
-              clonesAfter.forEach(clone => track.appendChild(clone));
-              // Prepend before clones keeping original relative order
-              clonesBefore.reverse().forEach(clone => {
-                  track.insertBefore(clone, track.firstChild);
-              });
-              
-              const allSlides = Array.from(track.children);
-              let currentIndex = slideCount; // Start at the first original slide
-              
-              function getSlidesPerView() {
-                  const width = window.innerWidth;
-                  if (width <= 600) return 1;
-                  if (width <= 1024) return 3;
-                  return 5;
-              }
-              
-              function updateSlider(instant = false) {
-                  if (instant) {
-                      track.style.transition = 'none';
-                  } else {
-                      track.style.transition = 'transform 1s cubic-bezier(0.2, 0.8, 0.2, 1)';
+          (function () {
+              'use strict';
+              document.addEventListener('DOMContentLoaded', function () {
+
+                  /* ─── Config ─────────────────────────────────────────────────── */
+                  var CW  = 350;   // card width  (px) — must match CSS .cfl-card width
+                  var CH  = 490;   // card height (px)
+
+                  /*
+                   * Slot layout — pixel-perfect, zero gap between cards.
+                   *
+                   * tx: horizontal center of the scaled card, relative to stage center.
+                   * ty: vertical drop (arc). 0 = top of arc (center card).
+                   * sc: scale factor.
+                   * op: opacity.
+                   * bl: blur (px).
+                   * zi: z-index (higher = in front; set INSTANTLY, not animated).
+                   *
+                   * Gap formula:
+                   *   To have slot −1 right-edge touch slot 0 left-edge:
+                   *     tx[-1] = −(CW/2 + (CW × sc[-1])/2) = −(150 + 98) = −248
+                   *   To have slot −2 right-edge touch slot −1 left-edge:
+                   *     tx[-2] = tx[-1] − (CW×sc[-1])/2 − (CW×sc[-2])/2
+                   *            = −248 − 98 − 63 = −409
+                   */
+                  // Scales for 7 slots (±1, ±2, ±3)
+                  var SC1 = 0.653, SC2 = 0.420, SC3 = 0.270;
+                  var HW0 = CW / 2;                    // 150
+                  var HW1 = (CW * SC1) / 2;             // ≈ 98
+                  var HW2 = (CW * SC2) / 2;             // ≈ 63
+                  var HW3 = (CW * SC3) / 2;             // ≈ 40.5
+
+                  // Pixel-perfect zero-gap tx values:
+                  var TX1 = -(HW0 + HW1);              // ≈ −248
+                  var TX2 = TX1 - HW1 - HW2;           // ≈ −409
+                  var TX3 = TX2 - HW2 - HW3;           // ≈ −512
+
+                  var SLOTS = [
+                  /*  offset  tx         ty    sc    op     bl   zi  */
+                      [-3,    TX3,       105,  SC3,  0.12,  16,  0 ],
+                      [-2,    TX2,        68,  SC2,  0.28,  10,  1 ],
+                      [-1,    TX1,        32,  SC1,  0.54,   5,  2 ],
+                      [ 0,    0,           0,  1.00, 1.00,   0,  4 ],
+                      [ 1,   -TX1,        32,  SC1,  0.54,   5,  2 ],
+                      [ 2,   -TX2,        68,  SC2,  0.28,  10,  1 ],
+                      [ 3,   -TX3,       105,  SC3,  0.12,  16,  0 ],
+                  ];
+
+                  /* off-screen entry X — just beyond the ±3 slot */
+                  var OFF = -TX3 + CW * 0.40;   // ≈ 632 px from center
+
+                  var DUR  = '0.44s';
+                  var EASE = 'cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                  var TRS  = 'transform ' + DUR + ' ' + EASE +
+                             ', opacity '  + DUR + ' ' + EASE +
+                             ', filter '   + DUR + ' ' + EASE;
+
+                  /* ─── State ──────────────────────────────────────────────────── */
+                  var cards = Array.from(document.querySelectorAll('#cflStage .cfl-card'));
+                  var N     = cards.length;   /* 7 */
+                  var cur   = 0;              /* index of card shown at center */
+
+                  /* ─── Helpers ────────────────────────────────────────────────── */
+                  function mod(n, m) { return ((n % m) + m) % m; }
+
+                  /* Apply visual state to one card instantly (no transition) */
+                  function stamp(card, tx, ty, sc, op, bl, zi) {
+                      card.style.transition = 'none';
+                      card.style.zIndex     = zi;
+                      card.style.transform  = 'translateX(' + tx + 'px) translateY(' + ty + 'px) scale(' + sc + ')';
+                      card.style.opacity    = op;
+                      card.style.filter     = bl > 0 ? 'blur(' + bl + 'px)' : 'none';
                   }
-                  
-                  const slidesPerView = getSlidesPerView();
-                  const slideWidthPercent = 100 / slidesPerView;
-                  const offsetIndex = currentIndex - Math.floor(slidesPerView / 2);
-                  
-                  track.style.transform = `translateX(-${offsetIndex * slideWidthPercent}%)`;
-                  
-                  allSlides.forEach((slide, idx) => {
-                      if (idx === currentIndex) {
-                          slide.classList.add('active-center');
-                      } else {
-                          slide.classList.remove('active-center');
+
+                  /* Apply visual state to one card with animation */
+                  function animate(card, tx, ty, sc, op, bl, zi) {
+                      card.style.zIndex    = zi;   /* z-index: instant, never animated */
+                      card.style.transition = TRS;
+                      card.style.transform  = 'translateX(' + tx + 'px) translateY(' + ty + 'px) scale(' + sc + ')';
+                      card.style.opacity    = op;
+                      card.style.filter     = bl > 0 ? 'blur(' + bl + 'px)' : 'none';
+                  }
+
+                  /* ─── Render ─────────────────────────────────────────────────── */
+                  /* Render all cards. withAnim=false → instant (initial paint). */
+                  function render(withAnim) {
+                      cards.forEach(function (card, i) {
+                          var offset = mod(i - cur + Math.floor(N / 2), N) - Math.floor(N / 2);
+                          var slot   = null;
+                          for (var s = 0; s < SLOTS.length; s++) {
+                              if (SLOTS[s][0] === offset) { slot = SLOTS[s]; break; }
+                          }
+                          if (!slot) {
+                              /* card is not in any visible slot — hide instantly */
+                              card.style.transition = 'none';
+                              card.style.opacity    = 0;
+                              card.style.zIndex     = 0;
+                              return;
+                          }
+                          if (withAnim) {
+                              animate(card, slot[1], slot[2], slot[3], slot[4], slot[5], slot[6]);
+                          } else {
+                              stamp(card,  slot[1], slot[2], slot[3], slot[4], slot[5], slot[6]);
+                          }
+                      });
+                  }
+
+                  /* ─── Navigation ─────────────────────────────────────────────── */
+                  function go(dir, isAuto) {
+                      if (!isAuto) {
+                          resetAutoPlay();
                       }
-                  });
-              }
-              
-              updateSlider(true);
-              
-              let interval = setInterval(nextSlide, 1000);
-              
-              function nextSlide() {
-                  if (currentIndex >= slideCount * 2) {
-                      currentIndex = slideCount;
-                      updateSlider(true);
-                      track.offsetHeight; // Force reflow to apply instant jump immediately
+                      /* Which card index is currently at the wrapping slot? */
+                      var wrapSlotOffset = dir > 0 ? -3 : 3;
+                      var wrapIdx        = mod(cur + wrapSlotOffset, N);
+                      var wrapCard       = cards[wrapIdx];
+
+                      /* Entry side config (the slot it will animate INTO) */
+                      var entryOffset = dir > 0 ? 3 : -3;
+                      var entrySlot   = null;
+                      for (var s = 0; s < SLOTS.length; s++) {
+                          if (SLOTS[s][0] === entryOffset) { entrySlot = SLOTS[s]; break; }
+                      }
+
+                      /* Off-screen start position (same ty/sc as entry slot, just further out) */
+                      var startTx = dir > 0 ?  OFF : -OFF;
+
+                      /* Teleport wrapping card off-screen instantly */
+                      stamp(wrapCard, startTx, entrySlot[2], entrySlot[3], 0, entrySlot[5], 0);
+
+                      /* Force reflow so the stamp actually applies before transition starts */
+                      void wrapCard.offsetWidth;
+
+                      /* Now advance cur and animate everything into new positions */
+                      cur = mod(cur + dir, N);
+                      render(true);
                   }
-                  
-                  currentIndex++;
-                  updateSlider();
-              }
-              
-              window.addEventListener('resize', () => {
-                  updateSlider(true);
-              });
-              
-              const viewport = document.querySelector('.premium-blog-slider-viewport');
-              if (viewport) {
-                  viewport.addEventListener('mouseenter', () => clearInterval(interval));
-                  viewport.addEventListener('mouseleave', () => {
-                      clearInterval(interval);
-                      interval = setInterval(nextSlide, 1000);
+
+                  /* ─── Events ─────────────────────────────────────────────────── */
+                  document.getElementById('cflPrev').addEventListener('click', function () { go(-1); });
+                  document.getElementById('cflNext').addEventListener('click', function () { go(+1); });
+
+                  /* Click a non-center card to bring it forward */
+                  cards.forEach(function (card, i) {
+                      card.addEventListener('click', function () {
+                          if (i === cur) return;
+                          /* Determine shortest direction */
+                          var offset = mod(i - cur + Math.floor(N / 2), N) - Math.floor(N / 2);
+                          go(offset > 0 ? 1 : -1);
+                      });
                   });
-              }
-          });
+
+                  /* ─── Auto Play (Every 1 Second) ─────────────────────────────── */
+                  var autoInterval = null;
+                  var isHovered = false;
+                  var lastInteractionTime = 0;
+ 
+                  function startAutoPlay() {
+                      if (autoInterval) return;
+                      autoInterval = setInterval(function () {
+                          var now = Date.now();
+                          if (!isHovered && (now - lastInteractionTime >= 1000)) {
+                              go(1, true);
+                              lastInteractionTime = now;
+                          }
+                      }, 100); // Check frequently (every 100ms) for instant resume
+                  }
+ 
+                  function stopAutoPlay() {
+                      if (autoInterval) {
+                          clearInterval(autoInterval);
+                          autoInterval = null;
+                      }
+                  }
+ 
+                  function resetAutoPlay() {
+                      lastInteractionTime = Date.now();
+                  }
+ 
+                  var sceneEl = document.getElementById('cflScene');
+                  if (sceneEl) {
+                      sceneEl.addEventListener('mouseenter', function () {
+                          isHovered = true;
+                      });
+                      sceneEl.addEventListener('mouseleave', function () {
+                          isHovered = false;
+                      });
+                  }
+
+                  // Start autoplay initially
+                  startAutoPlay();
+
+                  /* ─── Initial paint (no animation) ──────────────────────────── */
+                  render(false);
+
+              }); /* DOMContentLoaded */
+          })();
           </script>
-                
                 <!-- ===================================== Blog section End ============================== -->
+            </div>
                 
                 <section style="
   background: linear-gradient(135deg, #020617, #0f172a, #1e40af);

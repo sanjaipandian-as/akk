@@ -8,7 +8,8 @@ if (php_sapi_name() === 'cli-server') {
 }
 
 // Set the working directory to the project root so all relative includes work
-chdir(dirname(__DIR__));
+$rootDir = dirname(__DIR__);
+chdir($rootDir);
 
 // Get the request URI path
 $uri = $_SERVER['REQUEST_URI'];
@@ -19,7 +20,7 @@ $path = trim($path, '/');
 
 // If empty path, default to index.php
 if ($path === '') {
-    require 'index.php';
+    require $rootDir . '/index.php';
     exit;
 }
 
@@ -30,15 +31,23 @@ if (substr($path, -4) === '.php') {
     $file = $path . '.php';
 }
 
+// Prevent infinite loop by not allowing routing to the api folder
+if (substr($file, 0, 4) === 'api/') {
+    echo "404 Not Found";
+    exit;
+}
+
 // Check if the file exists in the root directory
-if (file_exists($file)) {
-    require $file;
+$absoluteFile = $rootDir . '/' . $file;
+if (file_exists($absoluteFile)) {
+    require $absoluteFile;
     exit;
 }
 
 // Fallback to index.php or 404
-if (file_exists('index.php')) {
-    require 'index.php';
+$absoluteIndex = $rootDir . '/index.php';
+if (file_exists($absoluteIndex)) {
+    require $absoluteIndex;
     exit;
 }
 
