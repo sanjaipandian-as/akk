@@ -5,7 +5,7 @@ echo ============================================
 
 :: Start PHP built-in server in background using XAMPP's PHP
 echo [1] Starting PHP server on http://localhost:8000 ...
-start "PHP Server" "C:\xampp\php\php.exe" -S localhost:8000
+start "PHP Server" "C:\xampp\php\php.exe" -S localhost:8000 api/index.php
 
 :: Wait a moment for PHP to start
 timeout /t 2 /nobreak > nul

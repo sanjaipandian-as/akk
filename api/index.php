@@ -1,4 +1,12 @@
 <?php
+// If run via PHP built-in server, serve static files directly
+if (php_sapi_name() === 'cli-server') {
+    $filePath = $_SERVER["SCRIPT_FILENAME"];
+    if (is_file($filePath) && substr($filePath, -4) !== '.php') {
+        return false;
+    }
+}
+
 // Set the working directory to the project root so all relative includes work
 chdir(dirname(__DIR__));
 
