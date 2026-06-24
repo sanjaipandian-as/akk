@@ -92,216 +92,117 @@
                 }
             }
 
-            /* ── Premium Navbar Styles ────────────────── */
-            .header {
-                position: sticky !important;
-                top: 0 !important;
-                z-index: 1000 !important;
-                background: rgba(255, 255, 255, 0.85) !important;
-                backdrop-filter: blur(16px) !important;
-                -webkit-backdrop-filter: blur(16px) !important;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01) !important;
-                transition: all 0.3s ease !important;
-                padding: 14px 0 !important;
-            }
-            
-            @media (min-width: 992px) {
-                .header-menu {
-                    margin-left: auto !important;
-                    margin-right: 48px !important;
-                }
-                .btn-header-cta {
-                    display: inline-flex !important;
-                }
-            }
-            
-            .nav-menu {
-                margin: 0 !important;
-                padding: 0 !important;
-                list-style: none !important;
-                display: flex !important;
-                align-items: center !important;
-                gap: 36px !important; /* Elegant spacing */
-            }
-            
-            .nav-menu__item {
-                position: relative !important;
-            }
-            
-            .nav-menu__link {
-                font-family: 'Space Grotesk', sans-serif !important;
-                font-size: 17px !important;
-                font-weight: 600 !important;
-                color: #0f172a !important; /* Deep Slate */
-                text-decoration: none !important;
-                padding: 6px 0 !important;
-                display: inline-flex !important;
-                align-items: center !important;
-                gap: 6px !important;
-                position: relative !important;
-                transition: color 0.25s ease !important;
-            }
-            
-            /* Underline animation */
-            .nav-menu__link::after {
-                content: '' !important;
-                position: absolute !important;
-                bottom: -2px !important;
-                left: 0 !important;
-                width: 100% !important;
-                height: 2px !important;
-                background: #002c7d !important; /* Dark Blue */
-                transform: scaleX(0) !important;
-                transform-origin: right !important;
-                transition: transform 0.3s ease !important;
-            }
-            
-            .nav-menu__link:hover {
-                color: #002c7d !important;
-            }
-            
-            .nav-menu__link:hover::after {
-                transform: scaleX(1) !important;
-                transform-origin: left !important;
-            }
-            
-            /* Dropdown indicator icon alignment */
-            .nav-menu__link i {
-                font-size: 13px !important;
-                color: #64748b !important;
-                transition: transform 0.25s ease !important;
-            }
-            .nav-menu__item:hover .nav-menu__link i {
-                transform: rotate(180deg) !important;
-                color: #002c7d !important;
-            }
+        /* Stacked Cards Section */
+        .stacked-section {
+            padding: 100px 0;
+            background: #fff;
+            position: relative;
+        }
+        .stacked-heading-wrapper {
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+        }
+        .stacked-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .stacked-badge::before, .stacked-badge::after {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background: #000;
+        }
+        .stacked-badge span {
+            border: 1px solid #000;
+            padding: 5px 15px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .stacked-ghost-text {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            color: rgba(0,0,0,0.04);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            white-space: nowrap;
+            z-index: 0;
+        }
+        .stacked-main-heading {
+            position: relative;
+            z-index: 1;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 900;
+            color: #000;
+            letter-spacing: -0.02em;
+        }
+        .stacked-main-heading .text-yellow {
+            color: #facc15;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+        }
+        .stacked-subheading {
+            max-width: 900px;
+            margin: 20px auto 0;
+            color: #4a4a4a;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
 
-            /* Services Mega Dropdown */
-            .services-mega-dropdown {
-                opacity: 0 !important;
-                visibility: hidden !important;
-                transform: translateX(-50%) translateY(12px) !important;
-                transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s !important;
-                position: absolute !important;
-                top: 100% !important;
-                left: 50% !important;
-                background: #ffffff !important;
-                border: 1px solid #e2e8f0 !important;
-                box-shadow: 0 20px 40px rgba(0,0,0,0.06) !important;
-                border-radius: 20px !important;
-                padding: 28px !important;
-                display: flex !important;
-                gap: 36px !important;
-                min-width: 780px !important;
-                z-index: 999 !important;
-                margin-top: 10px !important;
-            }
-            
-            .services-mega-parent:hover .services-mega-dropdown {
-                opacity: 1 !important;
-                visibility: visible !important;
-                transform: translateX(-50%) translateY(0) !important;
-            }
-            
-            .services-mega-col {
-                flex: 1 !important;
-            }
-            
-            .services-mega-heading {
-                font-size: 13.5px !important;
-                font-weight: 700 !important;
-                color: #0f172a !important;
-                text-transform: uppercase !important;
-                letter-spacing: 0.05em !important;
-                margin-bottom: 14px !important;
-                border-bottom: 1.5px solid #f1f5f9 !important;
-                padding-bottom: 8px !important;
-            }
-            
-            .services-mega-list {
-                list-style: none !important;
-                padding: 0 !important;
-                margin: 0 !important;
-                display: flex !important;
-                flex-direction: column !important;
-                gap: 10px !important;
-            }
-            
-            .services-mega-list a {
-                font-size: 14px !important;
-                font-weight: 500 !important;
-                color: #475569 !important;
-                text-decoration: none !important;
-                transition: all 0.2s ease !important;
-                display: inline-block !important;
-            }
-            
-            .services-mega-list a:hover {
-                color: #002c7d !important;
-                transform: translateX(4px) !important;
-            }
-            
-            /* Industries Dropdown */
-            .industries-dropdown {
-                opacity: 0 !important;
-                visibility: hidden !important;
-                transform: translateY(12px) !important;
-                transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s !important;
-                background: #ffffff !important;
-                border: 1px solid #e2e8f0 !important;
-                box-shadow: 0 20px 40px rgba(0,0,0,0.06) !important;
-                border-radius: 16px !important;
-                min-width: 220px !important;
-                padding: 10px !important;
-                margin-top: 10px !important;
-            }
-            
-            .nav-menu__item.has-submenu:hover .industries-dropdown {
-                opacity: 1 !important;
-                visibility: visible !important;
-                transform: translateY(0) !important;
-            }
-            
-            .nav-submenu__link {
-                font-size: 14px !important;
-                font-weight: 500 !important;
-                color: #475569 !important;
-                padding: 8px 12px !important;
-                border-radius: 8px !important;
-                transition: all 0.2s ease !important;
-                text-decoration: none !important;
-            }
-            
-            .nav-submenu__link:hover {
-                background: #f1f5f9 !important;
-                color: #002c7d !important;
-                transform: translateX(4px) !important;
-            }
-            
-            /* Premium CTA Button */
-            .btn-header-cta {
-                background: #002c7d !important;
-                color: #ffffff !important;
-                font-weight: 700 !important;
-                font-size: 14.5px !important;
-                padding: 10px 24px !important;
-                border-radius: 100px !important;
-                transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-                text-decoration: none !important;
-                border: 1.5px solid #002c7d !important;
-                align-items: center !important;
-                justify-content: center !important;
-                box-shadow: 0 4px 14px rgba(0, 44, 125, 0.15) !important;
-            }
-            .btn-header-cta:hover {
-                background: transparent !important;
-                color: #002c7d !important;
-                transform: translateY(-2px) !important;
-                box-shadow: 0 6px 20px rgba(0, 44, 125, 0.2) !important;
-            }
+        .sticky-cards-container {
+            position: relative;
+            padding-bottom: 50px;
+        }
+        .sticky-card {
+            position: sticky;
+            background: #250b46;
+            border-radius: 24px;
+            padding: 50px;
+            margin-bottom: 30px;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.05);
+            color: #fff;
+            overflow: hidden;
+            transform-origin: top center;
+            transition: transform 0.3s ease;
+        }
+        .sticky-card:nth-child(1) { top: 100px; }
+        .sticky-card:nth-child(2) { top: 120px; }
+        .sticky-card:nth-child(3) { top: 140px; }
+        .sticky-card:nth-child(4) { top: 160px; }
 
+        .sticky-card.color-1 { background: #250b46; }
+        .sticky-card.color-2 { background: #1a0833; }
+        .sticky-card.color-3 { background: #0f0520; }
+        .sticky-card.color-4 { background: #000000; }
 
+        .sc-title { font-size: 2.2rem; font-weight: 700; margin-bottom: 20px; letter-spacing: -0.02em; color: #fff; }
+        .sc-desc { font-size: 1.1rem; line-height: 1.6; color: #e5e7eb; margin-bottom: 30px; max-width: 90%; }
+        .sc-list { list-style: none; padding: 0; margin: 0 0 40px 0; }
+        .sc-list li { font-size: 1.05rem; margin-bottom: 16px; display: flex; align-items: center; color: #fff; }
+        .sc-list li i { color: #facc15; margin-right: 12px; font-weight: bold; font-size: 1.2rem; }
+        .sc-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 30px;
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 100px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .sc-btn:hover { background: #fff; color: #250b46; }
+        .sc-btn i { margin-left: 10px; font-size: 1.1rem; }
+        .sc-img-wrap { border-radius: 16px; overflow: hidden; height: 100%; min-height: 350px; }
+        .sc-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+        @media (max-width: 991px) {
+            .sticky-card { padding: 40px 30px; position: relative; top: auto !important; margin-bottom: 20px; }
+            .sc-img-wrap { margin-top: 30px; min-height: 250px; }
+            .sc-title { font-size: 1.8rem; }
+        }
         </style>
     </head>
 
@@ -322,134 +223,7 @@
         </div>
         <!-- ========================== Top Header End ============================== -->
         <!-- ==================== Header Start Here ==================== -->
-        <header class="header bg-white transition-all">
-            <div class="container container-two">
-                <nav class="d-flex align-items-center justify-content-between position-relative">
-                    <!-- Logo Start -->
-                    <div class="logo">
-                        <a class="link hover--translate-y-1 active--translate-y-scale-9" href="/">
-                            <?php include 'partials/logo.php'; ?>
-                        </a>
-                    </div>
-                    <!-- Logo End  -->
-                    <!-- Menu Start  -->
-                    <div class="header-menu d-lg-block d-none">
-                        <!-- Nav menu Start -->
-                        <ul class="nav-menu d-lg-flex align-items-center tw-gap-14">
-                            <li class="nav-menu__item">
-                                <a class="nav-menu__link hover--translate-y-1 tw-pe-5 text-heading tw-py-9 fw-semibold w-100" href="/">Home</a>
-                            </li>
-                            <li class="nav-menu__item has-submenu position-relative services-mega-parent">
-                                <a class="nav-menu__link text-heading tw-py-9 fw-semibold w-100"
-                                    href="javascript:void(0)">Services <i class="ph ph-caret-down"></i></a>
-                                    <div class="services-mega-dropdown">
-                                        <div class="services-mega-col">
-                                            <h4 class="services-mega-heading">Digital Marketing</h4>
-                                            <ul class="services-mega-list">
-                                                <li><a href="#">Generative Engine Optimization(GEO)</a></li>
-                                                <li><a href="#">Answer Engine Optimization(AEO)</a></li>
-                                                <li><a href="#">Search Engine Optimization(SEO)</a></li>
-                                                <li><a href="#">Google Ads</a></li>
-                                                <li><a href="#">Meta Ads</a></li>
-                                                <li><a href="#">Linkedin Ads</a></li>
-                                                <li><a href="#">Social Media Marketing</a></li>
-                                                <li><a href="#">Youtube Marketing</a></li>
-                                                <li><a href="#">Google My Business Page</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="services-mega-col">
-                                            <h4 class="services-mega-heading">Website Development</h4>
-                                            <ul class="services-mega-list">
-                                                <li><a href="#">App Development</a></li>
-                                                <li><a href="#">Website Development</a></li>
-                                                <li><a href="#">Web Application</a></li>
-                                                <li><a href="#">CMS Development</a></li>
-                                                <li><a href="#">E-Commerce Service</a></li>
-                                                <li><a href="#">Website Design</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="services-mega-col">
-                                            <h4 class="services-mega-heading">Branding</h4>
-                                            <ul class="services-mega-list">
-                                                <li><a href="#">Logo Design</a></li>
-                                                <li><a href="#">Content Creation</a></li>
-                                                <li><a href="#">UI/UX Design</a></li>
-                                                <li><a href="#">Motion Graphics</a></li>
-                                                <li><a href="#">Explainer Video</a></li>
-                                                <li><a href="#">Corporate Video</a></li>
-                                                <li><a href="#">Reels Making</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-menu__item has-submenu position-relative">
-                                    <a class="nav-menu__link text-heading tw-py-9 fw-semibold w-100"
-                                        href="javascript:void(0)">Industries <i class="ph ph-caret-down"></i></a>
-                                    <ul
-                                        class="industries-dropdown nav-submenu scroll-sm position-absolute tw-start-0 top-100 tw-w-max tw-rounded-md overflow-y-auto tw-p-2 tw-mt-4 tw-duration-200 tw-z-99">
-                                        <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                                            <a class="nav-submenu__link text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded" href="#">B2B Marketing</a>
-                                        </li>
-                                        <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                                            <a class="nav-submenu__link text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded" href="#">Eduction</a>
-                                        </li>
-                                        <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                                            <a class="nav-submenu__link text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded" href="#">Healthcare</a>
-                                        </li>
-                                        <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                                            <a class="nav-submenu__link text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded" href="#">Hospitality</a>
-                                        </li>
-                                        <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                                            <a class="nav-submenu__link text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded" href="#">Real Estate</a>
-                                        </li>
-                                        <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                                            <a class="nav-submenu__link text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded" href="#">Jewellery</a>
-                                        </li>
-                                        <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                                            <a class="nav-submenu__link text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded" href="#">Travel</a>
-                                        </li>
-                                        <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                                            <a class="nav-submenu__link text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded" href="#">Food</a>
-                                        </li>
-                                        <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                                            <a class="nav-submenu__link text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded" href="#">Clothing</a>
-                                        </li>
-                                        <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
-                                            <a class="nav-submenu__link text-heading fw-semibold w-100 d-block tw-py-2 tw-px-305 tw-rounded" href="#">Manufacture</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-menu__item">
-                                    <a class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100"
-                                        href="/project-details">Our Work</a>
-                                </li>
-                                <li class="nav-menu__item">
-                                    <a class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100"
-                                        href="/blog">Blog</a>
-                                </li>
-                                <li class="nav-menu__item">
-                                    <a class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100"
-                                        href="/about">About Us</a>
-                                </li>
-                                <!-- Contact Us moved to right side CTA button -->
-                            </ul>
-                        <!-- Nav menu End  -->
-                    </div>
-                    <!-- Menu End  -->
-                    <!-- Header Right start -->
-                    <div class="d-flex align-items-center tw-gap-3">
-                        <a href="/contact" class="btn-header-cta d-lg-inline-block d-none">Contact Us</a>
-                        <a href="/contact" class="btn-header-contact-icon d-lg-none d-inline-flex" title="Contact Us">
-                            <i class="ph ph-phone"></i>
-                        </a>
-                        <button class="toggle-mobileMenu leading-none d-lg-none text-neutral-800 tw-text-9" type="button">
-                            <i class="ph ph-list"></i>
-                        </button>
-                    </div>
-                    <!-- Header Right End  -->
-                </nav>
-            </div>
-        </header>
+        <?php include 'partials/header.php'; ?>
         <!-- ==================== Header End Here ==================== -->
         <div id="smooth-content">
             <!-- ============================== Top Features Section start ============================== -->
@@ -912,6 +686,108 @@ document.addEventListener("DOMContentLoaded", function () {
             
             
             
+            <!-- ==================== Stacked Cards Services ==================== -->
+            <section id="services" class="stacked-section">
+                <div class="container">
+                    <div class="stacked-heading-wrapper">
+                        <div class="stacked-ghost-text">With Our</div>
+                        <div class="stacked-badge">
+                            <span>What We Offer</span>
+                        </div>
+                        <h2 class="stacked-main-heading">Production-Ready <span class="text-yellow">Systems</span></h2>
+                        <p class="stacked-subheading">
+                            Akkurate helps enterprises and high-growth businesses design, build, and scale advanced digital systems that are secure, compliant, and built for real-world adoption.
+                        </p>
+                    </div>
+                    
+                    <div class="sticky-cards-container">
+                        <!-- Card 1 -->
+                        <div class="sticky-card color-1">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 pe-lg-5">
+                                    <h3 class="sc-title">Build Intelligent & Autonomous AI Systems</h3>
+                                    <p class="sc-desc">We design AI systems that move beyond experimentation—capable of reasoning, decision-making, and execution across enterprise workflows.</p>
+                                    <ul class="sc-list">
+                                        <li><i class="ph-bold ph-arrow-right"></i> RAG Development</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Autonomous AI Agents</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> AI-Engine Games</li>
+                                    </ul>
+                                    <a href="/contact.php" class="sc-btn">Explore AI solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                </div>
+                                <div class="col-lg-6 mt-4 mt-lg-0">
+                                    <div class="sc-img-wrap">
+                                        <img src="/assets/images/thumbs/office-stock.jpg" alt="AI Systems">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="sticky-card color-2">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 pe-lg-5">
+                                    <h3 class="sc-title">Custom Web & Digital Platforms</h3>
+                                    <p class="sc-desc">We build scalable, high-performance web applications and digital platforms tailored to your specific business requirements and user needs.</p>
+                                    <ul class="sc-list">
+                                        <li><i class="ph-bold ph-arrow-right"></i> Enterprise Web Apps</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> SaaS Product Development</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> E-Commerce Solutions</li>
+                                    </ul>
+                                    <a href="/contact.php" class="sc-btn">Explore Web solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                </div>
+                                <div class="col-lg-6 mt-4 mt-lg-0">
+                                    <div class="sc-img-wrap">
+                                        <img src="/assets/images/thumbs/office-stock.jpg" alt="Web Platforms">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="sticky-card color-3">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 pe-lg-5">
+                                    <h3 class="sc-title">Data Engineering & Analytics</h3>
+                                    <p class="sc-desc">Transform raw data into actionable insights with robust data pipelines, warehousing, and intuitive analytics dashboards.</p>
+                                    <ul class="sc-list">
+                                        <li><i class="ph-bold ph-arrow-right"></i> Data Warehousing</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Real-time Analytics</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Business Intelligence</li>
+                                    </ul>
+                                    <a href="/contact.php" class="sc-btn">Explore Data solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                </div>
+                                <div class="col-lg-6 mt-4 mt-lg-0">
+                                    <div class="sc-img-wrap">
+                                        <img src="/assets/images/thumbs/office-stock.jpg" alt="Data Engineering">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="sticky-card color-4">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 pe-lg-5">
+                                    <h3 class="sc-title">Cloud Infrastructure & DevOps</h3>
+                                    <p class="sc-desc">Ensure your applications are highly available, secure, and easily scalable with our cloud architecture and continuous delivery practices.</p>
+                                    <ul class="sc-list">
+                                        <li><i class="ph-bold ph-arrow-right"></i> Cloud Migration</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Infrastructure as Code</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> CI/CD Pipelines</li>
+                                    </ul>
+                                    <a href="/contact.php" class="sc-btn">Explore Cloud solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                </div>
+                                <div class="col-lg-6 mt-4 mt-lg-0">
+                                    <div class="sc-img-wrap">
+                                        <img src="/assets/images/thumbs/office-stock.jpg" alt="Cloud Infrastructure">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
             <!-- =========================== Roadmap section start ========================== -->
             <section class="pt-120 pb-80 bg-white">
                 <div class="container max-w-1440-px">
@@ -1290,901 +1166,6 @@ document.addEventListener("DOMContentLoaded", function () {
             </section>
             <!-- =============================== Offer section end ============================== -->
             <!-- =============================== faq section start ============================== -->
-            <!-- =============================== Why Akkurate section start ============================== -->
-            <section class="why-akkurate-section position-relative z-1 overflow-hidden" id="why-akkurate">
-                <style>
-                /* ── Trusted/Testimonials Section ─────────────────── */
-                .why-akkurate-section {
-                    background: #ffffff;
-                    padding: 60px 0;
-                    font-family: 'Inter', sans-serif;
-                }
-                .trusted-header-row {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap: 24px;
-                    margin-bottom: 40px;
-                }
-                .trusted-title {
-                    font-size: 38px;
-                    font-weight: 800;
-                    line-height: 1.15;
-                    color: #0d0d14;
-                    letter-spacing: -0.02em;
-                    margin: 0;
-                }
-                .trusted-ratings {
-                    display: flex;
-                    align-items: center;
-                    gap: 20px;
-                    flex-wrap: wrap;
-                }
-                .rating-item {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 2px;
-                }
-                .rating-item-top {
-                    display: flex;
-                    align-items: center;
-                    gap: 6px;
-                    font-size: 16px;
-                    font-weight: 700;
-                    color: #0d0d14;
-                }
-                .rating-subtext {
-                    font-size: 11.5px;
-                    color: #71717a;
-                    font-weight: 500;
-                    margin-left: 22px;
-                }
-                .rating-divider {
-                    width: 1px;
-                    height: 36px;
-                    background-color: #e2e8f0;
-                    align-self: center;
-                }
-                .rating-item i.ph-star-fill {
-                    color: #fbbf24;
-                }
-                .rating-item .score {
-                    font-weight: 700;
-                    margin-left: 4px;
-                }
-                .rating-item .star-icon-yellow {
-                    color: #ffb800;
-                    font-size: 15px;
-                }
-
-                /* Sub-nav Category bar */
-                .trusted-subnav {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-bottom: 48px;
-                }
-                .trusted-categories-pill {
-                    background: #ffffff;
-                    border: 1.5px solid #e8eaf0;
-                    border-radius: 100px;
-                    padding: 4px;
-                    display: inline-flex;
-                    align-items: center;
-                    gap: 4px;
-                }
-                .category-btn {
-                    background: transparent;
-                    border: none;
-                    border-radius: 100px;
-                    padding: 8px 20px;
-                    font-size: 13.5px;
-                    font-weight: 600;
-                    color: #71717a;
-                    cursor: pointer;
-                    transition: all 0.2s ease;
-                }
-                .category-btn.active {
-                    background: #000000;
-                    color: #ffffff;
-                }
-                .category-btn:hover:not(.active) {
-                    color: #000000;
-                }
-                .trusted-nav-arrows {
-                    display: flex;
-                    gap: 8px;
-                }
-                .nav-arrow-btn {
-                    width: 36px;
-                    height: 36px;
-                    border: 1.5px solid #e8eaf0;
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: #ffffff;
-                    color: #0d0d14;
-                    cursor: pointer;
-                    transition: all 0.2s ease;
-                    font-size: 14px;
-                }
-                .nav-arrow-btn:hover {
-                    background: #f4f4f5;
-                    border-color: #cbd5e1;
-                }
-
-                .prev-arrow-inline,
-                .next-arrow-inline {
-                    display: none !important;
-                }
-                .trusted-categories-pill-wrapper {
-                    display: flex;
-                    align-items: center;
-                    gap: 16px;
-                }
-                .trusted-nav-arrows-desktop {
-                    display: flex;
-                    gap: 8px;
-                }
-
-                @media (max-width: 768px) {
-                    .trusted-nav-arrows-desktop {
-                        display: none !important;
-                    }
-                    
-                    .prev-arrow-inline,
-                    .next-arrow-inline {
-                        display: flex !important;
-                        width: 32px;
-                        height: 32px;
-                        border: 1px solid #e8eaf0 !important;
-                        background: #ffffff !important;
-                        border-radius: 50% !important;
-                        align-items: center !important;
-                        justify-content: center !important;
-                        font-size: 12px !important;
-                        color: #0f172a !important;
-                        cursor: pointer !important;
-                        padding: 0 !important;
-                        flex-shrink: 0 !important;
-                        transition: all 0.2s ease !important;
-                        box-shadow: 0 2px 4px rgba(0,0,0,0.02) !important;
-                    }
-                    .prev-arrow-inline:hover,
-                    .next-arrow-inline:hover {
-                        background: #f8fafc !important;
-                        border-color: #cbd5e1 !important;
-                    }
-
-                    .trusted-categories-pill-wrapper {
-                        display: flex !important;
-                        align-items: center !important;
-                        background: #ffffff !important;
-                        border: 1.5px solid #e8eaf0 !important;
-                        border-radius: 100px !important;
-                        padding: 4px 6px !important;
-                        gap: 8px !important;
-                        width: auto !important;
-                        max-width: 100% !important;
-                        box-shadow: 0 4px 12px rgba(0,0,0,0.03) !important;
-                        margin: 0 auto !important;
-                    }
-
-                    .trusted-categories-pill {
-                        border: none !important;
-                        background: transparent !important;
-                        padding: 0 !important;
-                        gap: 4px !important;
-                        display: flex !important;
-                        align-items: center !important;
-                    }
-
-                    .category-btn {
-                        display: none !important;
-                    }
-                    
-                    .category-btn.mobile-visible {
-                        display: inline-block !important;
-                        padding: 8px 16px !important;
-                        font-size: 13px !important;
-                        border-radius: 100px !important;
-                    }
-
-                    .category-btn.active {
-                        background: #000000 !important;
-                        color: #ffffff !important;
-                        font-weight: 600 !important;
-                    }
-
-                    .category-btn.mobile-next {
-                        background: transparent !important;
-                        color: #0f172a !important;
-                        font-weight: 500 !important;
-                        cursor: pointer !important;
-                    }
-                    
-                    .trusted-header-row {
-                        justify-content: center !important;
-                        text-align: center !important;
-                    }
-                    
-                    .trusted-nav-group {
-                        justify-content: center !important;
-                        width: 100% !important;
-                        margin-top: 12px !important;
-                    }
-
-                    .trusted-card {
-                        min-height: auto !important;
-                        padding: 36px 20px 24px 20px !important;
-                    }
-                }
-
-                /* Video Column */
-                .trusted-video-wrapper {
-                    position: relative;
-                    height: 100%;
-                    min-height: 440px;
-                    border-radius: 24px;
-                    overflow: hidden;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-                }
-                .trusted-video-img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
-                .trusted-video-play-btn {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 60px;
-                    height: 60px;
-                    background: rgba(0, 0, 0, 0.65);
-                    backdrop-filter: blur(4px);
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                    border: none;
-                }
-                .trusted-video-play-btn::after {
-                    content: "";
-                    display: block;
-                    width: 0;
-                    height: 0;
-                    border-style: solid;
-                    border-width: 10px 0 10px 16px;
-                    border-color: transparent transparent transparent #ffffff;
-                    margin-left: 4px;
-                }
-                .trusted-video-play-btn:hover {
-                    background: rgba(0, 0, 0, 0.8);
-                    transform: translate(-50%, -50%) scale(1.08);
-                }
-                .trusted-video-overlay {
-                    position: absolute;
-                    bottom: 20px;
-                    left: 20px;
-                    right: 20px;
-                    background: rgba(15, 15, 15, 0.6);
-                    backdrop-filter: blur(12px);
-                    -webkit-backdrop-filter: blur(12px);
-                    border-radius: 99px;
-                    padding: 10px 20px 10px 10px;
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                }
-                .trusted-video-logo-container {
-                    width: 44px;
-                    height: 44px;
-                    border-radius: 50%;
-                    background: #ffffff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-shrink: 0;
-                    overflow: hidden;
-                    border: 1px solid rgba(255,255,255,0.2);
-                }
-                .trusted-video-logo-img {
-                    width: 85%;
-                    height: 85%;
-                    object-fit: contain;
-                }
-                .trusted-video-name {
-                    font-size: 15px;
-                    font-weight: 700;
-                    color: #ffffff;
-                    margin-bottom: 1px;
-                    line-height: 1.2;
-                }
-                .trusted-video-title {
-                    font-size: 12px;
-                    color: #cbd5e1;
-                    line-height: 1.2;
-                }
-
-                /* Right Cards Grid */
-                .trusted-cards-grid {
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    gap: 24px;
-                }
-                @media (max-width: 1200px) {
-                    .trusted-cards-grid {
-                        grid-template-columns: repeat(2, 1fr);
-                    }
-                }
-                @media (max-width: 768px) {
-                    .trusted-cards-grid {
-                        grid-template-columns: 1fr;
-                    }
-                }
-                .trusted-card {
-                    background: #ffffff;
-                    border: 1.5px solid #f1f5f9;
-                    border-radius: 24px;
-                    padding: 48px 24px 28px 24px;
-                    position: relative;
-                    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    min-height: 420px;
-                    transition: all 0.3s ease;
-                }
-                .trusted-card:hover {
-                    transform: translateY(-4px);
-                    box-shadow: 0 12px 30px rgba(0,0,0,0.05);
-                    border-color: #e2e8f0;
-                }
-                .trusted-card-badge {
-                    position: absolute;
-                    top: 0;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    background: #ffffff;
-                    border: 2px solid #e2e8f0;
-                    border-radius: 50%;
-                    width: 48px;
-                    height: 48px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 14px;
-                    font-weight: 700;
-                    color: #ec4899;
-                    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-                }
-                .trusted-card-text {
-                    font-size: 14.5px;
-                    color: #475569;
-                    line-height: 1.6;
-                    margin-bottom: 24px;
-                }
-                .trusted-card-text strong {
-                    font-weight: 700;
-                    color: #0f172a;
-                }
-                .trusted-card-author {
-                    font-size: 15px;
-                    font-weight: 700;
-                    color: #0f172a;
-                    margin-top: auto;
-                }
-                </style>
-
-                <div class="container">
-                    <!-- Title and Filter Row -->
-                    <div class="trusted-header-row">
-                        <h2 class="trusted-title">
-                            Built for Founders<br>Who Care About Numbers
-                        </h2>
-                        <div class="trusted-nav-group" style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
-                            <div class="trusted-categories-pill-wrapper">
-                                <button class="nav-arrow-btn prev-arrow-inline"><i class="ph ph-caret-left"></i></button>
-                                <div class="trusted-categories-pill">
-                                    <button class="category-btn active">Ease of use</button>
-                                    <button class="category-btn">All-in-One</button>
-                                    <button class="category-btn">Scalability</button>
-                                    <button class="category-btn">Customer Support</button>
-                                </div>
-                                <button class="nav-arrow-btn next-arrow-inline"><i class="ph ph-caret-right"></i></button>
-                            </div>
-                            <div class="trusted-nav-arrows-desktop">
-                                <button class="nav-arrow-btn prev-arrow-desktop"><i class="ph ph-caret-left"></i></button>
-                                <button class="nav-arrow-btn next-arrow-desktop"><i class="ph ph-caret-right"></i></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Main Columns layout -->
-                    <div class="row gy-5 align-items-stretch">
-                        <!-- LEFT: Video thumbnail -->
-                        <div class="col-lg-4 col-md-5 col-12">
-                            <div class="trusted-video-wrapper">
-                                <img class="trusted-video-img" src="/assets/images/thumbs/about-team-img1.jpg" alt="Client testimonial video" />
-                                <button class="trusted-video-play-btn"></button>
-                                <div class="trusted-video-overlay">
-                                    <div class="trusted-video-logo-container">
-                                        <!-- Custom Sumo styled logo fallback or SVG -->
-                                        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-                                            <circle cx="16" cy="16" r="16" fill="#000000"/>
-                                            <text x="16" y="20" fill="#ffffff" font-size="10" font-weight="bold" font-family="Arial" text-anchor="middle">Sumo</text>
-                                        </svg>
-                                    </div>
-                                    <div class="trusted-video-meta">
-                                        <div class="trusted-video-name">Julianne Holt-Kailihiwa</div>
-                                        <div class="trusted-video-title">CEO, Sumo Sushi & Bento</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- RIGHT: Testimonial cards -->
-                        <div class="col-lg-8 col-md-7 col-12">
-                            <p style="font-size: 16px; font-weight: 700; color: #0d0d14; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 28px; margin-top: -6px; text-align: center; border: 2px solid #0d0d14; padding: 12px 20px; border-radius: 8px; display: block;">
-                                Verified Customer Reviews & Feedback From Our Users
-                            </p>
-                            <div class="trusted-cards-grid" id="trusted-cards-container">
-                                
-                                <!-- Card 1 -->
-                                <div class="trusted-card">
-                                    <div class="trusted-card-badge">KH</div>
-                                    <p class="trusted-card-text">
-                                        Easy to use and learn by anyone, no proper training is required to adapt to Akkurate in your business. That's the nature of the application. We can access all the reports required to analyze and forecast sales. Overall, it's pretty good. <strong>We are very happy with it.</strong>
-                                    </p>
-                                    <div class="trusted-card-author">Khaja</div>
-                                </div>
-
-                                <!-- Card 2 -->
-                                <div class="trusted-card">
-                                    <div class="trusted-card-badge">ZO</div>
-                                    <p class="trusted-card-text">
-                                        Akkurate is an excellent POS system that streamlines restaurant operations effortlessly. <strong>Its user-friendly interface makes managing orders, inventory, and sales a breeze.</strong> The integration with delivery platforms is seamless. Overall, Akkurate is a reliable and efficient solution.
-                                    </p>
-                                    <div class="trusted-card-author">Zoltan B</div>
-                                </div>
-
-                                <!-- Card 3 -->
-                                <div class="trusted-card">
-                                    <div class="trusted-card-badge">OE</div>
-                                    <p class="trusted-card-text">
-                                        Akkurate is a very straightforward system, it's easy to use.
-                                    </p>
-                                    <div class="trusted-card-author">Oelbert H</div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                    const testimonials = {
-                        "Ease of use": [
-                            {
-                                badge: "KH",
-                                text: "Easy to use and learn by anyone, no proper training is required to adapt to Akkurate in your business. That's the nature of the application. We can access all the reports required to analyze and forecast sales. Overall, it's pretty good. <strong>We are very happy with it.</strong>",
-                                author: "Khaja"
-                            },
-                            {
-                                badge: "ZO",
-                                text: "Akkurate is an excellent POS system that streamlines restaurant operations effortlessly. <strong>Its user-friendly interface makes managing orders, inventory, and sales a breeze.</strong> The integration with delivery platforms is seamless. Overall, Akkurate is a reliable and efficient solution.",
-                                author: "Zoltan B"
-                            },
-                            {
-                                badge: "OE",
-                                text: "Akkurate is a very straightforward system, it's easy to use.",
-                                author: "Oelbert H"
-                            }
-                        ],
-                        "All-in-One": [
-                            {
-                                badge: "AM",
-                                text: "Having inventory, menu management, and multi-outlet billing in a single platform is a game-changer. <strong>It keeps all our sales and stock data perfectly synchronized in real-time.</strong> Highly recommended.",
-                                author: "Amit M."
-                            },
-                            {
-                                badge: "SL",
-                                text: "Everything we need from online delivery integration to table management is built right in. <strong>No extra plugins or tricky configurations required.</strong> Simple and unified.",
-                                author: "Sarah L."
-                            },
-                            {
-                                badge: "DK",
-                                text: "We switched from multiple disconnected tools to this all-in-one system, and it saved us hours of daily admin work.",
-                                author: "David K."
-                            }
-                        ],
-                        "Scalability": [
-                            {
-                                badge: "RC",
-                                text: "We scaled from 1 to 15 branches in less than a year, and the system handled the expansion without a single hitch. <strong>Centralized menu control and consolidated reporting made it effortless.</strong>",
-                                author: "Roberto C."
-                            },
-                            {
-                                badge: "JN",
-                                text: "Perfect for fast-growing chains. <strong>Adding new registers or franchises takes literally minutes.</strong> The cloud architecture is exceptionally stable during peak holiday sales.",
-                                author: "Jessica N."
-                            },
-                            {
-                                badge: "MB",
-                                text: "Reliable cloud sync means even if the internet drops, our registers keep running and sync up later automatically.",
-                                author: "Marcus B."
-                            }
-                        ],
-                        "Customer Support": [
-                            {
-                                badge: "TA",
-                                text: "The onboarding team walked us through every single step. <strong>Their 24/7 customer support is genuinely helpful and responsive.</strong> Any issue is resolved within minutes.",
-                                author: "Tariq A."
-                            },
-                            {
-                                badge: "EM",
-                                text: "Customer service is top-notch. <strong>They treat our business like their own and listen to feature feedback.</strong> Extremely satisfied with the relationship.",
-                                author: "Elena M."
-                            },
-                            {
-                                badge: "HP",
-                                text: "Prompt responses, helpful video guides, and friendly staff. Support has been fantastic since day one.",
-                                author: "Harpreet P."
-                            }
-                        ]
-                    };
-
-                    const container = document.getElementById("trusted-cards-container");
-                    const tabs = document.querySelectorAll(".category-btn");
-                    const prevBtns = document.querySelectorAll(".prev-arrow-desktop, .prev-arrow-inline");
-                    const nextBtns = document.querySelectorAll(".next-arrow-desktop, .next-arrow-inline");
-
-                    let activeCategoryIndex = 0;
-                    const categoriesKeys = Object.keys(testimonials);
-
-                    function updateMobileTabs() {
-                        tabs.forEach(t => {
-                            t.classList.remove("mobile-visible", "mobile-next");
-                        });
-                        
-                        tabs[activeCategoryIndex].classList.add("mobile-visible");
-                        const nextIdx = (activeCategoryIndex + 1) % tabs.length;
-                        tabs[nextIdx].classList.add("mobile-visible", "mobile-next");
-                    }
-
-                    function updateTestimonials(category) {
-                        // Apply fade-out style effect
-                        container.style.opacity = 0;
-                        container.style.transform = "translateY(8px)";
-                        container.style.transition = "all 0.25s ease";
-
-                        setTimeout(() => {
-                            container.innerHTML = "";
-                            const data = testimonials[category] || [];
-                            data.forEach(item => {
-                                const card = document.createElement("div");
-                                card.className = "trusted-card";
-                                card.innerHTML = `
-                                    <div class="trusted-card-badge">${item.badge}</div>
-                                    <p class="trusted-card-text">${item.text}</p>
-                                    <div class="trusted-card-author">${item.author}</div>
-                                `;
-                                container.appendChild(card);
-                            });
-
-                            // Fade-in
-                            container.style.opacity = 1;
-                            container.style.transform = "translateY(0)";
-                        }, 250);
-                    }
-
-                    tabs.forEach((tab, index) => {
-                        tab.addEventListener("click", () => {
-                            tabs.forEach(t => t.classList.remove("active"));
-                            tab.classList.add("active");
-                            activeCategoryIndex = index;
-                            updateTestimonials(tab.textContent.trim());
-                            updateMobileTabs();
-                        });
-                    });
-
-                    prevBtns.forEach(btn => {
-                        btn.addEventListener("click", () => {
-                            activeCategoryIndex = (activeCategoryIndex - 1 + categoriesKeys.length) % categoriesKeys.length;
-                            const key = categoriesKeys[activeCategoryIndex];
-                            tabs.forEach(t => {
-                                if (t.textContent.trim() === key) {
-                                    t.classList.add("active");
-                                } else {
-                                    t.classList.remove("active");
-                                }
-                            });
-                            updateTestimonials(key);
-                            updateMobileTabs();
-                        });
-                    });
-
-                    nextBtns.forEach(btn => {
-                        btn.addEventListener("click", () => {
-                            activeCategoryIndex = (activeCategoryIndex + 1) % categoriesKeys.length;
-                            const key = categoriesKeys[activeCategoryIndex];
-                            tabs.forEach(t => {
-                                if (t.textContent.trim() === key) {
-                                    t.classList.add("active");
-                                } else {
-                                    t.classList.remove("active");
-                                }
-                            });
-                            updateTestimonials(key);
-                            updateMobileTabs();
-                        });
-                    });
-
-                    updateMobileTabs();
-                });
-                </script>
-            </section>
-            <!-- =============================== Why Akkurate section end ============================== -->
-            <!-- =============================== Choose Us section start ============================ -->
-            <section class="choose-us position-relative z-1 overflow-hidden" style="padding-top: 50px; padding-bottom: 40px;">
-                <style>
-                    /* Responsive styling for Choose Us section floating logos */
-                    #box-wrapper {
-                        margin-left: 20px;
-                        position: relative;
-                        z-index: 1;
-                    }
-                    .floating-logo-container {
-                        background: #ffffff;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 0.75rem; /* tw-rounded-xl equivalent */
-                        position: absolute;
-                        z-index: 1;
-                        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-                        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    }
-                    /* Default positions and sizes (Desktop / lg + xl) */
-                    .floating-logo-1 {
-                        width: 100px;
-                        height: 100px;
-                        top: 10%;
-                        left: -15%;
-                        padding: 15px;
-                    }
-                    .floating-logo-2 {
-                        width: 100px;
-                        height: 100px;
-                        top: 15%;
-                        right: -10%;
-                        padding: 20px;
-                    }
-                    .floating-logo-3 {
-                        width: 110px;
-                        height: 110px;
-                        top: 45%;
-                        left: -10%;
-                        padding: 20px;
-                    }
-                    .floating-logo-4 {
-                        width: 120px;
-                        height: 120px;
-                        bottom: 15%;
-                        right: -15%;
-                        padding: 22px;
-                    }
-                    
-                    /* Medium and Small Desktops / Tablets */
-                    @media (max-width: 1199px) {
-                        #box-wrapper {
-                            margin-left: 0;
-                            max-width: 450px;
-                            margin-left: auto !important;
-                            margin-right: auto !important;
-                        }
-                        .floating-logo-1 {
-                            width: 80px;
-                            height: 80px;
-                            left: -10%;
-                            padding: 12px;
-                        }
-                        .floating-logo-2 {
-                            width: 80px;
-                            height: 80px;
-                            right: -8%;
-                            padding: 15px;
-                        }
-                        .floating-logo-3 {
-                            width: 90px;
-                            height: 90px;
-                            left: -8%;
-                            padding: 15px;
-                        }
-                        .floating-logo-4 {
-                            width: 100px;
-                            height: 100px;
-                            bottom: 15%;
-                            right: -10%;
-                            padding: 18px;
-                        }
-                    }
-                    
-                    /* Narrow Tablet portrait screens (like 768px in the screenshot) */
-                    @media (max-width: 768px) {
-                        #box-wrapper {
-                            max-width: 400px;
-                        }
-                        .floating-logo-1 {
-                            width: 70px;
-                            height: 70px;
-                            left: -8%;
-                            padding: 10px;
-                        }
-                        .floating-logo-2 {
-                            width: 70px;
-                            height: 70px;
-                            right: -6%;
-                            padding: 12px;
-                        }
-                        .floating-logo-3 {
-                            width: 85px;
-                            height: 85px;
-                            left: -6%;
-                            padding: 14px;
-                        }
-                        .floating-logo-4 {
-                            width: 95px;
-                            height: 95px;
-                            bottom: 15%;
-                            right: -8%;
-                            padding: 16px;
-                        }
-                    }
-                </style>
-                <div class="container">
-                    <div class="row gy-4 gx-5">
-                        <div class="col-lg-5 d-sm-block d-none order-lg-2">
-                            <div class="position-relative z-1 overflow-visible" id="box-wrapper">
-                                <img alt="Team Collaboration" class="w-100 object-fit-cover tw-rounded-3xl" style="height: 600px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);"
-                                    src="https://i.pinimg.com/736x/c4/f5/45/c4f545af2a8090cfa1fc68a58c7831dd.jpg" />
-                                
-                                <!-- Logo 1 (Top Left) -->
-                                <div class="floating-logo-container floating-logo-1">
-                                    <img alt="Figma" src="/assets/images/thumbs/choose-us-icon1.png" style="max-width: 100%; max-height: 100%; object-fit: contain;" />
-                                </div>
-                                
-                                <!-- Logo 2 (Top Right) -->
-                                <div class="floating-logo-container floating-logo-2">
-                                    <img alt="Notion" src="/assets/images/thumbs/choose-us-icon2.png" style="max-width: 100%; max-height: 100%; object-fit: contain;" />
-                                </div>
-                                
-                                <!-- Logo 3 (Center Left) -->
-                                <div class="floating-logo-container floating-logo-3">
-                                    <img alt="ChatGPT" src="/assets/images/thumbs/choose-us-icon3.png" style="max-width: 100%; max-height: 100%; object-fit: contain;" />
-                                </div>
-                                
-                                <!-- Logo 4 (Bottom Right) -->
-                                <div class="floating-logo-container floating-logo-4">
-                                    <img alt="Analytics" src="/assets/images/thumbs/choose-us-icon4.png" style="max-width: 100%; max-height: 100%; object-fit: contain;" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 order-lg-1">
-                            <div class="ps-lg-3 text-center d-flex flex-column align-items-center">
-                                <span
-                                    class="text-black fw-bold text-uppercase tw-mb-3" style="letter-spacing: 0.1em; font-size: 16px; font-family: 'Space Grotesk', sans-serif;">Why
-                                    Choose Us</span>
-                                <div class="max-w-672-px">
-                                    <h3 class="fw-bold cursor-big tw-mb-4 text-black text-center" style="font-size: clamp(2rem, 1.6rem + 1.5vw, 2.7rem); line-height: 1.2; font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em;">
-                                        What We Do Differently <br class="d-none d-md-block"> (And Why It Matters)
-                                    </h3>
-                                    <p class="text-neutral-600 text-center max-w-500-px tw-mb-6 mx-auto" style="font-size: 14.5px; line-height: 1.6;">We act like an in-house growth lab that is aligned to your business goals. We are focused on lasting growth and not just vanity metrics.</p>
-                                </div>
-                                <div class="tw-mt-2 w-100">
-                                    <style>
-                                        .premium-square-card {
-                                            background: linear-gradient(180deg, #ffffff 40%, #f0f4fa 100%) !important;
-                                            box-shadow: 0 10px 40px rgba(0,0,0,0.03);
-                                            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, background 0.4s ease, border-color 0.4s ease;
-                                            border: 1px solid rgba(0, 44, 125, 0.1) !important;
-                                            min-height: auto;
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: center;
-                                            padding: 24px 16px !important;
-                                        }
-                                        @media (min-width: 768px) {
-                                            .premium-square-card {
-                                                min-height: 280px;
-                                                padding: 32px 24px !important;
-                                            }
-                                        }
-                                        @media (min-width: 1200px) {
-                                            .premium-square-card {
-                                                aspect-ratio: 1 / 1;
-                                                min-height: auto;
-                                            }
-                                        }
-                                        .premium-square-card:hover {
-                                            transform: translateY(-10px);
-                                            box-shadow: 0 20px 50px rgba(0, 44, 125, 0.08);
-                                            background: linear-gradient(180deg, #ffffff 30%, #e8f0fe 100%) !important;
-                                            border-color: rgba(0, 44, 125, 0.25) !important;
-                                        }
-                                        .akkurate-highlight-box {
-                                            background: transparent;
-                                            border: none;
-                                            padding: 0;
-                                            margin-top: 14px;
-                                        }
-                                    </style>
-                                    <div class="row g-2 align-items-center">
-                                        <!-- Card 1 -->
-                                        <div class="col-md-4 col-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-delay="100">
-                                            <div class="tw-rounded-3xl d-flex flex-column justify-content-center align-items-center text-center position-relative premium-square-card">
-                                                <div class="w-100">
-                                                    <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-3 text-neutral-400" style="letter-spacing: 0.1em;">The Industry</span>
-                                                    <h6 class="tw-mb-4 text-neutral-500 fw-normal" style="font-size: 15px; line-height: 1.5;">Most agencies focus on campaigns.</h6>
-                                                    <div class="tw-w-8 tw-mb-4 mx-auto tw-rounded-full" style="background: rgba(0, 44, 125, 0.2); height: 2px;"></div>
-                                                    <div class="akkurate-highlight-box">
-                                                        <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-2" style="letter-spacing: 0.1em; color: #002c7d;">Akkurate</span>
-                                                        <p class="text-black fw-bold tw-mb-0" style="font-size: 17px; line-height: 1.3;">We focus on infrastructure.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Card 2 -->
-                                        <div class="col-md-4 col-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-delay="200">
-                                           <div class="tw-rounded-3xl d-flex flex-column justify-content-center align-items-center text-center position-relative premium-square-card">
-                                                <div class="w-100">
-                                                    <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-3 text-neutral-400" style="letter-spacing: 0.1em;">The Industry</span>
-                                                    <h6 class="tw-mb-4 text-neutral-500 fw-normal" style="font-size: 15px; line-height: 1.5;">Most talk impressions.</h6>
-                                                    <div class="tw-w-8 tw-mb-4 mx-auto tw-rounded-full" style="background: rgba(0, 44, 125, 0.2); height: 2px;"></div>
-                                                    <div class="akkurate-highlight-box">
-                                                        <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-2" style="letter-spacing: 0.1em; color: #002c7d;">Akkurate</span>
-                                                        <p class="text-black fw-bold tw-mb-0" style="font-size: 17px; line-height: 1.3;">We track revenue attribution.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Card 3 -->
-                                        <div class="col-md-4 col-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-delay="300">
-                                              <div class="tw-rounded-3xl d-flex flex-column justify-content-center align-items-center text-center position-relative premium-square-card">
-                                                <div class="w-100">
-                                                    <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-3 text-neutral-400" style="letter-spacing: 0.1em;">The Industry</span>
-                                                    <h6 class="tw-mb-4 text-neutral-500 fw-normal" style="font-size: 15px; line-height: 1.5;">Most deliver reports.</h6>
-                                                    <div class="tw-w-8 tw-mb-4 mx-auto tw-rounded-full" style="background: rgba(0, 44, 125, 0.2); height: 2px;"></div>
-                                                    <div class="akkurate-highlight-box">
-                                                        <span class="d-block tw-text-xs fw-bold text-uppercase tw-mb-2" style="letter-spacing: 0.1em; color: #002c7d;">Akkurate</span>
-                                                        <p class="text-black fw-bold tw-mb-0" style="font-size: 17px; line-height: 1.3;">We deliver insights & action plans.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column align-items-center text-center tw-mt-4" data-aos="fade-up"
-                                    data-aos-anchor-placement="top-bottom" data-aos-duration="600">
-                                    <h3 class="text-main-600 tw-mb-1" style="font-size: 4rem; font-weight: 800; line-height: 1;">1.3m</h3>
-                                    <p class="text-main-two-600 fw-semibold tw-mb-0" style="font-size: 24px; line-height: 1.4; max-width: 600px;">Average revenue growth for per successful client</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- =============================== Choose Us section end ============================== -->
             <!-- ================================== Show-case section start ========================== -->
             <section class="show-case py-60 bg-main-two-600 overflow-hidden">
                 <div class="max-w-602-px mx-auto text-center tw-mb-15">
@@ -2367,15 +1348,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     letter-spacing: 0.1em !important;
                     display: inline-block !important;
                     margin-bottom: 16px !important;
-                    font-family: 'Inter', sans-serif !important;
-                }
+                    }
                 .testimonials-rebuild__title {
                     color: #000000 !important;
                     font-size: clamp(2rem, 1.6rem + 1.7vw, 3.45rem) !important;
                     line-height: 1.15 !important;
                     margin: 0 !important;
                     font-weight: 400 !important;
-                    font-family: 'Space Grotesk', sans-serif !important;
                     letter-spacing: -0.02em !important;
                 }
                 .testimonials-rebuild__title span {
@@ -2418,8 +1397,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     font-weight: 700 !important;
                     color: #000000 !important;
                     margin-bottom: 8px !important;
-                    font-family: 'Inter', sans-serif !important;
-                }
+                    }
                 .testimonials-rebuild__rating {
                     display: none !important;
                 }
@@ -2435,8 +1413,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     line-height: 1 !important;
                     display: block !important;
                     margin: 8px 0 !important;
-                    font-family: Georgia, serif !important;
-                }
+                    }
                 .testimonials-rebuild__quote-close {
                     font-size: 32px !important;
                     font-weight: 700 !important;
@@ -2444,7 +1421,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     line-height: 1 !important;
                     display: block !important;
                     margin: 8px 0 !important;
-                    font-family: Georgia, serif !important;
                     text-align: right !important;
                 }
                 .testimonials-rebuild__text {
@@ -2453,8 +1429,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     line-height: 1.65 !important;
                     margin: 0 !important;
                     padding: 0 !important;
-                    font-family: 'Inter', sans-serif !important;
-                }
+                    }
                 .testimonials-rebuild__footer {
                     margin-top: auto;
                     border-top: none !important;
@@ -2464,8 +1439,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     font-size: 15px !important;
                     font-weight: 700 !important;
                     color: #000000 !important;
-                    font-family: 'Inter', sans-serif !important;
-                }
+                    }
                 @keyframes testimonials-marquee {
                     0% {
                         transform: translateX(0);
@@ -2630,473 +1604,143 @@ document.addEventListener("DOMContentLoaded", function () {
                 <img alt="Shape" class="position-absolute w-100 tw-start-0 bottom-0 z-n1"
                     src="/assets/images/shapes/shape-image.png" />
                 <!-- ===================================== Blog section start ============================== -->
-          <section class="coverflow-blog-section">
-              <div class="cfl-header">
-                  <span class="cfl-eyebrow">Our Insights</span>
-                  <h2 class="cfl-heading">Latest Blogs &amp; Articles</h2>
-              </div>
+            <section class="simple-blog-section py-5" style="background-color: #f8fafc;">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <span class="text-uppercase fw-bold" style="letter-spacing: 0.1em; font-size: 14px; color: #002c7d;">Our Insights</span>
+                        <h2 class="fw-bold mt-2" style="font-size: 2.5rem; color: #0f172a;">Latest Blogs & Articles</h2>
+                    </div>
+                    
+                    <div class="swiper blog-swiper pb-5">
+                        <div class="swiper-wrapper">
+                        <!-- Card 1 -->
+                        <div class="swiper-slide">
+                            <div class="blog-card bg-white rounded-3 shadow-sm d-flex flex-column h-100" style="border: 1px solid #e2e8f0;">
+                                <img src="https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Grow Your Business" style="width: 100%; height: 220px; object-fit: cover;">
+                                <div class="p-4 d-flex flex-column flex-grow-1">
+                                    <h3 class="fw-bold mb-3" style="font-size: 1.25rem; color: #0f172a;">Decoding the future: ai's impact on the industries</h3>
+                                    <p class="text-muted mb-4 flex-grow-1" style="font-size: 0.95rem; line-height: 1.6;">Our dedicated patent sit amet consectetur adipiscing elit Ut et massa me. Aliquam hendrerit urna vitae mattis...</p>
+                                    <a href="/blog" class="btn btn-primary mt-auto align-self-start px-4 py-2 text-white" style="background-color: #2563eb; border-color: #2563eb; font-weight: 600; border-radius: 8px;">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="swiper-slide">
+                            <div class="blog-card bg-white rounded-3 shadow-sm d-flex flex-column h-100" style="border: 1px solid #e2e8f0;">
+                                <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800" alt="SEO Tips" style="width: 100%; height: 220px; object-fit: cover;">
+                                <div class="p-4 d-flex flex-column flex-grow-1">
+                                    <h3 class="fw-bold mb-3" style="font-size: 1.25rem; color: #0f172a;">Innovation unleashed: behind the scenes our ai breakthroughs</h3>
+                                    <p class="text-muted mb-4 flex-grow-1" style="font-size: 0.95rem; line-height: 1.6;">Our dedicated patent sit amet consectetur adipiscing elit Ut et massa me. Aliquam hendrerit urna vitae mattis...</p>
+                                    <a href="/blog" class="btn btn-primary mt-auto align-self-start px-4 py-2 text-white" style="background-color: #2563eb; border-color: #2563eb; font-weight: 600; border-radius: 8px;">Read more</a>
+                                </div>
+                            </div>
+                        </div>
 
-              <!-- Coverflow scene -->
-              <div class="cfl-scene" id="cflScene">
-                  <button class="cfl-btn cfl-prev" id="cflPrev">&#8249;</button>
-                  <button class="cfl-btn cfl-next" id="cflNext">&#8250;</button>
-                  <div class="cfl-stage" id="cflStage">
-                      <div class="cfl-card" data-i="0">
-                          <div class="cfl-img"><img src="https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Grow Your Business"></div>
-                          <div class="cfl-body">
-                              <span class="cfl-cat">Business Growth</span>
-                              <h3 class="cfl-title">Grow Your Business</h3>
-                              <p class="cfl-desc">Learn powerful strategies to scale your business online and reach global markets faster.</p>
-                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
-                          </div>
-                      </div>
-                      <div class="cfl-card" data-i="1">
-                          <div class="cfl-img"><img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800" alt="SEO Tips"></div>
-                          <div class="cfl-body">
-                              <span class="cfl-cat">SEO &amp; Web</span>
-                              <h3 class="cfl-title">SEO Tips 2026</h3>
-                              <p class="cfl-desc">Latest search engine optimization techniques to rank your website faster in results.</p>
-                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
-                          </div>
-                      </div>
-                      <div class="cfl-card" data-i="2">
-                          <div class="cfl-img"><img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Marketing Trends"></div>
-                          <div class="cfl-body">
-                              <span class="cfl-cat">Marketing</span>
-                              <h3 class="cfl-title">Marketing Trends</h3>
-                              <p class="cfl-desc">Stay ahead with modern digital marketing trends and proven conversion strategies.</p>
-                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
-                          </div>
-                      </div>
-                      <div class="cfl-card" data-i="3">
-                          <div class="cfl-img"><img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Content Strategy"></div>
-                          <div class="cfl-body">
-                              <span class="cfl-cat">Content Strategy</span>
-                              <h3 class="cfl-title">Content Marketing</h3>
-                              <p class="cfl-desc">Craft high-impact content that resonates with your audience and drives organic growth.</p>
-                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
-                          </div>
-                      </div>
-                      <div class="cfl-card" data-i="4">
-                          <div class="cfl-img"><img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Brand Identity"></div>
-                          <div class="cfl-body">
-                              <span class="cfl-cat">Branding</span>
-                              <h3 class="cfl-title">Brand Identity</h3>
-                              <p class="cfl-desc">Build a memorable brand personality and visual identity that stands out in the market.</p>
-                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
-                          </div>
-                      </div>
-                      <div class="cfl-card" data-i="5">
-                          <div class="cfl-img"><img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Team Collaboration"></div>
-                          <div class="cfl-body">
-                              <span class="cfl-cat">Teamwork</span>
-                              <h3 class="cfl-title">Team Collaboration</h3>
-                              <p class="cfl-desc">Discover how aligned teams deliver better results, faster projects, and stronger outcomes.</p>
-                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
-                          </div>
-                      </div>
-                      <div class="cfl-card" data-i="6">
-                          <div class="cfl-img"><img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Digital Innovation"></div>
-                          <div class="cfl-body">
-                              <span class="cfl-cat">Innovation</span>
-                              <h3 class="cfl-title">Digital Innovation</h3>
-                              <p class="cfl-desc">Explore the latest digital tools and technologies reshaping the business landscape today.</p>
-                              <a href="/blog" class="cfl-link">Read Article <span>&rarr;</span></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </section>
+                        <!-- Card 3 -->
+                        <div class="swiper-slide">
+                            <div class="blog-card bg-white rounded-3 shadow-sm d-flex flex-column h-100" style="border: 1px solid #e2e8f0;">
+                                <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Marketing Trends" style="width: 100%; height: 220px; object-fit: cover;">
+                                <div class="p-4 d-flex flex-column flex-grow-1">
+                                    <h3 class="fw-bold mb-3" style="font-size: 1.25rem; color: #0f172a;">Decoding the future: ai's impact on the industries</h3>
+                                    <p class="text-muted mb-4 flex-grow-1" style="font-size: 0.95rem; line-height: 1.6;">Our dedicated patent sit amet consectetur adipiscing elit Ut et massa me. Aliquam hendrerit urna vitae mattis...</p>
+                                    <a href="/blog" class="btn btn-primary mt-auto align-self-start px-4 py-2 text-white" style="background-color: #2563eb; border-color: #2563eb; font-weight: 600; border-radius: 8px;">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 4 -->
+                        <div class="swiper-slide">
+                            <div class="blog-card bg-white rounded-3 shadow-sm d-flex flex-column h-100" style="border: 1px solid #e2e8f0;">
+                                <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Content Strategy" style="width: 100%; height: 220px; object-fit: cover;">
+                                <div class="p-4 d-flex flex-column flex-grow-1">
+                                    <h3 class="fw-bold mb-3" style="font-size: 1.25rem; color: #0f172a;">Innovation unleashed: behind the scenes our ai breakthroughs</h3>
+                                    <p class="text-muted mb-4 flex-grow-1" style="font-size: 0.95rem; line-height: 1.6;">Our dedicated patent sit amet consectetur adipiscing elit Ut et massa me. Aliquam hendrerit urna vitae mattis...</p>
+                                    <a href="/blog" class="btn btn-primary mt-auto align-self-start px-4 py-2 text-white" style="background-color: #2563eb; border-color: #2563eb; font-weight: 600; border-radius: 8px;">Read more</a>
+                                </div>
+                            </div>
+                        </div>
 
-          <style>
-          /* =============================================
-             CoverFlow Blog Carousel — White Theme
-          ============================================= */
-          .coverflow-blog-section {
-              background: #ffffff;
-              padding: 24px 0 40px;
-              overflow: hidden;
-              position: relative;
-          }
+                        <!-- Card 5 -->
+                        <div class="swiper-slide">
+                            <div class="blog-card bg-white rounded-3 shadow-sm d-flex flex-column h-100" style="border: 1px solid #e2e8f0;">
+                                <img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Brand Identity" style="width: 100%; height: 220px; object-fit: cover;">
+                                <div class="p-4 d-flex flex-column flex-grow-1">
+                                    <h3 class="fw-bold mb-3" style="font-size: 1.25rem; color: #0f172a;">Building a powerful brand identity in the modern era</h3>
+                                    <p class="text-muted mb-4 flex-grow-1" style="font-size: 0.95rem; line-height: 1.6;">Our dedicated patent sit amet consectetur adipiscing elit Ut et massa me. Aliquam hendrerit urna vitae mattis...</p>
+                                    <a href="/blog" class="btn btn-primary mt-auto align-self-start px-4 py-2 text-white" style="background-color: #2563eb; border-color: #2563eb; font-weight: 600; border-radius: 8px;">Read more</a>
+                                </div>
+                            </div>
+                        </div>
 
-          .cfl-header {
-              text-align: center;
-              margin-bottom: 16px;
-          }
-
-          .cfl-eyebrow {
-              font-family: 'Space Grotesk', sans-serif;
-              text-transform: uppercase;
-              font-size: 11px;
-              font-weight: 700;
-              letter-spacing: 0.3em;
-              color: #002c7d;
-              display: inline-block;
-              margin-bottom: 10px;
-          }
-
-          .cfl-heading {
-              font-family: 'Space Grotesk', sans-serif;
-              font-size: clamp(1.9rem, 1.4rem + 2vw, 3rem);
-              font-weight: 700;
-              color: #0f172a;
-              letter-spacing: -0.03em;
-              margin: 0;
-          }
-
-          /* ---- Scene ---- */
-          .cfl-scene {
-              position: relative;
-              width: 100%;
-              height: 540px;
-              overflow: hidden;
-          }
-
-          /* ---- Stage ---- */
-          .cfl-stage {
-              position: absolute;
-              top: 0; left: 0; right: 0; bottom: 0;
-          }
-
-          /* ---- Card shell ---- */
-          .cfl-card {
-              position: absolute;
-              top:  46%;
-              left: 50%;
-              width:  350px;
-              height: 490px;
-              margin-top:  -245px;
-              margin-left: -175px;
-              border-radius: 18px;
-              overflow: hidden;
-              cursor: pointer;
-              will-change: transform, opacity, filter;
-              background: #ffffff;
-              box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-              display: flex;
-              flex-direction: column;
-          }
-
-          /* ---- Image section (top 58%) ---- */
-          .cfl-img {
-              width: 100%;
-              height: 285px;
-              flex-shrink: 0;
-              overflow: hidden;
-              position: relative;
-          }
-
-          .cfl-img img {
-              width: 100%; height: 100%;
-              object-fit: cover;
-              display: block;
-              pointer-events: none;
-              user-select: none;
-              -webkit-user-drag: none;
-              transition: transform 0.5s ease;
-          }
-
-          .cfl-card:hover .cfl-img img {
-              transform: scale(1.04);
-          }
-
-          /* ---- Content body (bottom) ---- */
-          .cfl-body {
-              flex: 1;
-              display: flex;
-              flex-direction: column;
-              padding: 18px 20px 16px;
-              background: #ffffff;
-          }
-
-          .cfl-cat {
-              font-family: 'Space Grotesk', sans-serif;
-              font-size: 10px;
-              font-weight: 700;
-              letter-spacing: 0.18em;
-              text-transform: uppercase;
-              color: #002c7d;
-              display: inline-block;
-              margin-bottom: 8px;
-          }
-
-          .cfl-title {
-              font-family: 'Space Grotesk', sans-serif;
-              font-size: 17px;
-              font-weight: 700;
-              color: #0f172a;
-              margin: 0 0 8px;
-              line-height: 1.3;
-          }
-
-          .cfl-desc {
-              font-family: 'Inter', sans-serif;
-              font-size: 13px;
-              color: #64748b;
-              line-height: 1.55;
-              margin: 0 0 12px;
-              flex: 1;
-              /* clamp to 2 lines */
-              display: -webkit-box;
-              -webkit-line-clamp: 2;
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-          }
-
-          .cfl-link {
-              font-family: 'Space Grotesk', sans-serif;
-              font-size: 13px;
-              font-weight: 700;
-              color: #002c7d;
-              text-decoration: none;
-              display: inline-flex;
-              align-items: center;
-              gap: 4px;
-              transition: gap 0.2s ease, color 0.2s ease;
-          }
-          .cfl-link:hover { color: #0040a8; gap: 8px; }
-
-          /* ---- Nav buttons (pure blue boxed) ---- */
-          .cfl-btn {
-              position: absolute;
-              top: 50%;
-              transform: translateY(-50%);
-              z-index: 30;
-              background: #002c7d; /* Pure Brand Blue background */
-              color: #ffffff;      /* White arrow */
-              border: none;
-              border-radius: 0px;  /* Sharp boxed style, not rounded */
-              width: 48px;
-              height: 48px;
-              font-size: 26px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              cursor: pointer;
-              box-shadow: 0 4px 12px rgba(0, 44, 125, 0.2);
-              transition: background 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
-              padding: 0;
-              line-height: 1;
-          }
-          .cfl-btn:hover {
-              background: #3b82f6; /* Hover light blue */
-              transform: translateY(-50%) scale(1.08);
-              box-shadow: 0 6px 16px rgba(0, 44, 125, 0.35);
-          }
-          .cfl-prev { left:  calc(50% - 220px); }
-          .cfl-next { right: calc(50% - 220px); }
-
-          /* Mobile view visibility & scaling */
-          @media (max-width: 768px) {
-              .cfl-btn {
-                  width: 38px;
-                  height: 38px;
-                  font-size: 20px;
-              }
-              .cfl-prev { left: 8px; }
-              .cfl-next { right: 8px; }
-          }
-          </style>
-
-          <script>
-          (function () {
-              'use strict';
-              document.addEventListener('DOMContentLoaded', function () {
-
-                  /* ─── Config ─────────────────────────────────────────────────── */
-                  var CW  = 350;   // card width  (px) — must match CSS .cfl-card width
-                  var CH  = 490;   // card height (px)
-
-                  /*
-                   * Slot layout — pixel-perfect, zero gap between cards.
-                   *
-                   * tx: horizontal center of the scaled card, relative to stage center.
-                   * ty: vertical drop (arc). 0 = top of arc (center card).
-                   * sc: scale factor.
-                   * op: opacity.
-                   * bl: blur (px).
-                   * zi: z-index (higher = in front; set INSTANTLY, not animated).
-                   *
-                   * Gap formula:
-                   *   To have slot −1 right-edge touch slot 0 left-edge:
-                   *     tx[-1] = −(CW/2 + (CW × sc[-1])/2) = −(150 + 98) = −248
-                   *   To have slot −2 right-edge touch slot −1 left-edge:
-                   *     tx[-2] = tx[-1] − (CW×sc[-1])/2 − (CW×sc[-2])/2
-                   *            = −248 − 98 − 63 = −409
-                   */
-                  // Scales for 7 slots (±1, ±2, ±3)
-                  var SC1 = 0.653, SC2 = 0.420, SC3 = 0.270;
-                  var HW0 = CW / 2;                    // 150
-                  var HW1 = (CW * SC1) / 2;             // ≈ 98
-                  var HW2 = (CW * SC2) / 2;             // ≈ 63
-                  var HW3 = (CW * SC3) / 2;             // ≈ 40.5
-
-                  // Pixel-perfect zero-gap tx values:
-                  var TX1 = -(HW0 + HW1);              // ≈ −248
-                  var TX2 = TX1 - HW1 - HW2;           // ≈ −409
-                  var TX3 = TX2 - HW2 - HW3;           // ≈ −512
-
-                  var SLOTS = [
-                  /*  offset  tx         ty    sc    op     bl   zi  */
-                      [-3,    TX3,       105,  SC3,  0.12,  16,  0 ],
-                      [-2,    TX2,        68,  SC2,  0.28,  10,  1 ],
-                      [-1,    TX1,        32,  SC1,  0.54,   5,  2 ],
-                      [ 0,    0,           0,  1.00, 1.00,   0,  4 ],
-                      [ 1,   -TX1,        32,  SC1,  0.54,   5,  2 ],
-                      [ 2,   -TX2,        68,  SC2,  0.28,  10,  1 ],
-                      [ 3,   -TX3,       105,  SC3,  0.12,  16,  0 ],
-                  ];
-
-                  /* off-screen entry X — just beyond the ±3 slot */
-                  var OFF = -TX3 + CW * 0.40;   // ≈ 632 px from center
-
-                  var DUR  = '0.44s';
-                  var EASE = 'cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-                  var TRS  = 'transform ' + DUR + ' ' + EASE +
-                             ', opacity '  + DUR + ' ' + EASE +
-                             ', filter '   + DUR + ' ' + EASE;
-
-                  /* ─── State ──────────────────────────────────────────────────── */
-                  var cards = Array.from(document.querySelectorAll('#cflStage .cfl-card'));
-                  var N     = cards.length;   /* 7 */
-                  var cur   = 0;              /* index of card shown at center */
-
-                  /* ─── Helpers ────────────────────────────────────────────────── */
-                  function mod(n, m) { return ((n % m) + m) % m; }
-
-                  /* Apply visual state to one card instantly (no transition) */
-                  function stamp(card, tx, ty, sc, op, bl, zi) {
-                      card.style.transition = 'none';
-                      card.style.zIndex     = zi;
-                      card.style.transform  = 'translateX(' + tx + 'px) translateY(' + ty + 'px) scale(' + sc + ')';
-                      card.style.opacity    = op;
-                      card.style.filter     = bl > 0 ? 'blur(' + bl + 'px)' : 'none';
-                  }
-
-                  /* Apply visual state to one card with animation */
-                  function animate(card, tx, ty, sc, op, bl, zi) {
-                      card.style.zIndex    = zi;   /* z-index: instant, never animated */
-                      card.style.transition = TRS;
-                      card.style.transform  = 'translateX(' + tx + 'px) translateY(' + ty + 'px) scale(' + sc + ')';
-                      card.style.opacity    = op;
-                      card.style.filter     = bl > 0 ? 'blur(' + bl + 'px)' : 'none';
-                  }
-
-                  /* ─── Render ─────────────────────────────────────────────────── */
-                  /* Render all cards. withAnim=false → instant (initial paint). */
-                  function render(withAnim) {
-                      cards.forEach(function (card, i) {
-                          var offset = mod(i - cur + Math.floor(N / 2), N) - Math.floor(N / 2);
-                          var slot   = null;
-                          for (var s = 0; s < SLOTS.length; s++) {
-                              if (SLOTS[s][0] === offset) { slot = SLOTS[s]; break; }
-                          }
-                          if (!slot) {
-                              /* card is not in any visible slot — hide instantly */
-                              card.style.transition = 'none';
-                              card.style.opacity    = 0;
-                              card.style.zIndex     = 0;
-                              return;
-                          }
-                          if (withAnim) {
-                              animate(card, slot[1], slot[2], slot[3], slot[4], slot[5], slot[6]);
-                          } else {
-                              stamp(card,  slot[1], slot[2], slot[3], slot[4], slot[5], slot[6]);
-                          }
-                      });
-                  }
-
-                  /* ─── Navigation ─────────────────────────────────────────────── */
-                  function go(dir, isAuto) {
-                      if (!isAuto) {
-                          resetAutoPlay();
-                      }
-                      /* Which card index is currently at the wrapping slot? */
-                      var wrapSlotOffset = dir > 0 ? -3 : 3;
-                      var wrapIdx        = mod(cur + wrapSlotOffset, N);
-                      var wrapCard       = cards[wrapIdx];
-
-                      /* Entry side config (the slot it will animate INTO) */
-                      var entryOffset = dir > 0 ? 3 : -3;
-                      var entrySlot   = null;
-                      for (var s = 0; s < SLOTS.length; s++) {
-                          if (SLOTS[s][0] === entryOffset) { entrySlot = SLOTS[s]; break; }
-                      }
-
-                      /* Off-screen start position (same ty/sc as entry slot, just further out) */
-                      var startTx = dir > 0 ?  OFF : -OFF;
-
-                      /* Teleport wrapping card off-screen instantly */
-                      stamp(wrapCard, startTx, entrySlot[2], entrySlot[3], 0, entrySlot[5], 0);
-
-                      /* Force reflow so the stamp actually applies before transition starts */
-                      void wrapCard.offsetWidth;
-
-                      /* Now advance cur and animate everything into new positions */
-                      cur = mod(cur + dir, N);
-                      render(true);
-                  }
-
-                  /* ─── Events ─────────────────────────────────────────────────── */
-                  document.getElementById('cflPrev').addEventListener('click', function () { go(-1); });
-                  document.getElementById('cflNext').addEventListener('click', function () { go(+1); });
-
-                  /* Click a non-center card to bring it forward */
-                  cards.forEach(function (card, i) {
-                      card.addEventListener('click', function () {
-                          if (i === cur) return;
-                          /* Determine shortest direction */
-                          var offset = mod(i - cur + Math.floor(N / 2), N) - Math.floor(N / 2);
-                          go(offset > 0 ? 1 : -1);
-                      });
-                  });
-
-                  /* ─── Auto Play (Every 1 Second) ─────────────────────────────── */
-                  var autoInterval = null;
-                  var isHovered = false;
-                  var lastInteractionTime = 0;
- 
-                  function startAutoPlay() {
-                      if (autoInterval) return;
-                      autoInterval = setInterval(function () {
-                          var now = Date.now();
-                          if (!isHovered && (now - lastInteractionTime >= 1000)) {
-                              go(1, true);
-                              lastInteractionTime = now;
-                          }
-                      }, 100); // Check frequently (every 100ms) for instant resume
-                  }
- 
-                  function stopAutoPlay() {
-                      if (autoInterval) {
-                          clearInterval(autoInterval);
-                          autoInterval = null;
-                      }
-                  }
- 
-                  function resetAutoPlay() {
-                      lastInteractionTime = Date.now();
-                  }
- 
-                  var sceneEl = document.getElementById('cflScene');
-                  if (sceneEl) {
-                      sceneEl.addEventListener('mouseenter', function () {
-                          isHovered = true;
-                      });
-                      sceneEl.addEventListener('mouseleave', function () {
-                          isHovered = false;
-                      });
-                  }
-
-                  // Start autoplay initially
-                  startAutoPlay();
-
-                  /* ─── Initial paint (no animation) ──────────────────────────── */
-                  render(false);
-
-              }); /* DOMContentLoaded */
-          })();
-          </script>
+                        <!-- Card 6 -->
+                        <div class="swiper-slide">
+                            <div class="blog-card bg-white rounded-3 shadow-sm d-flex flex-column h-100" style="border: 1px solid #e2e8f0;">
+                                <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Team Collaboration" style="width: 100%; height: 220px; object-fit: cover;">
+                                <div class="p-4 d-flex flex-column flex-grow-1">
+                                    <h3 class="fw-bold mb-3" style="font-size: 1.25rem; color: #0f172a;">The role of teamwork in driving digital innovation</h3>
+                                    <p class="text-muted mb-4 flex-grow-1" style="font-size: 0.95rem; line-height: 1.6;">Our dedicated patent sit amet consectetur adipiscing elit Ut et massa me. Aliquam hendrerit urna vitae mattis...</p>
+                                    <a href="/blog" class="btn btn-primary mt-auto align-self-start px-4 py-2 text-white" style="background-color: #2563eb; border-color: #2563eb; font-weight: 600; border-radius: 8px;">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div> <!-- end swiper-wrapper -->
+                        <div class="swiper-pagination blog-swiper-pagination position-absolute bottom-0 w-100"></div>
+                    </div> <!-- end blog-swiper -->
+                </div>
+            </section>
+                    
+            <style>
+            .blog-swiper {
+                padding-bottom: 50px !important;
+            }
+            .blog-swiper-pagination {
+                bottom: 0 !important;
+            }
+            .blog-swiper-pagination .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+                background-color: #cbd5e1;
+                opacity: 1;
+                margin: 0 6px !important;
+                transition: all 0.3s ease;
+            }
+            .blog-swiper-pagination .swiper-pagination-bullet-active {
+                background-color: #2563eb;
+                width: 24px;
+                border-radius: 5px;
+            }
+            </style>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                if (typeof Swiper !== 'undefined') {
+                    new Swiper('.blog-swiper', {
+                        slidesPerView: 1,
+                        spaceBetween: 24,
+                        loop: true,
+                        slidesPerGroup: 1,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: '.blog-swiper-pagination',
+                            clickable: true,
+                        },
+                        breakpoints: {
+                            768: {
+                                slidesPerView: 2,
+                                slidesPerGroup: 2,
+                            },
+                            992: {
+                                slidesPerView: 3,
+                                slidesPerGroup: 3,
+                            }
+                        }
+                    });
+                }
+            });
+            </script>
                 <!-- ===================================== Blog section End ============================== -->
             </div>
                 
@@ -3116,7 +1760,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
   <!-- Heading -->
-  <h2 class="fw-bold text-white px-4" style="font-size: clamp(2.5rem, 2rem + 2vw, 3.5rem); margin-bottom: 20px; letter-spacing: -0.03em; line-height: 1.2; font-family: 'Space Grotesk', sans-serif;">
+  <h2 class="fw-bold text-white px-4" style="font-size: clamp(2.5rem, 2rem + 2vw, 3.5rem); margin-bottom: 20px; letter-spacing: -0.03em; line-height: 1.2; ">
     Success shared with <br class="d-md-none">
     <span style="color: #60a5fa; position: relative; display: inline-block;">
       clients worldwide
@@ -3243,7 +1887,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             Ready to Scale?
                                         </span>
                                     </div>
-                                    <h2 class="fw-bold tw-mb-6 text-black" style="font-size: clamp(2.8rem, 2rem + 2.5vw, 4.2rem); line-height: 1.1; font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.03em;">
+                                    <h2 class="fw-bold tw-mb-6 text-black" style="font-size: clamp(2.8rem, 2rem + 2.5vw, 4.2rem); line-height: 1.1; letter-spacing: -0.03em;">
                                         <span style="font-weight: 400; color: #4b5563;">Ready to Turn</span> <br>
                                         Marketing Into a <br>
                                         Growth Engine?
@@ -3414,7 +2058,6 @@ function goToLocation(lat, lng) {
   background: linear-gradient(135deg, #0c4a57, #0f6b78);
   color: #fff;
   padding: 80px 20px 0;
-  font-family: Arial;
   position: relative;
   overflow: hidden;
 }
@@ -3475,7 +2118,6 @@ function goToLocation(lat, lng) {
   background: linear-gradient(135deg, #f5f7fa, #e4e9f0);
   color: #1a1a1a;
   padding: 40px 20px 0;
-  font-family: 'Space Grotesk', sans-serif;
   position: relative;
   overflow: hidden;
 }
@@ -3615,6 +2257,266 @@ function goToLocation(lat, lng) {
 }
 
 </style>
+            <!-- ========================== Integrations Section Start ========================= -->
+            <section class="integrations-section position-relative overflow-hidden" style="background-color: #ffffff; min-height: 600px; display: flex; flex-direction: column; align-items: center; padding-top: 100px; padding-bottom: 80px;">
+                
+                <div class="container position-relative z-1" style="text-align: center; margin-bottom: 60px;">
+                    <div class="d-inline-flex align-items-center justify-content-center tw-mb-4 position-relative">
+                        <span class="text-uppercase fw-bold" style="color: #8b5cf6; letter-spacing: 0.15em; font-size: 13px;">Integrations</span>
+                        <!-- Decorative dots -->
+                        <!-- <div style="position: absolute; right: -40px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 8px;">
+                            <div style="width: 6px; height: 6px; border-radius: 50%; background-color: #8b5cf6;"></div>
+                            <div style="width: 16px; height: 16px; border-radius: 50%; border: 1px solid rgba(139, 92, 246, 0.4);"></div>
+                        </div> -->
+                    </div>
+                    
+                    <h2 class="fw-bold text-heading tw-mb-2" style="font-size: clamp(2rem, 3.5vw, 3rem); letter-spacing: -0.02em;">Incorporate our tool into</h2>
+                    <h2 class="fw-bold" style="font-size: clamp(2rem, 3.5vw, 3rem); color: #3b82f6; letter-spacing: -0.02em;">your everyday tasks</h2>
+                </div>
+
+                <!-- Scrolling Logos Area -->
+                <div class="logos-area position-relative w-100" style="height: 340px; z-index: 1; margin-top: 40px; margin-bottom: 60px;">
+                    
+                    <!-- Row 1 -->
+                    <div class="marquee-row" style="top: 0;">
+                        <div class="marquee-content" style="animation: marquee-left 45s linear infinite;">
+                            <!-- set 1 -->
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg" alt="Magento"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" alt="WooCommerce"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></div>
+                            <!-- set 2 -->
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg" alt="Magento"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" alt="WooCommerce"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></div>
+                            <!-- set 3 -->
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg" alt="Magento"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" alt="WooCommerce"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="marquee-row" style="top: 180px;">
+                        <div class="marquee-content" style="animation: marquee-right 50s linear infinite;">
+                            <!-- set 1 -->
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-plain.svg" alt="After Effects"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg" alt="Premiere Pro"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WP"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"></div>
+                            <!-- set 2 -->
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-plain.svg" alt="After Effects"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg" alt="Premiere Pro"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WP"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"></div>
+                            <!-- set 3 -->
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-plain.svg" alt="After Effects"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg" alt="Premiere Pro"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WP"></div>
+                            <div class="logo-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"></div>
+                        </div>
+                    </div>
+
+                    <!-- Center Orb -->
+                    <div class="center-orb-wrapper">
+                        <div class="center-orb"></div>
+                        <div class="center-icon">
+                            <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6, #8b5cf6); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);">
+                                <svg class="center-akkurate-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 102.2" style="width: 70px; height: 70px; fill: white;">
+                                    <path d="m54.9 1.4c-4.3 0-8.2 3.4-8.3 8-0.1 4.3 3.2 8.6 8.1 8.7 4.6 0.1 8.3-3.5 8.4-8 0.2-4.2-3.3-8.7-8.2-8.7z"/>
+                                    <path d="m38.3 10.9c-1.2-2.4-3.7-4.1-6.8-4.1-2.6-0.1-5.2 1.2-6.8 3.5-1.7 2.3-2 5.8-0.4 8.5l14 23.6h-29.8c-3.8 0.1-7.1 3.1-7 7.5-0.1 4.3 3.2 8 7.1 8.2h32.5l12.1-20.9-14.9-26.3z"/>
+                                    <path d="m101.6 42.5-29.6-0.1 14.1-23.8c1.5-2.8 1.3-6.3-1.1-8.9-1.4-1.6-3.3-2.7-5.6-2.7-2 0-4.8 0.9-6.4 3.3l-16.1 27 12.3 20.8h32.6c3.9 0 7.2-3.3 7.1-7.9-0.2-3.9-3.3-7.4-7.3-7.7z"/>
+                                    <path d="m17.4 64.6c-4.4 0-8 3.4-8 7.9-0.1 4 2.8 8.7 8 8.8 4.5 0 8.1-3.4 8.2-7.7 0.2-4-2.9-8.9-8.2-9z"/>
+                                    <path d="m92.7 64.7c-4.3-0.2-8.3 3.1-8.3 7.7-0.1 4.1 2.9 8.8 8.3 8.9 4.2-0.1 8-3.1 8-8 0-4.2-3.4-8.4-8-8.6z"/>
+                                    <path d="m55.1 41.2-28.4 47.6c-1 1.4-1.3 3-1.1 4.9 0.4 2.9 3 6.5 7.4 6.8 2 0.1 5.3-0.4 7-3.2l14.4-24.7c-0.5-3.5-1.1-7.3-1.3-7.9-0.3-0.6-4.8-2.9-4.8-2.9s4.4-2.2 4.7-2.4c0.4-0.4 2.1-4.5 2.1-4.5s1.7 4 2 4.5c0.3 0.4 4.6 2.4 4.6 2.4s-4.1 2.2-4.6 2.7c-0.3 1.2-1.3 8.1-1.3 8.1l14.3 24.3c1.3 2.2 3.7 3.5 6.5 3.6 4 0.1 7.8-2.9 7.9-7.4 0-1.4-0.2-2.8-1.1-4.2l-28.3-47.7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gradient overlays for fade out effect at edges -->
+                    <div style="position: absolute; top: 0; left: 0; width: 15%; height: 100%; background: linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0) 100%); z-index: 2; pointer-events: none;"></div>
+                    <div style="position: absolute; top: 0; right: 0; width: 15%; height: 100%; background: linear-gradient(to left, #ffffff 0%, rgba(255,255,255,0) 100%); z-index: 2; pointer-events: none;"></div>
+                </div>
+
+            </section>
+
+            <style>
+            .integrations-section {
+                font-family: 'Inter', sans-serif;
+            }
+            .marquee-row {
+                position: absolute;
+                width: 100%;
+                display: flex;
+                overflow: hidden;
+            }
+            .marquee-content {
+                display: flex;
+                gap: 50px;
+                padding-right: 50px;
+                width: max-content;
+            }
+            .logo-box {
+                width: 110px;
+                height: 110px;
+                background: #ffffff;
+                border: 1px solid #e2e8f0;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+            }
+            
+            /* Staggering alignment for a dynamic scattered look */
+            .marquee-row:nth-child(1) .logo-box:nth-child(odd) {
+                margin-top: 0px;
+            }
+            .marquee-row:nth-child(1) .logo-box:nth-child(even) {
+                margin-top: 50px;
+            }
+            .marquee-row:nth-child(2) .logo-box:nth-child(odd) {
+                margin-top: 50px;
+            }
+            .marquee-row:nth-child(2) .logo-box:nth-child(even) {
+                margin-top: 0px;
+            }
+
+            .logo-box:hover {
+                background: #f8fafc;
+                transform: translateY(-5px);
+                border-color: #cbd5e1;
+                box-shadow: 0 12px 20px -3px rgba(0,0,0,0.1);
+            }
+            .logo-box img {
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                opacity: 0.85;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+            }
+            .logo-box:hover img {
+                opacity: 1;
+                transform: scale(1.15);
+            }
+
+            @keyframes marquee-left {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(calc(-100% / 3)); }
+            }
+
+            @keyframes marquee-right {
+                0% { transform: translateX(calc(-100% / 3)); }
+                100% { transform: translateX(0); }
+            }
+
+            .center-orb-wrapper {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 380px;
+                height: 380px;
+                z-index: 10;
+                pointer-events: none;
+            }
+            .center-orb {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.05) 100%);
+                backdrop-filter: blur(16px);
+                -webkit-backdrop-filter: blur(16px);
+                border: 1px solid rgba(255, 255, 255, 0.8);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05), inset 0 0 20px rgba(255, 255, 255, 0.5);
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .center-icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .logos-area {
+                    height: 250px !important;
+                    margin-bottom: 40px !important;
+                }
+                .center-orb-wrapper {
+                    width: 250px;
+                    height: 250px;
+                }
+                .marquee-row:nth-child(2) {
+                    top: 140px !important;
+                }
+                .logo-box {
+                    width: 80px;
+                    height: 80px;
+                }
+                .logo-box img {
+                    width: 45px;
+                    height: 45px;
+                }
+                .marquee-content {
+                    gap: 30px;
+                    padding-right: 30px;
+                }
+                .marquee-row:nth-child(1) .logo-box:nth-child(even) {
+                    margin-top: 30px;
+                }
+                .marquee-row:nth-child(2) .logo-box:nth-child(odd) {
+                    margin-top: 30px;
+                }
+            }
+            </style>
+            <!-- ========================== Integrations Section End ========================= -->
+
             <!-- ========================== Sleek Black Footer Start ========================= -->
             <?php include 'partials/footer.php'; ?>
             <!-- ========================== Sleek Black Footer End ========================= -->
