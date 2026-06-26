@@ -94,7 +94,7 @@
 
         /* Stacked Cards Section */
         .stacked-section {
-            padding: 100px 0;
+            padding: 100px 0 20px 0;
             background: #fff;
             position: relative;
         }
@@ -154,7 +154,7 @@
 
         .sticky-cards-container {
             position: relative;
-            padding-bottom: 50px;
+            padding-bottom: 0px;
         }
         .sticky-card {
             position: sticky;
@@ -789,7 +789,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </section>
             
             <!-- =========================== Roadmap section start ========================== -->
-            <section class="pt-120 pb-80 bg-white">
+            <section class="pt-0 pb-80 bg-white">
                 <div class="container max-w-1440-px">
                     <!-- what we do Start -->
                     <div class="bg-main-two-600 tw-rounded-3xl overflow-hidden position-relative" id="roadmap-section">

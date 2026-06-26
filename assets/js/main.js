@@ -91,7 +91,7 @@
       if (FileName === "" || FileName === "index.html") {
         // Keep the activePage class on the Home link
         selector
-          .find("li.nav-menu__item.has-submenu")
+          .find("li.nav-menu__item")
           .eq(0)
           .addClass("activePage");
       } else {
