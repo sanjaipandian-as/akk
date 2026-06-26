@@ -59,7 +59,7 @@
         .browser-dot.green { background: #22c55e; }
         
         /* Bento Grid Services */
-        .bento-section { padding: 100px 0; background: #fafafa; border-radius: 40px; margin: 0 20px; }
+        .bento-section { padding: 60px 0; background: #fafafa; border-radius: 40px; margin: 0 20px; }
         .bento-card {
             background: #ffffff;
             border: 1px solid rgba(0,0,0,0.04);
@@ -83,18 +83,18 @@
             font-size: 28px; color: #050505; margin-bottom: 32px;
             border: 1px solid rgba(0,0,0,0.03);
         }
-        .bento-title { font-size: 1.25rem; font-weight: 700; color: #050505; margin-bottom: 16px; letter-spacing: -0.01em; }
-        .bento-desc { font-size: 1rem; color: #4a4a4a; line-height: 1.6; }
+        .bento-title { font-size: 1.125rem; font-weight: 700; color: #050505; margin-bottom: 16px; letter-spacing: -0.01em; }
+        .bento-desc { font-size: 0.9rem; color: #4a4a4a; line-height: 1.6; }
         
-        .bento-large { background: #050505; color: #ffffff; }
-        .bento-large .bento-title { color: #ffffff; font-size: 1.5rem; }
-        .bento-large .bento-desc { color: #a1a1aa; }
+        .bento-large { background: #081a4b; color: #ffffff; }
+        .bento-large .bento-title { color: #ffffff; font-size: 1.25rem; }
+        .bento-large .bento-desc { color: rgba(255,255,255,0.85); }
         .bento-large .bento-icon { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.05); color: #ffffff; }
         
         /* Editorial Section */
         .editorial-section { padding: 80px 0; background: #ffffff; }
-        .editorial-title { font-size: clamp(2rem, 3vw, 2.75rem); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; color: #050505; margin-bottom: 24px; }
-        .editorial-text { font-size: 1.05rem; line-height: 1.6; color: #4a4a4a; }
+        .editorial-title { font-size: clamp(1.5rem, 2.5vw, 2.25rem); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; color: #050505; margin-bottom: 24px; }
+        .editorial-text { font-size: 0.95rem; line-height: 1.6; color: #4a4a4a; }
 
         /* Grid Boxes */
         .grid-box { background: #fcfcfc; border: 1px solid rgba(0,0,0,0.05); border-radius: 20px; padding: 40px; height: 100%; transition: all 0.3s ease; }
@@ -140,8 +140,8 @@
         /* Buttons */
         .btn-black {
             display: inline-flex; align-items: center; justify-content: center;
-            padding: 18px 36px; background: #050505; color: #ffffff;
-            font-size: 1.125rem; font-weight: 600; border-radius: 100px;
+            padding: 16px 32px; background: #050505; color: #ffffff;
+            font-size: 1rem; font-weight: 600; border-radius: 100px;
             text-decoration: none; transition: all 0.3s ease;
             border: 1px solid #050505;
         }
@@ -157,6 +157,23 @@
             border-radius: 0 16px 16px 0;
             margin-bottom: 16px;
         }
+
+        /* Blue Theme Section */
+        .bg-blue-theme { background: #081a4b !important; color: #ffffff; border-bottom: none !important; }
+        .bg-blue-theme .editorial-title { color: #ffffff; }
+        .bg-blue-theme .editorial-text { color: rgba(255,255,255,0.85); }
+        .bg-blue-theme .text-dark { color: #ffffff !important; }
+        .bg-blue-theme .elegant-feature { border-bottom-color: rgba(255,255,255,0.1) !important; }
+        .bg-blue-theme .elegant-feature:first-child { border-top-color: rgba(255,255,255,0.1) !important; }
+        .bg-blue-theme .elegant-feature:hover { background-color: rgba(255,255,255,0.05); border-bottom-color: transparent !important; }
+        .bg-blue-theme .elegant-icon { background: rgba(255,255,255,0.1); color: #ffffff; border-color: rgba(255,255,255,0.2); }
+        .bg-blue-theme .elegant-feature:hover .elegant-icon { background: #ffffff; color: #081a4b; }
+        .bg-blue-theme .border-blue-600 { border-color: #ffffff !important; }
+        .bg-blue-theme .bg-white { background-color: rgba(255,255,255,0.1) !important; }
+        .bg-blue-theme .grid-box { background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1); }
+        .bg-blue-theme .grid-box:hover { background: rgba(255, 255, 255, 0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-color: rgba(255, 255, 255, 0.2); }
+        .bg-blue-theme .btn-black { background: #ffffff; color: #081a4b; border-color: #ffffff; }
+        .bg-blue-theme .btn-black:hover { background: transparent; color: #ffffff; }
         
         @media (max-width: 991px) {
             .bento-section { margin: 0; border-radius: 0; padding: 60px 0; }
@@ -183,7 +200,7 @@
                                 Answer Engine Optimization
                             </div>
                             
-                            <h1 class="web-title tw-text-left" style="text-align: left; font-size: clamp(1.8rem, 4vw, 3.2rem); line-height: 1.2;">
+                            <h1 class="web-title tw-text-left" style="text-align: left; font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.2;">
                                 Get Found Where People Are <span class="text-gradient">Asking Questions.</span>
                             </h1>
                             
@@ -217,10 +234,10 @@
             </section>
 
             <!-- What Is AEO? -->
-            <section class="editorial-section border-bottom bg-neutral-50">
+            <section class="editorial-section bg-blue-theme">
                 <div class="container">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="row gx-5 align-items-start">
+                        <div class="col-lg-5 mb-5 mb-lg-0 position-sticky" style="top: 120px; z-index: 10;">
                             <h2 class="editorial-title">What Is AEO?</h2>
                             <p class="editorial-text mb-4">
                                 Answer Engine Optimization (AEO) involves structuring your website and content so search engines and AI tools can understand it. Only then can they feature your business as a direct answer.
@@ -235,40 +252,40 @@
                             <div class="elegant-feature">
                                 <div class="elegant-icon"><i class="ph-bold ph-star"></i></div>
                                 <div>
-                                    <h4 class="tw-text-xl fw-bold mb-2 text-dark">Featured Snippets</h4>
-                                    <p class="editorial-text mb-0 tw-text-base">Structuring content to increase your chances of appearing in position zero.</p>
+                                    <h4 class="tw-text-base fw-bold mb-2 text-dark">Featured Snippets</h4>
+                                    <p class="editorial-text mb-0 tw-text-sm">Structuring content to increase your chances of appearing in position zero.</p>
                                 </div>
                             </div>
                             
                             <div class="elegant-feature">
                                 <div class="elegant-icon"><i class="ph-bold ph-robot"></i></div>
                                 <div>
-                                    <h4 class="tw-text-xl fw-bold mb-2 text-dark">AI-Generated Answers</h4>
-                                    <p class="editorial-text mb-0 tw-text-base">Optimizing your website content for AI-driven search platforms and tools.</p>
+                                    <h4 class="tw-text-base fw-bold mb-2 text-dark">AI-Generated Answers</h4>
+                                    <p class="editorial-text mb-0 tw-text-sm">Optimizing your website content for AI-driven search platforms and tools.</p>
                                 </div>
                             </div>
                             
                             <div class="elegant-feature">
                                 <div class="elegant-icon"><i class="ph-bold ph-microphone-stage"></i></div>
                                 <div>
-                                    <h4 class="tw-text-xl fw-bold mb-2 text-dark">Voice Search Visibility</h4>
-                                    <p class="editorial-text mb-0 tw-text-base">Improving your website for conversational and voice-based searches.</p>
+                                    <h4 class="tw-text-base fw-bold mb-2 text-dark">Voice Search Visibility</h4>
+                                    <p class="editorial-text mb-0 tw-text-sm">Improving your website for conversational and voice-based searches.</p>
                                 </div>
                             </div>
                             
                             <div class="elegant-feature">
                                 <div class="elegant-icon"><i class="ph-bold ph-question"></i></div>
                                 <div>
-                                    <h4 class="tw-text-xl fw-bold mb-2 text-dark">Question-Based Content</h4>
-                                    <p class="editorial-text mb-0 tw-text-base">Creating high-intent content that directly answers customer queries.</p>
+                                    <h4 class="tw-text-base fw-bold mb-2 text-dark">Question-Based Content</h4>
+                                    <p class="editorial-text mb-0 tw-text-sm">Creating high-intent content that directly answers customer queries.</p>
                                 </div>
                             </div>
                             
                             <div class="elegant-feature" style="border-bottom: 1px solid rgba(0,0,0,0.08);">
                                 <div class="elegant-icon"><i class="ph-bold ph-tree-structure"></i></div>
                                 <div>
-                                    <h4 class="tw-text-xl fw-bold mb-2 text-dark">Semantic Optimization</h4>
-                                    <p class="editorial-text mb-0 tw-text-base">Strengthening topical authority so AI systems trust your website more.</p>
+                                    <h4 class="tw-text-base fw-bold mb-2 text-dark">Semantic Optimization</h4>
+                                    <p class="editorial-text mb-0 tw-text-sm">Strengthening topical authority so AI systems trust your website more.</p>
                                 </div>
                             </div>
                         </div>
@@ -277,10 +294,10 @@
             </section>
 
             <!-- Bento Grid Services -->
-            <section id="services" class="bento-section my-5">
+            <section id="services" class="bento-section mt-3 mb-4">
                 <div class="container">
-                    <div class="text-center max-w-700-px mx-auto mb-5 pb-4">
-                        <h2 class="web-title tw-text-3xl md:tw-text-4xl">Our AEO Services</h2>
+                    <div class="text-center max-w-700-px mx-auto mb-4 pb-2">
+                        <h2 class="web-title tw-text-2xl md:tw-text-3xl">Our AEO Services</h2>
                         <p class="hero-subtitle mx-auto">Here’s what people approach our experts for:</p>
                     </div>
                     
@@ -369,36 +386,40 @@
             </section>
 
             <!-- Why Choose Us Grid -->
-            <section class="editorial-section">
+            <section class="editorial-section bg-blue-theme" style="padding: 60px 0;">
                 <div class="container">
-                    <div class="text-center max-w-700-px mx-auto mb-5 pb-4">
+                    <div class="text-center max-w-700-px mx-auto mb-4 pb-2">
                         <h2 class="editorial-title">Why Choose Akkurate for AEO?</h2>
                         <p class="editorial-text mx-auto">Out of all the brands out there, why should you choose us? It is purely because of our:</p>
                     </div>
                     
                     <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="grid-box">
-                                <h3 class="tw-text-xl fw-bold mb-3 text-dark">Data-Driven Strategy</h3>
-                                <p class="editorial-text mb-0">Every optimization is based on user behavior, search intent, and AI visibility trends.</p>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="grid-box text-center" style="padding: 30px 20px;">
+                                <div class="mb-3"><img src="/assets/images/thumbs/data_driven_strategy.png" class="img-fluid rounded w-100 object-fit-cover" style="height: 120px;" alt="Data-Driven Strategy"></div>
+                                <h3 class="tw-text-base fw-bold mb-3 text-dark">Data-Driven Strategy</h3>
+                                <p class="editorial-text mb-0 tw-text-sm">Every optimization is based on user behavior, search intent, and AI visibility trends.</p>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="grid-box">
-                                <h3 class="tw-text-xl fw-bold mb-3 text-dark">Future-Focused SEO</h3>
-                                <p class="editorial-text mb-0">We prepare your business for the next generation of search experiences.</p>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="grid-box text-center" style="padding: 30px 20px;">
+                                <div class="mb-3"><img src="/assets/images/thumbs/future_seo.png" class="img-fluid rounded w-100 object-fit-cover" style="height: 120px;" alt="Future-Focused SEO"></div>
+                                <h3 class="tw-text-base fw-bold mb-3 text-dark">Future-Focused SEO</h3>
+                                <p class="editorial-text mb-0 tw-text-sm">We prepare your business for the next generation of search experiences.</p>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="grid-box">
-                                <h3 class="tw-text-xl fw-bold mb-3 text-dark">Clear Reporting</h3>
-                                <p class="editorial-text mb-0">You get transparent insights into rankings, visibility, traffic, and answer engine performance.</p>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="grid-box text-center" style="padding: 30px 20px;">
+                                <div class="mb-3"><img src="/assets/images/thumbs/clear_reporting.png" class="img-fluid rounded w-100 object-fit-cover" style="height: 120px;" alt="Clear Reporting"></div>
+                                <h3 class="tw-text-base fw-bold mb-3 text-dark">Clear Reporting</h3>
+                                <p class="editorial-text mb-0 tw-text-sm">You get transparent insights into rankings, visibility, traffic, and answer engine performance.</p>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="grid-box">
-                                <h3 class="tw-text-xl fw-bold mb-3 text-dark">Integrated Growth Approach</h3>
-                                <p class="editorial-text mb-0">AEO works best when combined with SEO, content, and technical optimization — and we handle it all under one roof.</p>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="grid-box text-center" style="padding: 30px 20px;">
+                                <div class="mb-3"><img src="/assets/images/thumbs/integrated_growth.png" class="img-fluid rounded w-100 object-fit-cover" style="height: 120px;" alt="Integrated Growth Approach"></div>
+                                <h3 class="tw-text-base fw-bold mb-3 text-dark">Integrated Growth</h3>
+                                <p class="editorial-text mb-0 tw-text-sm">AEO works best when combined with SEO, content, and technical optimization.</p>
                             </div>
                         </div>
                     </div>
@@ -409,7 +430,7 @@
             <section class="py-120 bg-white text-center border-top">
                 <div class="container">
                     <div class="max-w-800-px mx-auto">
-                        <h2 class="web-title tw-text-3xl md:tw-text-4xl">Ready to Optimize for the Future of Search?</h2>
+                        <h2 class="web-title tw-text-2xl md:tw-text-3xl">Ready to Optimize for the Future of Search?</h2>
                         <p class="hero-subtitle mx-auto tw-mb-6">
                             The future of digital discovery belongs to businesses that can provide the best answers quickly and clearly. Akkurate helps you become the brand customers discover first across search engines, AI assistants, and answer platforms.
                         </p>

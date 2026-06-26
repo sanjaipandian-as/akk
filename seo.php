@@ -133,77 +133,117 @@
             margin: 0;
         }
 
-        /* Process Steps */
+        /* Process Steps Redesign */
         .process-container {
-            background: #ffffff;
-            color: #050505;
-            padding: 80px 0;
+            background: #081a4b;
+            color: #ffffff;
+            padding: 100px 0;
         }
         .process-title {
-            font-size: clamp(2rem, 3vw, 2.75rem);
-            font-weight: 700;
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            font-weight: 800;
             letter-spacing: -0.03em;
-            color: #050505;
-            margin-bottom: 40px;
+            color: #ffffff;
+            margin-bottom: 30px;
         }
-        .process-step {
+        .process-subtitle {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: rgba(255,255,255,0.8);
+        }
+        .process-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 30px;
             position: relative;
-            padding-left: 60px;
-            border-left: 1px solid rgba(0,0,0,0.1);
-            padding-bottom: 50px;
+            overflow: hidden;
+            transition: all 0.3s ease;
         }
-        .process-step::before {
-            content: '';
+        .process-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(255,255,255,0.2);
+            transform: translateY(-5px);
+        }
+        .process-number {
             position: absolute;
-            left: -6px;
-            top: 0;
-            width: 11px;
-            height: 11px;
-            border-radius: 50%;
-            background: #2563eb;
-            box-shadow: 0 0 0 8px rgba(37,99,235,0.15);
+            top: -10px;
+            right: 10px;
+            font-size: 120px;
+            font-weight: 900;
+            color: rgba(255,255,255,0.03);
+            line-height: 1;
+            pointer-events: none;
         }
-        .process-step:last-child { border-left-color: transparent; padding-bottom: 0; }
         .process-step-title {
             font-size: 1.5rem;
             font-weight: 700;
-            margin-bottom: 20px;
-            color: #050505;
-            letter-spacing: -0.02em;
+            color: #ffffff;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
         }
         .process-step-desc {
             font-size: 1rem;
             line-height: 1.7;
-            color: #4a4a4a;
+            color: rgba(255,255,255,0.7);
+            position: relative;
+            z-index: 2;
         }
 
-        /* Why Choose Us & CTA */
+        /* Unique CTA Redesign */
         .agency-cta {
-            padding: 80px 0;
+            padding: 100px 0;
             background: #ffffff;
+        }
+        .cta-wrapper {
+            background: #081a4b;
+            border-radius: 40px;
+            padding: 60px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(8,26,75,0.15);
+        }
+        .cta-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -30%; left: -10%;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
         }
         
         .differentiator-item {
-            margin-bottom: 40px;
+            padding-left: 24px;
+            border-left: 2px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        .differentiator-item:hover {
+            border-left-color: #ffffff;
         }
         .differentiator-title {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: 700;
-            margin-bottom: 12px;
-            color: #050505;
+            margin-bottom: 8px;
+            color: #ffffff;
         }
         .differentiator-desc {
-            font-size: 1rem;
-            color: #4a4a4a;
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.7);
             line-height: 1.6;
         }
 
         .cta-box {
             background: #ffffff;
-            padding: 60px;
-            border-radius: 30px;
-            border: 1px solid rgba(0,0,0,0.08);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            padding: 50px;
+            border-radius: 24px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 2;
+            transform: translateY(-20px);
         }
 
         /* Buttons */
@@ -298,9 +338,13 @@
             <!-- ==================== Editorial: Why SEO Matters ==================== -->
             <section class="editorial-section">
                 <div class="container">
-                    <div class="row gx-5">
-                        <div class="col-lg-5 mb-5 mb-lg-0">
-                            <h2 class="editorial-title">Why SEO Still Matters.</h2>
+                    <div class="row gx-5 align-items-start">
+                        <div class="col-lg-5 mb-5 mb-lg-0 position-sticky" style="top: 120px; z-index: 10;">
+                            <h2 class="editorial-title mb-4">Why SEO Still Matters.</h2>
+                            <p class="editorial-text mb-4">
+                                In an era of AI and social media, organic search is still the most reliable and highest-converting channel for sustainable business growth.
+                            </p>
+                            <a href="/contact.php" class="btn-premium d-none d-lg-inline-flex mt-2">Get Your SEO Audit</a>
                         </div>
                         <div class="col-lg-7">
                             <p class="editorial-text tw-mb-8">
@@ -454,27 +498,31 @@
             <!-- ==================== Process Timeline ==================== -->
             <section class="process-container">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5">
+                    <div class="row gx-5 align-items-start">
+                        <div class="col-lg-5 mb-5 mb-lg-0 position-sticky" style="top: 120px; z-index: 10;">
                             <h2 class="process-title">Our Unique Process.</h2>
-                            <p class="editorial-text pe-lg-5">
+                            <p class="process-subtitle pe-lg-5">
                                 We have a highly streamlined methodology. At every instance, you are aware of what is happening and the impact it is driving.
                             </p>
                         </div>
                         <div class="col-lg-7">
-                            <div class="process-step">
+                            <div class="process-card">
+                                <div class="process-number">01</div>
                                 <h3 class="process-step-title">Website Audit</h3>
                                 <p class="process-step-desc">We comprehensively analyze your website to identify technical issues and uncover hidden growth opportunities before writing a single line of code or content.</p>
                             </div>
-                            <div class="process-step">
+                            <div class="process-card">
+                                <div class="process-number">02</div>
                                 <h3 class="process-step-title">Competitor Analysis</h3>
                                 <p class="process-step-desc">Understanding competitors helps us create smarter SEO strategies. We find their weaknesses and exploit them to your advantage.</p>
                             </div>
-                            <div class="process-step">
+                            <div class="process-card">
+                                <div class="process-number">03</div>
                                 <h3 class="process-step-title">Content Optimization</h3>
                                 <p class="process-step-desc">We improve existing pages and architect entirely new content that not only ranks high on search engines but reliably converts readers into customers.</p>
                             </div>
-                            <div class="process-step">
+                            <div class="process-card">
+                                <div class="process-number">04</div>
                                 <h3 class="process-step-title">Performance Tracking</h3>
                                 <p class="process-step-desc">Every campaign is rigorously monitored with accurate, transparent reporting and measurable KPIs. You will always know the exact return on your investment.</p>
                             </div>
@@ -483,40 +531,56 @@
                 </div>
             </section>
 
-            <!-- ==================== Why Choose Us & CTA ==================== -->
-            <section class="agency-cta">
+            <!-- ==================== Why Choose Us ==================== -->
+            <section class="agency-cta" style="padding-bottom: 40px;">
                 <div class="container">
-                    <div class="row gx-5">
-                        <div class="col-lg-6 mb-5 mb-lg-0">
-                            <h2 class="editorial-title mb-5">Why Choose Akkurate?</h2>
-                            
-                            <div class="differentiator-item">
-                                <h4 class="differentiator-title">Results-Focused SEO</h4>
-                                <p class="differentiator-desc">We focus on rankings that bring tangible business impact and revenue, not just empty traffic numbers.</p>
-                            </div>
-                            <div class="differentiator-item">
-                                <h4 class="differentiator-title">Transparent Communication</h4>
-                                <p class="differentiator-desc">You always know what is happening with your campaign and performance. No black box strategies.</p>
-                            </div>
-                            <div class="differentiator-item">
-                                <h4 class="differentiator-title">Long-Term Organic Growth</h4>
-                                <p class="differentiator-desc">We build solid SEO foundations that continue delivering compound results over time.</p>
-                            </div>
-                            <div class="differentiator-item">
-                                <h4 class="differentiator-title">Integrated Expertise</h4>
-                                <p class="differentiator-desc">SEO works better when connected with content, development, and analytics — we bring everything together.</p>
-                            </div>
+                    <div class="cta-wrapper" style="padding: 80px 60px;">
+                        <div class="text-center mb-5">
+                            <h2 class="editorial-title text-white">Why Choose Akkurate?</h2>
                         </div>
                         
-                        <div class="col-lg-6">
-                            <div class="cta-box">
-                                <h3 class="editorial-title mb-4" style="font-size: 1.75rem;">Grow Organically With Confidence.</h3>
-                                <p class="editorial-text mb-5">
-                                    SEO is not just about being visible online. It is about becoming the trusted solution your audience chooses.<br><br>
-                                    Let’s build an SEO strategy that attracts the right audience and drives measurable growth month after month.
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="differentiator-item">
+                                    <h4 class="differentiator-title text-white">Results-Focused SEO</h4>
+                                    <p class="differentiator-desc">We focus on rankings that bring tangible business impact and revenue, not just empty traffic numbers.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="differentiator-item">
+                                    <h4 class="differentiator-title text-white">Transparent Communication</h4>
+                                    <p class="differentiator-desc">You always know what is happening with your campaign and performance. No black box strategies.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="differentiator-item">
+                                    <h4 class="differentiator-title text-white">Long-Term Organic Growth</h4>
+                                    <p class="differentiator-desc">We build solid SEO foundations that continue delivering compound results over time.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="differentiator-item">
+                                    <h4 class="differentiator-title text-white">Integrated Expertise</h4>
+                                    <p class="differentiator-desc">SEO works better when connected with content, development, and analytics — we bring everything together.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== Contact CTA ==================== -->
+            <section class="py-5 bg-white mb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="cta-box text-center p-5 border-0 bg-light" style="border-radius: 24px; transform: none; box-shadow: none;">
+                                <h3 class="editorial-title mb-3" style="font-size: 2rem;">Grow Organically With Confidence.</h3>
+                                <p class="editorial-text mb-5 mx-auto" style="max-width: 600px;">
+                                    SEO is not just about being visible online. It is about becoming the trusted solution your audience chooses. Let’s build an SEO strategy that attracts the right audience and drives measurable growth.
                                 </p>
                                 
-                                <form action="/contact.php" method="POST" class="d-flex flex-column gap-3">
+                                <form action="/contact.php" method="POST" class="d-flex flex-column gap-3 text-start">
                                     <div class="row g-3">
                                         <div class="col-sm-6">
                                             <input type="text" class="form-control p-3 bg-white border-0 shadow-sm" placeholder="Your Name" style="border-radius: 12px;" required>
@@ -526,8 +590,10 @@
                                         </div>
                                     </div>
                                     <input type="text" class="form-control p-3 bg-white border-0 shadow-sm" placeholder="Company Website" style="border-radius: 12px;">
-                                    <textarea class="form-control p-3 bg-white border-0 shadow-sm" rows="4" placeholder="How can we help?" style="border-radius: 12px;"></textarea>
-                                    <button type="submit" class="btn-premium w-100 mt-3" style="border-radius: 12px;">Get a Demo Today</button>
+                                    <textarea class="form-control p-3 bg-white border-0 shadow-sm" rows="3" placeholder="How can we help?" style="border-radius: 12px;"></textarea>
+                                    <div class="text-center mt-3">
+                                        <button type="submit" class="btn-premium px-5 py-3 fs-5" style="border-radius: 12px;">Get a Demo Today</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
