@@ -172,11 +172,23 @@
         .sticky-card:nth-child(2) { top: 120px; }
         .sticky-card:nth-child(3) { top: 140px; }
         .sticky-card:nth-child(4) { top: 160px; }
+        .sticky-card:nth-child(5) { top: 180px; }
+        .sticky-card:nth-child(6) { top: 200px; }
+        .sticky-card:nth-child(7) { top: 220px; }
+        .sticky-card:nth-child(8) { top: 240px; }
+        .sticky-card:nth-child(9) { top: 260px; }
+        .sticky-card:nth-child(10) { top: 280px; }
 
-        .sticky-card.color-1 { background: #250b46; }
-        .sticky-card.color-2 { background: #1a0833; }
-        .sticky-card.color-3 { background: #0f0520; }
-        .sticky-card.color-4 { background: #000000; }
+        .sticky-card.color-1 { background: #0a1b4d; }
+        .sticky-card.color-2 { background: #08163f; }
+        .sticky-card.color-3 { background: #061131; }
+        .sticky-card.color-4 { background: #040c23; }
+        .sticky-card.color-5 { background: #020614; }
+        .sticky-card.color-6 { background: #000000; }
+        .sticky-card.color-7 { background: #0a1b4d; }
+        .sticky-card.color-8 { background: #08163f; }
+        .sticky-card.color-9 { background: #061131; }
+        .sticky-card.color-10 { background: #040c23; }
 
         .sc-title { font-size: 2.2rem; font-weight: 700; margin-bottom: 20px; letter-spacing: -0.02em; color: #fff; }
         .sc-desc { font-size: 1.1rem; line-height: 1.6; color: #e5e7eb; margin-bottom: 30px; max-width: 90%; }
@@ -196,7 +208,7 @@
         }
         .sc-btn:hover { background: #fff; color: #250b46; }
         .sc-btn i { margin-left: 10px; font-size: 1.1rem; }
-        .sc-img-wrap { border-radius: 16px; overflow: hidden; height: 100%; min-height: 350px; }
+        .sc-img-wrap { border-radius: 16px; overflow: hidden; height: 550px; width: 100%; }
         .sc-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
         @media (max-width: 991px) {
             .sticky-card { padding: 40px 30px; position: relative; top: auto !important; margin-bottom: 20px; }
@@ -795,18 +807,18 @@
                         <div class="sticky-card color-1">
                             <div class="row align-items-center h-100">
                                 <div class="col-lg-6 pe-lg-5">
-                                    <h3 class="sc-title">Build Intelligent & Autonomous AI Systems</h3>
-                                    <p class="sc-desc">We design AI systems that move beyond experimentation—capable of reasoning, decision-making, and execution across enterprise workflows.</p>
+                                    <h3 class="sc-title">1. Website Design & Development</h3>
+                                    <p class="sc-desc">Build fast, modern websites designed to convert visitors into customers across every device.</p>
                                     <ul class="sc-list">
-                                        <li><i class="ph-bold ph-arrow-right"></i> RAG Development</li>
-                                        <li><i class="ph-bold ph-arrow-right"></i> Autonomous AI Agents</li>
-                                        <li><i class="ph-bold ph-arrow-right"></i> AI-Engine Games</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Responsive, mobile-first websites</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Fast, secure, and SEO-ready builds</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> UX focused on generating leads</li>
                                     </ul>
-                                    <a href="/contact.php" class="sc-btn">Explore AI solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                    <a href="/contact.php" class="sc-btn">Explore solutions <i class="ph-bold ph-arrow-right"></i></a>
                                 </div>
                                 <div class="col-lg-6 mt-4 mt-lg-0">
                                     <div class="sc-img-wrap">
-                                        <img src="/assets/images/thumbs/office-stock.jpg" alt="AI Systems">
+                                        <img src="/assets/images/imaes/Website Design & Development.png" alt="Website Design & Development">
                                     </div>
                                 </div>
                             </div>
@@ -816,18 +828,18 @@
                         <div class="sticky-card color-2">
                             <div class="row align-items-center h-100">
                                 <div class="col-lg-6 pe-lg-5">
-                                    <h3 class="sc-title">Custom Web & Digital Platforms</h3>
-                                    <p class="sc-desc">We build scalable, high-performance web applications and digital platforms tailored to your specific business requirements and user needs.</p>
+                                    <h3 class="sc-title">2. Search Engine Optimization (SEO)</h3>
+                                    <p class="sc-desc">Increase your visibility on Google with technical SEO, content strategy, and long-term organic growth.</p>
                                     <ul class="sc-list">
-                                        <li><i class="ph-bold ph-arrow-right"></i> Enterprise Web Apps</li>
-                                        <li><i class="ph-bold ph-arrow-right"></i> SaaS Product Development</li>
-                                        <li><i class="ph-bold ph-arrow-right"></i> E-Commerce Solutions</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> On-page & technical optimization</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Keyword and content strategy</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Higher rankings and organic traffic</li>
                                     </ul>
-                                    <a href="/contact.php" class="sc-btn">Explore Web solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                    <a href="/contact.php" class="sc-btn">Explore solutions <i class="ph-bold ph-arrow-right"></i></a>
                                 </div>
                                 <div class="col-lg-6 mt-4 mt-lg-0">
                                     <div class="sc-img-wrap">
-                                        <img src="/assets/images/thumbs/office-stock.jpg" alt="Web Platforms">
+                                        <img src="/assets/images/imaes/Search Engine Optimization (SEO).png" alt="Search Engine Optimization">
                                     </div>
                                 </div>
                             </div>
@@ -837,18 +849,18 @@
                         <div class="sticky-card color-3">
                             <div class="row align-items-center h-100">
                                 <div class="col-lg-6 pe-lg-5">
-                                    <h3 class="sc-title">Data Engineering & Analytics</h3>
-                                    <p class="sc-desc">Transform raw data into actionable insights with robust data pipelines, warehousing, and intuitive analytics dashboards.</p>
+                                    <h3 class="sc-title">3. Social Media Management</h3>
+                                    <p class="sc-desc">Build brand awareness, engage your audience, and create consistent content that drives business results.</p>
                                     <ul class="sc-list">
-                                        <li><i class="ph-bold ph-arrow-right"></i> Data Warehousing</li>
-                                        <li><i class="ph-bold ph-arrow-right"></i> Real-time Analytics</li>
-                                        <li><i class="ph-bold ph-arrow-right"></i> Business Intelligence</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Content planning and creation</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Community engagement</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Performance tracking and reporting</li>
                                     </ul>
-                                    <a href="/contact.php" class="sc-btn">Explore Data solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                    <a href="/contact.php" class="sc-btn">Explore solutions <i class="ph-bold ph-arrow-right"></i></a>
                                 </div>
                                 <div class="col-lg-6 mt-4 mt-lg-0">
                                     <div class="sc-img-wrap">
-                                        <img src="/assets/images/thumbs/office-stock.jpg" alt="Data Engineering">
+                                        <img src="/assets/images/imaes/Social Media Management.png" alt="Social Media Management">
                                     </div>
                                 </div>
                             </div>
@@ -858,18 +870,144 @@
                         <div class="sticky-card color-4">
                             <div class="row align-items-center h-100">
                                 <div class="col-lg-6 pe-lg-5">
-                                    <h3 class="sc-title">Cloud Infrastructure & DevOps</h3>
-                                    <p class="sc-desc">Ensure your applications are highly available, secure, and easily scalable with our cloud architecture and continuous delivery practices.</p>
+                                    <h3 class="sc-title">4. Google & Meta Advertising</h3>
+                                    <p class="sc-desc">Launch high-performing paid campaigns that generate qualified leads while maximizing your advertising budget.</p>
                                     <ul class="sc-list">
-                                        <li><i class="ph-bold ph-arrow-right"></i> Cloud Migration</li>
-                                        <li><i class="ph-bold ph-arrow-right"></i> Infrastructure as Code</li>
-                                        <li><i class="ph-bold ph-arrow-right"></i> CI/CD Pipelines</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Search, Display & Social campaigns</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Lead generation and retargeting</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> ROI-focused campaign optimization</li>
                                     </ul>
-                                    <a href="/contact.php" class="sc-btn">Explore Cloud solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                    <a href="/contact.php" class="sc-btn">Explore solutions <i class="ph-bold ph-arrow-right"></i></a>
                                 </div>
                                 <div class="col-lg-6 mt-4 mt-lg-0">
                                     <div class="sc-img-wrap">
-                                        <img src="/assets/images/thumbs/office-stock.jpg" alt="Cloud Infrastructure">
+                                        <img src="/assets/images/imaes/Google & Meta Advertising.png" alt="Google & Meta Advertising">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="sticky-card color-5">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 pe-lg-5">
+                                    <h3 class="sc-title">5. LinkedIn Personal Branding</h3>
+                                    <p class="sc-desc">Position founders and executives as industry authorities through strategic content and thought leadership.</p>
+                                    <ul class="sc-list">
+                                        <li><i class="ph-bold ph-arrow-right"></i> Thought leadership content and visuals</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Profile optimization</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Personal brand growth strategy</li>
+                                    </ul>
+                                    <a href="/contact.php" class="sc-btn">Explore solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                </div>
+                                <div class="col-lg-6 mt-4 mt-lg-0">
+                                    <div class="sc-img-wrap">
+                                        <img src="/assets/images/imaes/LinkedIn Personal Branding.png" alt="LinkedIn Personal Branding">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="sticky-card color-6">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 pe-lg-5">
+                                    <h3 class="sc-title">6. Logo & Brand Identity Design</h3>
+                                    <p class="sc-desc">Create memorable visual identities that build trust and make your business instantly recognizable.</p>
+                                    <ul class="sc-list">
+                                        <li><i class="ph-bold ph-arrow-right"></i> Logo and visual identity design</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Brand guidelines and assets</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Consistent brand positioning</li>
+                                    </ul>
+                                    <a href="/contact.php" class="sc-btn">Explore solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                </div>
+                                <div class="col-lg-6 mt-4 mt-lg-0">
+                                    <div class="sc-img-wrap">
+                                        <img src="/assets/images/imaes/Logo & Brand Identity Design.png" alt="Logo & Brand Identity Design">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="sticky-card color-7">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 pe-lg-5">
+                                    <h3 class="sc-title">7. Video Production & Creative Content</h3>
+                                    <p class="sc-desc">Produce professional videos, reels, corporate films, and visual assets that capture attention and tell your story.</p>
+                                    <ul class="sc-list">
+                                        <li><i class="ph-bold ph-arrow-right"></i> Corporate videos and brand films</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Reels and social media content</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Product and promotional videos</li>
+                                    </ul>
+                                    <a href="/contact.php" class="sc-btn">Explore solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                </div>
+                                <div class="col-lg-6 mt-4 mt-lg-0">
+                                    <div class="sc-img-wrap">
+                                        <img src="/assets/images/imaes/Video Production & Creative Content.png" alt="Video Production">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="sticky-card color-8">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 pe-lg-5">
+                                    <h3 class="sc-title">8. Content Writing & Copywriting</h3>
+                                    <p class="sc-desc">From websites to blogs and marketing campaigns, we create content that informs, persuades, and converts.</p>
+                                    <ul class="sc-list">
+                                        <li><i class="ph-bold ph-arrow-right"></i> Website and landing page copy</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Blogs, articles, and newsletters</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Marketing and sales collateral</li>
+                                    </ul>
+                                    <a href="/contact.php" class="sc-btn">Explore solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                </div>
+                                <div class="col-lg-6 mt-4 mt-lg-0">
+                                    <div class="sc-img-wrap">
+                                        <img src="/assets/images/imaes/Content Writing & Copywriting.png" alt="Content Writing & Copywriting">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 9 -->
+                        <div class="sticky-card color-9">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 pe-lg-5">
+                                    <h3 class="sc-title">9. Marketing Automation & CRM Solutions</h3>
+                                    <p class="sc-desc">Automate follow-ups, lead nurturing, customer journeys, and sales processes to improve efficiency and growth.</p>
+                                    <ul class="sc-list">
+                                        <li><i class="ph-bold ph-arrow-right"></i> CRM setup and integration</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Lead nurturing workflows</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Email and sales automation</li>
+                                    </ul>
+                                    <a href="/contact.php" class="sc-btn">Explore solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                </div>
+                                <div class="col-lg-6 mt-4 mt-lg-0">
+                                    <div class="sc-img-wrap">
+                                        <img src="/assets/images/imaes/Marketing Automation & CRM Solutions.png" alt="Marketing Automation & CRM">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 10 -->
+                        <div class="sticky-card color-10">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 pe-lg-5">
+                                    <h3 class="sc-title">10. Analytics, CRO & Growth Consulting</h3>
+                                    <p class="sc-desc">Track what matters, optimize conversion rates, and make data-driven decisions that continuously improve business performance.</p>
+                                    <ul class="sc-list">
+                                        <li><i class="ph-bold ph-arrow-right"></i> Website and campaign analytics</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Conversion rate optimization (CRO)</li>
+                                        <li><i class="ph-bold ph-arrow-right"></i> Data-driven growth strategy</li>
+                                    </ul>
+                                    <a href="/contact.php" class="sc-btn">Explore solutions <i class="ph-bold ph-arrow-right"></i></a>
+                                </div>
+                                <div class="col-lg-6 mt-4 mt-lg-0">
+                                    <div class="sc-img-wrap">
+                                        <img src="/assets/images/imaes/Analytics, CRO & Growth Consulting.png" alt="Analytics & CRO">
                                     </div>
                                 </div>
                             </div>
@@ -1851,9 +1989,9 @@
 
   <!-- Heading -->
   <h2 class="fw-bold text-white px-4" style="font-size: clamp(2.5rem, 2rem + 2vw, 3.5rem); margin-bottom: 20px; letter-spacing: -0.03em; line-height: 1.2; ">
-    Success shared with <br class="d-md-none">
+    Built on Trust. <br class="d-md-none">
     <span style="color: #60a5fa; position: relative; display: inline-block;">
-      clients worldwide
+      Globally Proven Through Results.
       <span style="position: absolute; bottom: 8px; left: 0; width: 100%; height: 6px; background-color: #3b82f6; opacity: 0.3; z-index: -1;"></span>
     </span>
   </h2>
@@ -1866,8 +2004,7 @@
     font-size: 16px;
     line-height: 1.6;
   ">
-    We build strong relationships based on trust, transparency, and consistent
-    quality — helping businesses grow and succeed together.
+    The best measure of our work isn't what we say. It's the businesses that continue to trust us with their transformation.
   </p>
 
   <!-- Infinite Loop Logo Slider -->
