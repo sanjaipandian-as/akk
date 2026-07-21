@@ -463,8 +463,8 @@
                     <div class="tw-rounded-50-px gradient-bg-one tw-px-36-px tw-py-80-px">
                         <div class="row gy-4">
                             <div class="col-lg-6">
-                                <div class="tw-pe-12 about-cards-wrapper position-relative">
-                                    <div class="row g-2">
+                                <div class="tw-pe-12 about-cards-wrapper position-relative h-100">
+                                    <div class="row g-2 h-100">
                                         <div class="col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
                                             data-aos-duration="800">
                                             <div
@@ -482,7 +482,7 @@
                                         <div class="col-sm-6 position-relative" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
                                             data-aos-duration="800">
                                             <div
-                                                class="bg-main-two-600 tw-rounded-3xl tw-h-260-px d-flex flex-column justify-content-center align-items-center position-relative">
+                                                class="bg-main-two-600 tw-rounded-3xl h-100 d-flex flex-column justify-content-center align-items-center position-relative overflow-hidden">
                                                 <img alt="" class="position-absolute tw-start-50 bottom-0 tw-translate-x-50"
                                                     src="/assets/images/thumbs/model.png" />
                                             </div>
@@ -502,7 +502,7 @@
                                         <div class="col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
                                             data-aos-duration="800">
                                             <div
-                                                class="bg-main-two-600 tw-rounded-3xl tw-p-8 text-center d-flex flex-column justify-content-center align-items-center tw-h-260-px">
+                                                class="bg-main-two-600 tw-rounded-3xl tw-p-8 text-center d-flex flex-column justify-content-center align-items-center h-100">
                                                 <div class="circle-border d-inline-block">
                                                     <svg class="radial-progress" data-percentage="78" viewbox="0 0 80 80">
                                                         <circle class="incomplete" cx="40" cy="40" r="35"></circle>
@@ -539,41 +539,41 @@
                                             class="text-black tw-text-lg fw-bold text-uppercase tw-mb-205 d-inline-block">ABOUT
                                             US</span>
                                         <h3 class="splitTextStyleOne fw-light tw-leading-104">
-                                            <span class="d-inline-block"> Not Another Agency.</span>
+                                            <span class="d-inline-block"> Most agencies deliver campaigns.</span>
                                             <span class="d-inline-block fw-semibold"></span>
                                             <span class="d-inline-block"></span>
-                                            <span class="d-inline-block fw-semibold">  A Growth Engineering Team</span>
+                                            <span class="d-inline-block fw-semibold">  We build businesses that grow.</span>
                                         </h3>
                                     </div>
                                     <div class="d-flex flex-column tw-gap-6">
                                         <div class="d-flex align-items-start tw-gap-26-px animation-item" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom" data-aos-duration="600">
                                             <span class="tw-w-14 d-flex justify-content-center align-items-center">
-                                                <img alt="We Start With Data" class="w-100 h-auto object-fit-contain" src="/assets/Gifs/bulb.gif" />
+                                                <img alt="We Start With Questions, Not Assumptions" class="w-100 h-auto object-fit-contain" src="/assets/Gifs/bulb.gif" />
                                             </span>
                                             <div class="">
-                                                <h6 class="tw-mb-4">We Start With Data, Not Design</h6>
-                                                <p class="text-neutral-500 max-w-400-px">Every campaign begins with insight. Be it analytics, behavior mapping, or market intelligence.</p>
+                                                <h6 class="tw-mb-4">We Start With Questions, Not Assumptions</h6>
+                                                <p class="text-neutral-500 max-w-400-px">Before we recommend campaigns or technology, we understand your business, customers, competitors, and goals.</p>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-start tw-gap-26-px animation-item" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom" data-aos-duration="600">
                                             <span class="tw-w-14 d-flex justify-content-center align-items-center">
-                                                <img alt="Performance Over Promises" class="w-100 h-auto object-fit-contain" src="/assets/Gifs/goal.gif" />
+                                                <img alt="We Measure What Matters" class="w-100 h-auto object-fit-contain" src="/assets/Gifs/goal.gif" />
                                             </span>
                                             <div class="">
-                                                <h6 class="tw-mb-4">Performance Over Promises</h6>
-                                                <p class="text-neutral-500 max-w-400-px">We track revenue, CAC, LTV, pipeline velocity and not just clicks and impressions.</p>
+                                                <h6 class="tw-mb-4">We Measure What Matters</h6>
+                                                <p class="text-neutral-500 max-w-400-px">Clicks and impressions are easy to celebrate. Revenue, qualified leads, customer retention, and business growth are what we care about.</p>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-start tw-gap-26-px animation-item" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom" data-aos-duration="600">
                                             <span class="tw-w-14 d-flex justify-content-center align-items-center">
-                                                <img alt="Tech + Marketing Under One Roof" class="w-100 h-auto object-fit-contain" src="/assets/Gifs/growth.gif" />
+                                                <img alt="Technology Meets Business Strategy" class="w-100 h-auto object-fit-contain" src="/assets/Gifs/growth.gif" />
                                             </span>
                                             <div class="">
-                                                <h6 class="tw-mb-4">Tech + Marketing Under One Roof.</h6>
-                                                <p class="text-neutral-500 max-w-400-px">We bridge the gap between development and growth marketing to build high-performing digital engines.</p>
+                                                <h6 class="tw-mb-4">Technology Meets Business Strategy</h6>
+                                                <p class="text-neutral-500 max-w-400-px">From software development and AI to marketing and automation, we bring everything under one roof. Every part of your business works together instead of in silos.</p>
                                             </div>
                                         </div>
                                     </div>
