@@ -211,9 +211,52 @@
         .sc-img-wrap { border-radius: 16px; overflow: hidden; height: 550px; width: 100%; }
         .sc-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
         @media (max-width: 991px) {
-            .sticky-card { padding: 40px 30px; position: relative; top: auto !important; margin-bottom: 20px; }
-            .sc-img-wrap { margin-top: 30px; min-height: 250px; }
-            .sc-title { font-size: 1.8rem; }
+            .sticky-card {
+                position: sticky !important;
+                padding: 32px 22px;
+                margin-bottom: 35px;
+                border-radius: 20px;
+                box-shadow: 0 -10px 30px rgba(0,0,0,0.25);
+            }
+            .sticky-card:nth-child(1) { top: 70px; }
+            .sticky-card:nth-child(2) { top: 85px; }
+            .sticky-card:nth-child(3) { top: 100px; }
+            .sticky-card:nth-child(4) { top: 115px; }
+            .sticky-card:nth-child(5) { top: 130px; }
+            .sticky-card:nth-child(6) { top: 145px; }
+            .sticky-card:nth-child(7) { top: 160px; }
+            .sticky-card:nth-child(8) { top: 175px; }
+            .sticky-card:nth-child(9) { top: 190px; }
+            .sticky-card:nth-child(10) { top: 205px; }
+
+            .sc-title { font-size: 1.5rem; margin-bottom: 14px; }
+            .sc-desc { font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px; max-width: 100%; }
+            .sc-list { margin-bottom: 24px; }
+            .sc-list li { font-size: 0.9rem; margin-bottom: 10px; }
+            .sc-btn { padding: 10px 22px; font-size: 0.9rem; }
+            .sc-img-wrap { margin-top: 20px; height: 220px; width: 100%; border-radius: 14px; }
+        }
+
+        @media (max-width: 575px) {
+            .sticky-card {
+                padding: 26px 18px;
+                margin-bottom: 30px;
+                border-radius: 18px;
+            }
+            .sticky-card:nth-child(1) { top: 65px; }
+            .sticky-card:nth-child(2) { top: 78px; }
+            .sticky-card:nth-child(3) { top: 91px; }
+            .sticky-card:nth-child(4) { top: 104px; }
+            .sticky-card:nth-child(5) { top: 117px; }
+            .sticky-card:nth-child(6) { top: 130px; }
+            .sticky-card:nth-child(7) { top: 143px; }
+            .sticky-card:nth-child(8) { top: 156px; }
+            .sticky-card:nth-child(9) { top: 169px; }
+            .sticky-card:nth-child(10) { top: 182px; }
+
+            .sc-title { font-size: 1.35rem; margin-bottom: 12px; }
+            .sc-desc { font-size: 0.9rem; margin-bottom: 16px; }
+            .sc-img-wrap { height: 190px; }
         }
         </style>
     </head>
@@ -596,6 +639,296 @@
                 </div>
             </section>
             <!-- ========================== About section End ============================= -->
+            <!-- ========================== Testimonials Section Start ============================= -->
+            <style>
+                .testimonials-sapaad {
+                    background-color: #f7f7f7;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                }
+                .testimonial-tabs-container {
+                    background: #ffffff;
+                    border-radius: 9999px;
+                    padding: 4px;
+                    border: 1px solid #e5e7eb;
+                    display: inline-flex;
+                    align-items: center;
+                    max-width: 100%;
+                    overflow-x: auto;
+                    scrollbar-width: none;
+                    -webkit-overflow-scrolling: touch;
+                }
+                .testimonial-tabs-container::-webkit-scrollbar {
+                    display: none;
+                }
+                .testimonial-tab-btn {
+                    border: none !important;
+                    font-size: 14px;
+                    padding: 8px 20px;
+                    border-radius: 9999px;
+                    font-weight: 500;
+                    color: #374151 !important;
+                    background: transparent !important;
+                    transition: all 0.2s ease;
+                    white-space: nowrap;
+                    text-decoration: none !important;
+                    outline: none !important;
+                    box-shadow: none !important;
+                    cursor: pointer;
+                }
+                .testimonial-tab-btn.active-tab {
+                    background: #000000 !important;
+                    color: #ffffff !important;
+                    font-weight: 700;
+                    padding: 8px 24px;
+                }
+                .testimonial-card-item {
+                    width: 310px;
+                    min-width: 310px;
+                    flex-shrink: 0;
+                    background: #ffffff;
+                    border-radius: 20px;
+                    padding: 45px 30px 30px 30px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 420px;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.015);
+                    scroll-snap-align: start;
+                }
+                
+                @media (max-width: 991px) {
+                    .testimonials-sapaad {
+                        padding-top: 40px !important;
+                        padding-bottom: 40px !important;
+                    }
+                    .testimonials-sapaad-title {
+                        font-size: 2rem !important;
+                        text-align: center;
+                    }
+                    .testimonials-ratings-wrap {
+                        justify-content: center !important;
+                        margin-top: 14px;
+                    }
+                    .testimonials-video-card {
+                        height: 340px !important;
+                        border-radius: 16px !important;
+                    }
+                    .testimonial-tabs-container {
+                        width: 100%;
+                        justify-content: flex-start;
+                        padding: 3px;
+                    }
+                    .testimonial-tab-btn {
+                        font-size: 13px !important;
+                        padding: 7px 16px !important;
+                    }
+                    .testimonial-tab-btn.active-tab {
+                        padding: 7px 20px !important;
+                    }
+                    #testimonialScrollContainer {
+                        scroll-snap-type: x mandatory;
+                        -webkit-overflow-scrolling: touch;
+                        padding-top: 35px !important;
+                        padding-bottom: 20px !important;
+                        gap: 16px !important;
+                    }
+                    .testimonial-card-item {
+                        width: 82vw !important;
+                        max-width: 340px !important;
+                        min-width: 270px !important;
+                        min-height: 360px !important;
+                        padding: 38px 22px 22px 22px !important;
+                        border-radius: 16px !important;
+                    }
+                }
+                
+                @media (max-width: 575px) {
+                    .testimonials-sapaad-title {
+                        font-size: 1.65rem !important;
+                    }
+                    .testimonials-video-card {
+                        height: 280px !important;
+                    }
+                    .testimonial-ratings-wrap {
+                        gap: 10px !important;
+                    }
+                    .testimonial-ratings-wrap .tw-text-xl {
+                        font-size: 15px !important;
+                    }
+                    .testimonial-card-item {
+                        width: 86vw !important;
+                        min-height: 330px !important;
+                        padding: 34px 18px 18px 18px !important;
+                    }
+                }
+            </style>
+
+            <section class="testimonials-sapaad tw-py-80-px">
+                <div class="container max-w-1400-px">
+                    <!-- Top Row with Title and Ratings -->
+                    <div class="row align-items-center mb-4 mb-lg-5">
+                        <div class="col-lg-5">
+                            <h2 class="fw-bold text-black m-0 testimonials-sapaad-title" style="font-size: 2.75rem; letter-spacing: -1px; line-height: 1.1;">
+                                Trusted as the <br class="d-none d-sm-inline"> #1 POS worldwide
+                            </h2>
+                        </div>
+                        <div class="col-lg-7 d-flex justify-content-lg-end mt-3 mt-lg-0">
+                            <div class="d-flex align-items-center flex-wrap testimonials-ratings-wrap" style="gap: 1.25rem;">
+                                <!-- Trustpilot -->
+                                <div class="d-flex align-items-center" style="gap: 8px;">
+                                    <img src="/assets/images/icons/trustpilot-star.svg" alt="Trustpilot" style="width: 22px;">
+                                    <span class="text-black fw-bold tw-text-xl">Trustpilot</span>
+                                    <span class="fw-bold tw-text-xl ms-1">4.8</span>
+                                    <span style="color: #f59e0b; font-size: 1.1rem;">★</span>
+                                </div>
+                                <div style="width: 1px; height: 26px; background-color: #d1d5db; margin: 0 4px;" class="d-none d-sm-block"></div>
+                                <!-- Capterra -->
+                                <div class="d-flex align-items-center" style="gap: 8px;">
+                                    <span class="fw-bold text-primary tw-text-xl d-flex align-items-center"><i class="ph-fill ph-paper-plane-tilt me-1"></i> Capterra</span>
+                                    <span class="fw-bold tw-text-xl ms-1">4.3</span>
+                                    <span style="color: #f59e0b; font-size: 1.1rem;">★</span>
+                                </div>
+                                <div style="width: 1px; height: 26px; background-color: #d1d5db; margin: 0 4px;" class="d-none d-sm-block"></div>
+                                <!-- Google -->
+                                <div class="d-flex align-items-center" style="gap: 8px;">
+                                    <span class="fw-bold tw-text-xl"><span class="text-primary">G</span><span class="text-danger">o</span><span class="text-warning">o</span><span class="text-primary">g</span><span class="text-success">l</span><span class="text-danger">e</span></span>
+                                    <span class="fw-bold tw-text-xl ms-1">4.9</span>
+                                    <span style="color: #f59e0b; font-size: 1.1rem;">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gy-4 gy-lg-5">
+                        <!-- Left Column (Video) -->
+                        <div class="col-lg-4">
+                            <div class="position-relative overflow-hidden testimonials-video-card" style="border-radius: 20px; height: 530px; background-color: #000;">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" alt="Julianne Holt-Kailihiwa" class="w-100 h-100 object-fit-cover" style="opacity: 0.9;">
+                                
+                                <div class="position-absolute top-50 start-50 translate-middle cursor-pointer" style="width: 54px; height: 54px; background: rgba(0,0,0,0.6); border-radius: 50%; display: flex; justify-content: center; align-items: center; backdrop-filter: blur(2px);">
+                                    <i class="ph-fill ph-play text-white tw-text-xl" style="margin-left: 3px;"></i>
+                                </div>
+                                
+                                <div class="position-absolute bottom-0 start-0 w-100 p-4 d-flex align-items-center" style="gap: 12px; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);">
+                                    <div class="bg-white rounded-circle d-flex justify-content-center align-items-center" style="width: 44px; height: 44px; flex-shrink: 0;">
+                                        <span class="text-primary fw-bold tw-text-xs" style="font-style: italic; font-family: serif;">Sumo</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white mb-0 fw-bold tw-text-base" style="letter-spacing: 0.3px;">Julianne Holt-Kailihiwa</h5>
+                                        <p class="mb-0 tw-text-xs" style="color: #9ca3af;">CEO, Sumo Sushi & Bento</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column (Tabs & Cards) -->
+                        <div class="col-lg-8 ps-lg-4">
+                            <!-- Tabs & Arrows -->
+                            <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap" style="gap: 12px;">
+                                <div class="testimonial-tabs-container">
+                                    <button class="testimonial-tab-btn active-tab">Ease of use</button>
+                                    <button class="testimonial-tab-btn">All-in-One</button>
+                                    <button class="testimonial-tab-btn">Scalability</button>
+                                    <button class="testimonial-tab-btn">Customer Support</button>
+                                </div>
+                                <div class="d-flex tw-gap-2">
+                                    <button id="prevTestimonialBtn" class="bg-white rounded-circle d-flex justify-content-center align-items-center text-neutral-600 border border-neutral-200 shadow-sm hover-bg-neutral-100 transition-all" style="width: 42px; height: 42px; cursor: pointer;"><i class="ph-bold ph-caret-left" style="font-size: 14px;"></i></button>
+                                    <button id="nextTestimonialBtn" class="bg-white rounded-circle d-flex justify-content-center align-items-center text-neutral-800 border border-neutral-200 shadow-sm hover-bg-neutral-100 transition-all" style="width: 42px; height: 42px; cursor: pointer;"><i class="ph-bold ph-caret-right" style="font-size: 14px;"></i></button>
+                                </div>
+                            </div>
+                            
+                            <!-- Scrollable Cards Container -->
+                            <div id="testimonialScrollContainer" class="d-flex tw-gap-5 overflow-x-auto" style="padding-top: 35px; padding-bottom: 15px; scrollbar-width: none; scroll-behavior: smooth;">
+                                
+                                <!-- Card 1 -->
+                                <div class="testimonial-card-item">
+                                    <div class="position-absolute start-50 translate-middle-x" style="top: -28px;">
+                                        <div class="rounded-circle d-flex justify-content-center align-items-center fw-bold" style="width: 56px; height: 56px; background: #ffffff; border: 4px solid #d1d5db; font-size: 18px; color: #f472b6;">
+                                            KH
+                                        </div>
+                                    </div>
+                                    <p class="text-black fw-normal mb-4" style="font-size: 14.5px; line-height: 1.6; flex-grow: 1; color: #1f2937;">
+                                        Easy to use and learn by anyone, no proper training is required to adapt to Sapaad in your business. That's the nature of the application. We can access all the reports required to analyze and forecast sales. Overall, it's pretty good. <strong>We are very happy with it.</strong>
+                                    </p>
+                                    <h6 class="fw-bold text-black mb-0" style="font-size: 15px;">Khaja</h6>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="testimonial-card-item">
+                                    <div class="position-absolute start-50 translate-middle-x" style="top: -28px;">
+                                        <div class="rounded-circle d-flex justify-content-center align-items-center fw-bold" style="width: 56px; height: 56px; background: #ffffff; border: 4px solid #d1d5db; font-size: 18px; color: #e879f9;">
+                                            ZO
+                                        </div>
+                                    </div>
+                                    <p class="text-black fw-normal mb-4" style="font-size: 14.5px; line-height: 1.6; flex-grow: 1; color: #1f2937;">
+                                        Sapaad is an excellent POS system that streamlines restaurant operations effortlessly. <strong>Its user-friendly interface makes managing orders, inventory, and sales a breeze.</strong> The integration with delivery platforms is seamless. Overall, Sapaad is a reliable and efficient solution.
+                                    </p>
+                                    <h6 class="fw-bold text-black mb-0" style="font-size: 15px;">Zoltan B</h6>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="testimonial-card-item">
+                                    <div class="position-absolute start-50 translate-middle-x" style="top: -28px;">
+                                        <div class="rounded-circle d-flex justify-content-center align-items-center fw-bold" style="width: 56px; height: 56px; background: #ffffff; border: 4px solid #d1d5db; font-size: 18px; color: #c084fc;">
+                                            OE
+                                        </div>
+                                    </div>
+                                    <p class="text-black fw-normal mb-4" style="font-size: 14.5px; line-height: 1.6; flex-grow: 1; color: #1f2937;">
+                                        Sapaad is a very straightforward system, it's easy to use.
+                                    </p>
+                                    <h6 class="fw-bold text-black mb-0" style="font-size: 15px;">Oelbert H</h6>
+                                </div>
+                                
+                                <!-- Card 4 -->
+                                <div class="testimonial-card-item">
+                                    <div class="position-absolute start-50 translate-middle-x" style="top: -28px;">
+                                        <div class="rounded-circle d-flex justify-content-center align-items-center fw-bold" style="width: 56px; height: 56px; background: #ffffff; border: 4px solid #d1d5db; font-size: 18px; color: #3b82f6;">
+                                            SU
+                                        </div>
+                                    </div>
+                                    <p class="text-black fw-normal mb-4" style="font-size: 14.5px; line-height: 1.6; flex-grow: 1; color: #1f2937;">
+                                        One word... Sapaad is amazing! Seamless integration and perfect customer support.
+                                    </p>
+                                    <h6 class="fw-bold text-black mb-0" style="font-size: 15px;">Suhayb</h6>
+                                </div>
+
+                            </div>
+
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    var scrollContainer = document.getElementById('testimonialScrollContainer');
+                                    var prevBtn = document.getElementById('prevTestimonialBtn');
+                                    var nextBtn = document.getElementById('nextTestimonialBtn');
+                                    var tabBtns = document.querySelectorAll('.testimonial-tab-btn');
+
+                                    if (prevBtn && scrollContainer) {
+                                        prevBtn.addEventListener('click', function() {
+                                            scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
+                                        });
+                                    }
+
+                                    if (nextBtn && scrollContainer) {
+                                        nextBtn.addEventListener('click', function() {
+                                            scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
+                                        });
+                                    }
+
+                                    tabBtns.forEach(function(btn) {
+                                        btn.addEventListener('click', function() {
+                                            tabBtns.forEach(function(b) {
+                                                b.classList.remove('active-tab');
+                                            });
+                                            btn.classList.add('active-tab');
+                                        });
+                                    });
+                                });
+                            </script>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========================== Testimonials Section End ============================= -->
             
        <section class="footer-akkurate-dark tw-py-80-px tw-px-6 text-white position-relative">
   <style>
