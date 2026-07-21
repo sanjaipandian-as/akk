@@ -585,103 +585,193 @@
             </section>
             <!-- ========================== About section End ============================= -->
             
-       <section class="bg-main-two-600 tw-py-80-px tw-px-6 text-white">
-
+       <section class="footer-akkurate-dark tw-py-80-px tw-px-6 text-white position-relative">
+  <style>
+    .service-btnss {
+      display: flex;
+      flex-wrap: wrap;
+      cursor: pointer;
+    }
+    .service-btnss .top-row {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .service-desc-wrapper {
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease;
+      position: relative;
+      z-index: 2;
+    }
+    .service-btnss:hover .service-desc-wrapper {
+      max-height: 150px;
+      opacity: 1;
+      margin-top: 10px;
+    }
+    .service-desc-wrapper p {
+      color: #081a4b !important;
+      visibility: visible !important;
+    }
+  </style>
   <div class="container">
     <div class="row gy-4">
 
       <!-- LEFT -->
       <div class="col-lg-6 d-flex flex-column">
-        <!-- <p class="text-sm opacity-70 mb-2">- Services</p> -->
-
         <h2 class="fw-semibold tw-leading-104 tw-mb-6">
-          Best-in-class <br>
-          Services to Deliver <br>
-          What Matters
+          Must-Haves to Grow <br> Your Business
         </h2>
-
+        <p class="text-neutral-300 tw-text-lg tw-mb-8">
+          A beautiful website is only one piece of the puzzle. Businesses that generate consistent leads and sales combine branding, technology, marketing, and optimization into one growth system.
+        </p>
         <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72"
              class="tw-rounded-xl w-100 flex-grow-1 object-fit-cover tw-h-300-px"/>
       </div>
 
       <!-- RIGHT -->
-   <div class="col-lg-6">
-  <div class="services-list-container">
+      <div class="col-lg-6">
+        <div class="services-list-container">
 
-  <div class="service-btnss">
-    <div class="left">
-      <i class="ph ph-robot"></i>
-      <span>AI Consulting Services</span>
-    </div>
-    <span class="arrow">↗</span>
-  </div>
+          <div class="service-btnss">
+            <div class="top-row">
+              <div class="left d-flex align-items-center tw-gap-3">
+                <span class="tw-text-xl fw-bold">1.</span>
+                <span class="fw-semibold tw-text-lg">Strong Brand Identity</span>
+              </div>
+              <span class="arrow">↗</span>
+            </div>
+            <div class="service-desc-wrapper">
+              <p class="mb-0 text-neutral-400">Your brand is what people remember after they leave your website. A consistent logo and identity builds trust from the very first click.</p>
+            </div>
+          </div>
 
-  <div class="service-btnss">
-    <div class="left">
-      <i class="ph ph-cloud"></i>
-      <span>Cloud Services</span>
-    </div>
-    <span class="arrow">↗</span>
-  </div>
+          <div class="service-btnss">
+            <div class="top-row">
+              <div class="left d-flex align-items-center tw-gap-3">
+                <span class="tw-text-xl fw-bold">2.</span>
+                <span class="fw-semibold tw-text-lg">High-Performing Website</span>
+              </div>
+              <span class="arrow">↗</span>
+            </div>
+            <div class="service-desc-wrapper">
+              <p class="mb-0 text-neutral-400">A website should be fast, mobile-friendly, and easy to navigate. Great design means nothing if visitors don't take action.</p>
+            </div>
+          </div>
 
-  <div class="service-btnss">
-    <div class="left">
-      <i class="ph ph-chart-line"></i>
-      <span>BI Analytical Services</span>
-    </div>
-    <span class="arrow">↗</span>
-  </div>
+          <div class="service-btnss">
+            <div class="top-row">
+              <div class="left d-flex align-items-center tw-gap-3">
+                <span class="tw-text-xl fw-bold">3.</span>
+                <span class="fw-semibold tw-text-lg">Search Engine Visibility</span>
+              </div>
+              <span class="arrow">↗</span>
+            </div>
+            <div class="service-desc-wrapper">
+              <p class="mb-0 text-neutral-400">Your ideal customers should be able to find you on Google. SEO helps your website attract traffic long after it's launched.</p>
+            </div>
+          </div>
 
-  <div class="service-btnss">
-    <div class="left">
-      <i class="ph ph-check-circle"></i>
-      <span>QA Services</span>
-    </div>
-    <span class="arrow">↗</span>
-  </div>
+          <div class="service-btnss">
+            <div class="top-row">
+              <div class="left d-flex align-items-center tw-gap-3">
+                <span class="tw-text-xl fw-bold">4.</span>
+                <span class="fw-semibold tw-text-lg">Lead Generation System</span>
+              </div>
+              <span class="arrow">↗</span>
+            </div>
+            <div class="service-desc-wrapper">
+              <p class="mb-0 text-neutral-400">Every website needs a clear way to capture enquiries. Forms, CTAs, and landing pages turn visitors into potential customers.</p>
+            </div>
+          </div>
 
-  <div class="service-btnss">
-    <div class="left">
-      <i class="ph ph-gear"></i>
-      <span>Managed Services</span>
-    </div>
-    <span class="arrow">↗</span>
-  </div>
+          <div class="service-btnss">
+            <div class="top-row">
+              <div class="left d-flex align-items-center tw-gap-3">
+                <span class="tw-text-xl fw-bold">5.</span>
+                <span class="fw-semibold tw-text-lg">Social Media Presence</span>
+              </div>
+              <span class="arrow">↗</span>
+            </div>
+            <div class="service-desc-wrapper">
+              <p class="mb-0 text-neutral-400">Customers often check your social channels before making a decision. Active profiles strengthen credibility and extend your reach.</p>
+            </div>
+          </div>
 
-  <div class="service-btnss">
-    <div class="left">
-      <i class="ph ph-code"></i>
-      <span>Web Development</span>
-    </div>
-    <span class="arrow">↗</span>
-  </div>
+          <div class="service-btnss">
+            <div class="top-row">
+              <div class="left d-flex align-items-center tw-gap-3">
+                <span class="tw-text-xl fw-bold">6.</span>
+                <span class="fw-semibold tw-text-lg">LinkedIn Personal Brand</span>
+              </div>
+              <span class="arrow">↗</span>
+            </div>
+            <div class="service-desc-wrapper">
+              <p class="mb-0 text-neutral-400">For B2B businesses, LinkedIn is your digital reputation. A strong presence builds authority and creates valuable business opportunities.</p>
+            </div>
+          </div>
 
-  <div class="service-btnss">
-    <div class="left">
-      <i class="ph ph-megaphone"></i>
-      <span>Digital Marketing</span>
-    </div>
-    <span class="arrow">↗</span>
-  </div>
+          <div class="service-btnss">
+            <div class="top-row">
+              <div class="left d-flex align-items-center tw-gap-3">
+                <span class="tw-text-xl fw-bold">7.</span>
+                <span class="fw-semibold tw-text-lg">Engaging Content</span>
+              </div>
+              <span class="arrow">↗</span>
+            </div>
+            <div class="service-desc-wrapper">
+              <p class="mb-0 text-neutral-400">Content answers questions, builds trust, and improves search rankings. Every page should give visitors a reason to stay.</p>
+            </div>
+          </div>
 
-</div>
-</div>
+          <div class="service-btnss">
+            <div class="top-row">
+              <div class="left d-flex align-items-center tw-gap-3">
+                <span class="tw-text-xl fw-bold">8.</span>
+                <span class="fw-semibold tw-text-lg">Professional Visuals</span>
+              </div>
+              <span class="arrow">↗</span>
+            </div>
+            <div class="service-desc-wrapper">
+              <p class="mb-0 text-neutral-400">High-quality photos and videos make your business feel more credible. Strong visuals communicate your story faster than words.</p>
+            </div>
+          </div>
+
+          <div class="service-btnss">
+            <div class="top-row">
+              <div class="left d-flex align-items-center tw-gap-3">
+                <span class="tw-text-xl fw-bold">9.</span>
+                <span class="fw-semibold tw-text-lg">Analytics & Tracking</span>
+              </div>
+              <span class="arrow">↗</span>
+            </div>
+            <div class="service-desc-wrapper">
+              <p class="mb-0 text-neutral-400">You can't improve what you don't measure. Analytics reveal what's working, what's not, and where opportunities exist.</p>
+            </div>
+          </div>
+
+          <div class="service-btnss">
+            <div class="top-row">
+              <div class="left d-flex align-items-center tw-gap-3">
+                <span class="tw-text-xl fw-bold">10.</span>
+                <span class="fw-semibold tw-text-lg">Frequent Optimization</span>
+              </div>
+              <span class="arrow">↗</span>
+            </div>
+            <div class="service-desc-wrapper">
+              <p class="mb-0 text-neutral-400">The best websites are never completely finished. Regular updates, testing, and improvements keep your business growing.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
     </div>
   </div>
 </section>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  window.activateService = function(el) {
-    document.querySelectorAll('.overlay').forEach(o => {
-      o.style.transform = "translateX(-100%)";
-    });
-
-    el.querySelector('.overlay').style.transform = "translateX(0)";
-  }
-});
-</script>
             
             
             
