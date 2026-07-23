@@ -94,13 +94,13 @@
 
         /* Stacked Cards Section */
         .stacked-section {
-            padding: 100px 0 20px 0;
+            padding: 10px;
             background: #fff;
             position: relative;
         }
         .stacked-heading-wrapper {
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             position: relative;
         }
         .stacked-badge {
@@ -140,16 +140,17 @@
             color: #000;
             letter-spacing: -0.02em;
         }
-        .stacked-main-heading .text-yellow {
-            color: #facc15;
-            text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+        .stacked-main-heading .text-yellow,
+        .stacked-main-heading .footer-akkurate-dark {
+            color: #081a4b !important;
+            background: none !important;
         }
         .stacked-subheading {
             max-width: 900px;
-            margin: 20px auto 0;
+            margin: 10px auto 0;
             color: #4a4a4a;
-            font-size: 1.1rem;
-            line-height: 1.6;
+            font-size: 1.05rem;
+            line-height: 1.5;
         }
 
         .sticky-cards-container {
@@ -160,9 +161,9 @@
             position: sticky;
             background: #250b46;
             border-radius: 24px;
-            padding: 50px;
+            padding: 36px 40px;
             margin-bottom: 30px;
-            box-shadow: 0 -10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.08);
             color: #fff;
             overflow: hidden;
             transform-origin: top center;
@@ -190,15 +191,15 @@
         .sticky-card.color-9 { background: #061131; }
         .sticky-card.color-10 { background: #040c23; }
 
-        .sc-title { font-size: 2.2rem; font-weight: 700; margin-bottom: 20px; letter-spacing: -0.02em; color: #fff; }
-        .sc-desc { font-size: 1.1rem; line-height: 1.6; color: #e5e7eb; margin-bottom: 30px; max-width: 90%; }
-        .sc-list { list-style: none; padding: 0; margin: 0 0 40px 0; }
-        .sc-list li { font-size: 1.05rem; margin-bottom: 16px; display: flex; align-items: center; color: #fff; }
-        .sc-list li i { color: #facc15; margin-right: 12px; font-weight: bold; font-size: 1.2rem; }
+        .sc-title { font-size: 1.85rem; font-weight: 700; margin-bottom: 14px; letter-spacing: -0.02em; color: #fff; }
+        .sc-desc { font-size: 1rem; line-height: 1.5; color: #e5e7eb; margin-bottom: 24px; max-width: 95%; }
+        .sc-list { list-style: none; padding: 0; margin: 0 0 28px 0; }
+        .sc-list li { font-size: 0.98rem; margin-bottom: 12px; display: flex; align-items: center; color: #fff; }
+        .sc-list li i { color: #facc15; margin-right: 12px; font-weight: bold; font-size: 1.1rem; }
         .sc-btn {
             display: inline-flex;
             align-items: center;
-            padding: 12px 30px;
+            padding: 10px 24px;
             border: 1px solid rgba(255,255,255,0.4);
             border-radius: 100px;
             color: #fff;
@@ -208,7 +209,7 @@
         }
         .sc-btn:hover { background: #fff; color: #250b46; }
         .sc-btn i { margin-left: 10px; font-size: 1.1rem; }
-        .sc-img-wrap { border-radius: 16px; overflow: hidden; height: 550px; width: 100%; }
+        .sc-img-wrap { border-radius: 16px; overflow: hidden; height: 380px; width: 100%; }
         .sc-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
         @media (max-width: 991px) {
             .sticky-card {
@@ -513,9 +514,9 @@
             </div>
             <!-- ============================ brand slider end =========================== -->
             <!-- ========================== About section start ============================= -->
-            <section class="pt-60 pb-60 drag-rotate-element-section">
+            <section class="py-3 drag-rotate-element-section">
                 <div class="container">
-                    <div class="tw-rounded-50-px gradient-bg-one tw-px-36-px tw-py-80-px">
+                    <div class="tw-rounded-50-px bg-white tw-px-36-px tw-py-40-px">
                         <div class="row gy-4">
                             <div class="col-lg-6">
                                 <div class="tw-pe-12 about-cards-wrapper position-relative h-100">
@@ -594,10 +595,10 @@
                                             class="text-black tw-text-lg fw-bold text-uppercase tw-mb-205 d-inline-block">ABOUT
                                             US</span>
                                         <h3 class="splitTextStyleOne fw-light tw-leading-104">
-                                            <span class="d-inline-block"> Most agencies deliver campaigns.</span>
-                                            <span class="d-inline-block fw-semibold"></span>
-                                            <span class="d-inline-block"></span>
-                                            <span class="d-inline-block fw-semibold">  We build businesses that grow.</span>
+                                            <span class="d-inline-block"> Bored of campaigns?</span>
+                                            <span class="d-inline-block fw-semibold"> We deliver growth.</span>
+                                            <!-- <span class="d-inline-block"> Most agencies deliver campaigns.</span>
+                                            <span class="d-inline-block fw-semibold">  We build businesses that grow.</span> -->
                                         </h3>
                                     </div>
                                     <div class="d-flex flex-column tw-gap-6">
@@ -930,7 +931,7 @@
             </section>
             <!-- ========================== Testimonials Section End ============================= -->
             
-       <section class="footer-akkurate-dark tw-py-80-px tw-px-6 text-white position-relative">
+       <section class="footer-akkurate-dark tw-py-60-px tw-px-6 text-white position-relative">
   <style>
     .service-btnss {
       display: flex;
@@ -962,7 +963,7 @@
       visibility: visible !important;
     }
   </style>
-  <div class="container">
+  <div class="container pb-4">
     <div class="row gy-4">
 
       <!-- LEFT -->
@@ -974,7 +975,7 @@
           A beautiful website is only one piece of the puzzle. Businesses that generate consistent leads and sales combine branding, technology, marketing, and optimization into one growth system.
         </p>
         <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72"
-             class="tw-rounded-xl w-100 flex-grow-1 object-fit-cover tw-h-300-px"/>
+             class="tw-rounded-xl w-100 flex-grow-1 object-fit-cover tw-h-300-px mb-4"/>
       </div>
 
       <!-- RIGHT -->
@@ -1063,51 +1064,12 @@
             <div class="top-row">
               <div class="left d-flex align-items-center tw-gap-3">
                 <span class="tw-text-xl fw-bold">7.</span>
-                <span class="fw-semibold tw-text-lg">Engaging Content</span>
-              </div>
-              <span class="arrow">↗</span>
-            </div>
-            <div class="service-desc-wrapper">
-              <p class="mb-0 text-neutral-400">Content answers questions, builds trust, and improves search rankings. Every page should give visitors a reason to stay.</p>
-            </div>
-          </div>
-
-          <div class="service-btnss">
-            <div class="top-row">
-              <div class="left d-flex align-items-center tw-gap-3">
-                <span class="tw-text-xl fw-bold">8.</span>
                 <span class="fw-semibold tw-text-lg">Professional Visuals</span>
               </div>
               <span class="arrow">↗</span>
             </div>
             <div class="service-desc-wrapper">
               <p class="mb-0 text-neutral-400">High-quality photos and videos make your business feel more credible. Strong visuals communicate your story faster than words.</p>
-            </div>
-          </div>
-
-          <div class="service-btnss">
-            <div class="top-row">
-              <div class="left d-flex align-items-center tw-gap-3">
-                <span class="tw-text-xl fw-bold">9.</span>
-                <span class="fw-semibold tw-text-lg">Analytics & Tracking</span>
-              </div>
-              <span class="arrow">↗</span>
-            </div>
-            <div class="service-desc-wrapper">
-              <p class="mb-0 text-neutral-400">You can't improve what you don't measure. Analytics reveal what's working, what's not, and where opportunities exist.</p>
-            </div>
-          </div>
-
-          <div class="service-btnss">
-            <div class="top-row">
-              <div class="left d-flex align-items-center tw-gap-3">
-                <span class="tw-text-xl fw-bold">10.</span>
-                <span class="fw-semibold tw-text-lg">Frequent Optimization</span>
-              </div>
-              <span class="arrow">↗</span>
-            </div>
-            <div class="service-desc-wrapper">
-              <p class="mb-0 text-neutral-400">The best websites are never completely finished. Regular updates, testing, and improvements keep your business growing.</p>
             </div>
           </div>
 
@@ -1123,13 +1085,13 @@
             
             <!-- ==================== Stacked Cards Services ==================== -->
             <section id="services" class="stacked-section">
-                <div class="container">
+                <div class="container-fluid px-4 px-md-5">
                     <div class="stacked-heading-wrapper">
                         <div class="stacked-ghost-text">With Our</div>
                         <div class="stacked-badge">
                             <span>What We Offer</span>
                         </div>
-                        <h2 class="stacked-main-heading">Production-Ready <span class="text-yellow">Systems</span></h2>
+                        <h2 class="stacked-main-heading">Production-Ready <span class="footer-akkurate-dark">Systems</span></h2>
                         <p class="stacked-subheading">
                             Akkurate helps enterprises and high-growth businesses design, build, and scale advanced digital systems that are secure, compliant, and built for real-world adoption.
                         </p>
